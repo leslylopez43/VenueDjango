@@ -75,15 +75,15 @@
                 </div>
             </li>
             <li class="lis-inline-item">
-              <a class="{% if grand_total %} text-into font-weight-bold (% else %) text-black (% endif %) nav-link" href="">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                 <div class="text-center">
                   <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                   <p class="my-0">
                     {% if grand_total %}
-                      £{{grand_total|floatformat:2}}
-                      {% else %}
-                        £0.00
-                      {% endif %}
+                          £{{ grand_total|floatformat:2 }}
+                        {% else %}
+                          £0.00
+                        {% endif %}
                   </p>
                 </div>
               </a>
