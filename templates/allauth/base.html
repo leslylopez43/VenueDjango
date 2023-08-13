@@ -14,12 +14,15 @@
 
     <title>Venue Ariel{% block extra_title %} {% endblock %}</title>
     {% block corecss %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     {% endblock %}
 
     {%block extra_css%} 
     {% endblock %}
     {% block corejs %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     {% endblock %}
 
@@ -47,7 +50,6 @@
                   </span>
                 </button>
               </div>
-
             </div>
           </form>
         </div>
@@ -57,19 +59,19 @@
             <li class="list-inline-item dropdown">
                 <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <div class="text-center">
-                    <div> <i class="fas fa user fa-lg"></i></div>
+                    <div><i class="fas fa-user fa-lg"></i></div>
                     <p class="my-0">My Account</p>
                   </div>
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                   {% if request.user.is_authenticated %}
                   {% if request.user.is_superuser %}
-                  <a href="" class="dropdown-item">Product Management</a>
+                    <a href="" class="dropdown-item">Product Management</a>
                   {% endif %}
                   <a href="" class="dropdown-item">My Profile</a>
-                  <a href=" {% url 'account_logout' %} class="dropdown-item">Logout</a>
+                  <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                   {% else %}
-                  <a href="{% url 'account_signup' %}" class="dropdown_item">Register</a>
+                  <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                   <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                   {% endif %}
                 </div>
