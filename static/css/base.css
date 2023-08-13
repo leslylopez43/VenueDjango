@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+}
+body{
+    background: url("/media/background.webp") no-repeat center fixed;
+    background-size: cover;
+    height: calc(100% -160px);
+    color: #555;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
