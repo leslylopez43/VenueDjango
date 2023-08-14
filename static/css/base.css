@@ -1,22 +1,28 @@
+/* Base styles for all screen sizes */
 html {
     height: 100%;
-}
-body{
-    background: url("/media/background.webp") no-repeat center fixed;
+  }
+  
+  body {
+    background: url("#") no-repeat center fixed;
     background-size: cover;
-    height: calc(100% -160px);
+    height: calc(100% - 160px);
     color: #555;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-}
-/* Base styles for all screen sizes */
-.container {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .logo-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 150px; /* Adjust the logo */
+    max-height: 100px;
+  }
+  
+  .container {
     background-color: #f0f0f0;
     padding: 20px;
     margin: 0 auto;
   }
-  
+ 
   /* Styles for large container on xl screen */
   @media (min-width: 1200px) {
     .container {
@@ -40,5 +46,4 @@ body{
       /* Additional styles for xs screen size */
     }
   }
-
- 
+  
