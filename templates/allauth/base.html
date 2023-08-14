@@ -33,6 +33,16 @@
 
     <header class="container-fluid fixed-top">
       <div id="topnav" class="row (bg-white pt-lg-2 d-none d-lg-flex">
+      </div>
+      <div class="row bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        {% Include 'Includes/mbile-top-header.html' %}
+        {% Include 'Includes/main-nav.html' %}
+        </nav>
+      </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="{% url 'home' %}" class="nav-link main-logo-link">
             <img src="/media/logoariel.webp" alt="Venue Ariel Logo" class="logo-img">
@@ -57,8 +67,7 @@
                 <li class="list-inline-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" id="user-options" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <div class="text-center">                      
-                          <div><i class="fas fa-user fa-lg"></i>
-                     </div>
+                          <div><i class="fas fa-user fa-lg"></i></div>
                           <p class="my-0">My Account</p>
                       </div>
                   </a>
@@ -108,12 +117,9 @@
 
    
    {% block postloadjs %}
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
-    <!-- Include additional JavaScript scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    {% endblock %}
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+{% endblock %}
     <!-- Include additional JavaScript scripts -->
     {% block extra_js %}{% endblock %}
    
