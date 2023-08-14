@@ -4,7 +4,7 @@ html {
   }
   
   body {
-    background: url("#") no-repeat center fixed;
+    background: url("/media/background.webp") no-repeat center fixed;
     background-size: cover;
     height: calc(100% - 160px);
     color: #555;
