@@ -10,3 +10,35 @@ body{
 
 
 }
+/* Base styles for all screen sizes */
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for large container on xl screen */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      /* Additional styles for xl screen size */
+    }
+  }
+  
+  /* Styles for medium container on md screen */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 800px;
+      /* Additional styles for md screen size */
+    }
+  }
+  
+  /* Styles for small container on xs screen */
+  @media (max-width: 767px) {
+    .container {
+      max-width: 600px;
+      /* Additional styles for xs screen size */
+    }
+  }
+
+ 
