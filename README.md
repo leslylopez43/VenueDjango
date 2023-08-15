@@ -2,6 +2,8 @@
 
 allauth app itself log in and out
 
+kaggle.com
+
 ###  "GET /favicon.ico HTTP/1.1" 404 2109
 
 ## Tenant Table
