@@ -23,8 +23,18 @@
    
    <!-- Include Google Fonts (Bricolage Grotesque) -->
    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&display=swap" rel="stylesheet">
+
+   {% block postloadjs %}
+      
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   
+{% endblock %}
+ <!-- Include additional JavaScript scripts -->
+ {% block extra_js %}{% endblock %}
    {% endblock %}
    <!-- Include additional CSS styles -->
+
    {% block extra_css %}
    {% endblock %}
     
@@ -133,13 +143,6 @@
 
 
       
-      {% block postloadjs %}
-      
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    
-{% endblock %}
-  <!-- Include additional JavaScript scripts -->
-  {% block extra_js %}{% endblock %}
+   
 </body>
   </html>
