@@ -55,6 +55,10 @@ bg-black{
         z-index: -1;
 
 }
+.small-logo-image {
+  width: 20px; /* Adjust the width to your desired value */
+  height: auto; /* Maintain the aspect ratio */
+}
 
   /* Styles for large container on xl screen */
   @media (min-width: 1200px) {
