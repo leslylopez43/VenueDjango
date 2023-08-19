@@ -2,25 +2,26 @@
 {% load static %}
 
 {% block page_header %}
-{% endblock %}
-    <div class="container header_container">
+    <div class="container header-container">
         <div class="row">
-            <div class="col">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+                <h1 class="display-4 logo-font text-black">
+                    The New Events Are here 
+                </h1>
+                <div class="my-5">
+                    <h4>
+                        <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Booking Now</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
-{% block content%}
-<div class="container">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">The New events Are Here
-            </h1>
-            <div class="my-5">
-                <h4>
-                <a href="" clas="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
-             </div>
-        </div>
-    </div>
-</div>
-{% endblock%}
+{% endblock %}
