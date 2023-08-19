@@ -4,12 +4,35 @@ html {
   }
   
   body {
-    background: url(/media/background.webp) no-repeat center fixed;
+    background: url('/media/background.webp') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100% - 160px);
+    height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+    font-family: 'Lato';
+}
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+ 
+.logo-font {
+  text-transform: uppercase;
+}
+
+.main-logo-link {
+  width: fit-content;
+}
+
+.shop-now-button {
+  background: black;
+  color: white;
+  min-width: 260px;
+}
+
   .logo-img {
     display: block;
     margin: 0 auto;
@@ -46,6 +69,34 @@ html {
 bg-black{
   background: #000 important;
 }
+
+.btn-black {
+  background: black;
+  color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+  background: #222;
+  color: white;
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.border-black {
+  border: 1px solid black !important;
+}
+
+.bg-black {
+  background: #000 !important;
+}
+
 .overlay{ height: 100%;
         width: 100%;
         top: 0;
@@ -56,7 +107,7 @@ bg-black{
 
 }
 .small-logo-image {
-  width: 20px; /* Adjust the width to your desired value */
+  width: 50px; /* Adjust the width to your desired value */
   height: auto; /* Maintain the aspect ratio */
 }
 
