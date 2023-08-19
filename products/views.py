@@ -19,4 +19,4 @@ def venue_detail(request, venue_id):
         'products': products,  # Use 'products' here as well
     }
 
-    return render(request, 'products/venue_detail', context)
+    return render(request, 'products/venue_detail.html', context)
