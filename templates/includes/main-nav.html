@@ -13,44 +13,44 @@
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                HAll
+                Events
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="{% url 'products' %}?category=wedding" class="dropdown-item">Weddings</a> 
-            <a href="{% url 'products' %}?category=birthdays" class="dropdown-item">Birthdays </a>
-            <a href="{% url 'products' %}?category=parties" class="dropdown-item">Parties</a>
-            <a href="{% url 'products' %}?category=babyshower" class="dropdown-item">BabyShower</a>
-            <a href="{% url 'products' %}?category=corporate,events" class="dropdown-item">Corporate Events</a>
-            <a href="{% url 'products' %}?category=christmas" class="dropdown-item">Christmas</a>
-            <a href="{% url 'products' %}?category=lifestyleshoot,phoroshoot" class="dropdown-item">Lifestyleshoot & Photoshoot</a> 
-            <a href="{% url 'products' %}?category=wedding,birthdays,parties,babyshower,corporate,events,lifestyleshoot,phoroshoot" class="dropdown-item">Lifestyleshoot & Photoshoot</a> 
-            
+            <a href="{% url 'products' %}?category=Weddings" class="dropdown-item">Weddings</a>
+            <a href="{% url 'products' %}?category=Birthdays" class="dropdown-item">Birthdays</a>
+            <a href="{% url 'products' %}?category=Parties" class="dropdown-item">Parties</a>
+            <a href="{% url 'products' %}?category=Babyshower" class="dropdown-item">BabyShower</a>
+            <a href="{% url 'products' %}?category=Corporate Events" class="dropdown-item">Corporate & Events</a>
+            <a href="{% url 'products' %}?category=Christmas" class="dropdown-item">Christmas</a>
+            <a href="{% url 'products' %}?category=Lifestyleshoot" class="dropdown-item">Lifestyleshoot & Photoshoot</a>
+            <a href="{% url 'products' %}?category=Weddings,Birthdays,Parties,Babyshower,Corporate Events,Christmas,Lifestyleshoot" class="dropdown-item">All Events</a>
         </div>
-    </li>
+        
+        </li>
     <li class="nav-item dropdown">
     <a class="logo-font font-weight-bold nav-link text-black mr5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Apartments
+        Features
     </a>
     <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-        <a href="" class="dropdown-item">By Price</a> 
-        <a href="" class="dropdown-item">By Rating</a>
-        <a href="" class="dropdown-item">By Category</a>
-        <a href="" class="dropdown-item">by Guest</a>
-        <a href="" class="dropdown-item">By Availability</a>
-        <a href="" class="dropdown-item">By Rooms</a>
-
-
-    </div>
+        
+        <a href="{% url 'products' %}?category=Outdoor space" class="dropdown-item">Outdoor Space</a> 
+        <a href="{% url 'products' %}?category=Music" class="dropdown-item">Pa for music</a>
+        <a  href="{% url 'products' %}?category=City" class="dropdown-item">City</a>    
+        <a href="{% url 'products' %}?category=Big screen" class="dropdown-item">Big screen</a>
+        <a href="{% url 'products' %}?category=Exclusive hire" class="dropdown-item">Exclusive hire</a>
+        <a href="{% url 'products' %}?category=Disabled access" class="dropdown-item">Disabled access</a>
+        <a href="{% url 'products' %}?category=Air conditioning" class="dropdown-item">Air conditioning</a>
+        </div>
     </li>
     <li class="nav-item dropdown">
         <a class="logo-font font-weight-bold nav-link text-black mr5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Special Offer
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="" class="dropdown-item">Family Packages</a> 
-            <a href="" class="dropdown-item">Holiday</a>
-            <a href="" class="dropdown-item">CLub</a>
-            <a href="" class="dropdown-item">All Special Offer</a>
+            <a href="{% url 'products' %}?category=Family" class="dropdown-item">Family Packages</a> 
+            <a href="{% url 'products' %}?category=Summer Party" class="dropdown-item">Summer party</a>
+            <a href="{% url 'products' %}?category=Club" class="dropdown-item">Club</a>
+            <a href="{% url 'products' %}?category=Family,Summer Party,Club" class="dropdown-item">All Special Offer</a>
     
         </div>
     </li>
