@@ -16,13 +16,14 @@
                 HAll
         </a>
         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="" class="dropdown-item">Weddings</a> 
-            <a href="" class="dropdown-item">Birthdays </a>
-            <a href="" class="dropdown-item">Parties</a>
-            <a href="" class="dropdown-item">Baby Shower</a>
-            <a href="" class="dropdown-item">Corporate Events</a>
-            <a href="" class="dropdown-item">Christmas</a>
-            <a href="" class="dropdown-item">Lifestyleshoot & Photoshoot</a> 
+            <a href="{% url 'products' %}?category=wedding" class="dropdown-item">Weddings</a> 
+            <a href="{% url 'products' %}?category=birthdays" class="dropdown-item">Birthdays </a>
+            <a href="{% url 'products' %}?category=parties" class="dropdown-item">Parties</a>
+            <a href="{% url 'products' %}?category=babyshower" class="dropdown-item">BabyShower</a>
+            <a href="{% url 'products' %}?category=corporate,events" class="dropdown-item">Corporate Events</a>
+            <a href="{% url 'products' %}?category=christmas" class="dropdown-item">Christmas</a>
+            <a href="{% url 'products' %}?category=lifestyleshoot,phoroshoot" class="dropdown-item">Lifestyleshoot & Photoshoot</a> 
+            <a href="{% url 'products' %}?category=wedding,birthdays,parties,babyshower,corporate,events,lifestyleshoot,phoroshoot" class="dropdown-item">Lifestyleshoot & Photoshoot</a> 
             
         </div>
     </li>
