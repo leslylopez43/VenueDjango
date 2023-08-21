@@ -2,10 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 
+def view_bag (request):
 
-
-def view_bag(request):
-    """ A view that render the bag contents page"""
+    """ A view that renders the bag content name"""
 
     return render (request, 'bag/bag.html')
 
