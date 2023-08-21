@@ -4,5 +4,6 @@ from .  import views
 
 
 urlpatterns = [
-    path('', views.view.bag, name='view_bag')
+    path('', views.view_bag, name='view_bag')  # 
 ]
+
