@@ -166,7 +166,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-Descount members 
 
-FREE_MEMBERS_THRESHOLD = 50
+
+
+FREE_MEMBERS_THRESHOLD = 10
 STANDARD_DELIVERY_PERCENTAGE = 10
