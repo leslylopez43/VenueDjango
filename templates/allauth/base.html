@@ -114,12 +114,23 @@
   </header>
 
   {% if messages %}
-      <div class="message-container">
-        {% for message in messages %}
-        {% include 'includes/toasts/toast_succes.html %}
-        {% endfor %}
-      </div>
-  {% endif %}
+  <div class="message-container">
+    {% for message in messages %}
+    {% with messagelevel as level %}
+    {% if level == 40%}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_succes.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith%}
+
+    {% endfor %}
+  </div>
+{% endif %}
 
   {% block page_header %}
   {% endblock %}
