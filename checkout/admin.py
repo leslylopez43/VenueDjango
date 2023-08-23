@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import Order, OrderLineItem
+
+from checkout.models import Order, OrderLineItem
+
+# rest of your admin code...
+
 
 
 # Register your models here.
