@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from django.conf import settings
 
 
 def all_products(request):
@@ -64,3 +65,9 @@ def venue_detail(request, venue_id):
     }
 
     return render(request, 'products/venue_detail.html', context)
+
+
+def checkout(request):
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    # Rest of your view logic...
+    return render(request, 'checkout/checkout.html', {'stripe_public_key': stripe_public_key})

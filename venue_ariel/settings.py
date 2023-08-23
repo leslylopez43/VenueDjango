@@ -22,6 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!'
 
+STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -113,7 +116,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGING_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
 
 
 WSGI_APPLICATION = 'venue_ariel.wsgi.application'
