@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+
+    # other
+    'crispy-forms',
     
 ]
 
@@ -60,6 +63,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'venue_ariel.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         
@@ -74,9 +79,15 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request', #requiered by allauth
                 'django.contrib.auth.context_processors.auth',
+                'django.template.context_processors.media',
                 'django.contrib.messages.context_processors.messages',
+
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+                'crispy_form_templatetag.crispy_forms_tags',
+                'crispy_form_templatetag.crispy_forms_field',
+            ]
         },
     },
 ]
