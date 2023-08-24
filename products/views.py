@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404  
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -7,6 +7,7 @@ from django.conf import settings
 
 
 def all_products(request):
+    
     """A view to show all products, including sorting and search queries"""
 
     products = Product.objects.all()
@@ -71,3 +72,18 @@ def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     # Rest of your view logic...
     return render(request, 'checkout/checkout.html', {'stripe_public_key': stripe_public_key})
+
+
+def venue_detail(request, venue_id):
+    """A view to show venue details"""
+    product = get_object_or_404(Product, pk=venue_id)  # Correct the model name to 'Product'
+    
+    context = {
+        'product': product,
+    }
+    
+    return render(request, 'products/venue_detail.html', context)
+
+
+
+

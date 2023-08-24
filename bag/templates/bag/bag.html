@@ -160,34 +160,48 @@
     </div>
 {% endblock %}
 
-{% block postloadjs %}
-{{ block.super }}
-<script type="text/javascript">
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
-    })
-</script>
-{% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
 
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+ {% block postloadjs %}
+ {{ block.super }}
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
-</script>
+ <!-- Include jQuery library -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <script type="text/javascript">
+     $('.btt-link').click(function(e) {
+         window.scrollTo(0, 0);
+     });
+ </script>
+
+ {% include 'products/includes/quantity_input_script.html' %}
+
+ <script type="text/javascript">
+     // Update quantity on click
+     $('.update-link').click(function(e) {
+         e.preventDefault(); // Prevent default link behavior
+         var form = $(this).prev('.update-form');
+         form.submit();
+     });
+
+     // Remove item and reload on click
+     $('.remove-item').click(function(e) {
+         e.preventDefault(); // Prevent default link behavior
+
+         var csrfToken = "{{ csrf_token }}";
+         var itemId = $(this).attr('id').split('remove_')[1];
+         var size = $(this).data('product_size');
+         var url = `/bag/remove/${itemId}/`;
+         var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+
+         // Use jQuery's $.post to send a POST request
+         $.post(url, data)
+             .done(function() {
+                 location.reload();
+             })
+             .fail(function() {
+                 console.log("Failed to remove item.");
+             });
+     });
+ </script>
 {% endblock %}
