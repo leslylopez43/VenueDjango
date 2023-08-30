@@ -55,16 +55,6 @@ kaggle.com
 | Christmas        | Availability for Christmas events |
 | Lilmedshoot & Photoshoot | Availability for lifestyle and photoshoots |
 
-### Apartments 
-
-| Field            | Description            |
-|------------------|------------------------|
-| Accommodation ID | Unique identifier for the apartment  |
-| Check-in         | Date and time of check-in  |
-| Check-out        | Date and time of check-out |
-| Guest            | Number of guests          |
-| Rooms            | Number of rooms           |
-| Check Availability | Availability of the apartment |
 
 ## Payments
 
