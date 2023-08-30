@@ -6,6 +6,14 @@ kaggle.com
 
 ###  "GET /favicon.ico HTTP/1.1" 404 2109
 
+## Wireframe
+![Ariel Logo](/media/products/wireframe_search.webp)
+#### Front Website
+![Ariel Logo](/media/products/wireframe_frontpage.webp)
+
+
+
+
 ## Tenant Table
 
 | Field            | Description            |
@@ -88,14 +96,19 @@ kaggle.com
 # Venue Ariel Reservation Management System
 
 Welcome to the Venue Reservation Management System! This system allows customers to browse, reserve, and manage event venues, while venue managers can efficiently manage reservations and resources. Let's explore the detailed user stories and features of this system.
-
+![Ariel Logo](/media/products/frontwebsite.webp)
 ## Customer User Stories
 
 ### Browse Available Venues
 As a customer, I want to browse through a list of available event venues with details such as types, capacities, amenities, and photos.
+![Ariel Logo](/media/products/all_products.webp)
 
 ### Check Venue Availability
 I should be able to check the real-time availability of a specific venue for my desired date and time.
+![Ariel Logo](/media/products/events.webp)
+![Ariel Logo](/media/products/features.webp)
+![Ariel Logo](/media/products/features.webp)
+![Ariel Logo](/media/products/special_offer.webp)
 
 ### Reserve a Venue
 I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
