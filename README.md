@@ -84,38 +84,75 @@ kaggle.com
 | VAT                | VAT (Value Added Tax) information |
 
 
-## Guest Stories
-# Accommodation Management System Ariel 
-[![Ariel](/img/Ariel%20Logo.webp)](/img/LogoAriel.webp)
 
+# Venue Ariel Reservation Management System
 
-Welcome to the Accommodation Management System! This system helps you manage tenant information, tenancy details, accommodation availability, and payments. Let's dive into the story of how these tables work together to streamline the accommodation management process.
+Welcome to the Venue Reservation Management System! This system allows customers to browse, reserve, and manage event venues, while venue managers can efficiently manage reservations and resources. Let's explore the detailed user stories and features of this system.
 
-## Tenant Table
+## Customer User Stories
 
-The **Tenant Table** serves as the foundation of the system. It stores essential information about tenants, such as their names, dates of birth, contact details, and addresses. Each tenant is assigned a unique **Tenant ID** to ensure accurate identification.
+### Browse Available Venues
+As a customer, I want to browse through a list of available event venues with details such as types, capacities, amenities, and photos.
 
-## Tenancy Table
+### Check Venue Availability
+I should be able to check the real-time availability of a specific venue for my desired date and time.
 
-As tenants book accommodations, their tenancy details are recorded in the **Tenancy Table**. This table links the tenants from the **Tenant Table** to their respective accommodations. I track the check-in and check-out dates, the number of people accommodated (**Sleeps**), and the type of venue they choose (**Venue Type**).
+### Reserve a Venue
+I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
 
-## Accommodation Table
+### View and Manage Reservations
+I need a dashboard to view and manage my reservations, including editing event details, updating timings, and making payments.
 
-To maintain a comprehensive view of each tenant's accommodations, I connect the **Tenant Table** and the **Tenancy Table** through the **Accommodation Table**. This table holds the unique identifiers for both the tenants and the accommodations.
+### Make Payments Online
+I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
 
-### Hall Table and Apartments Table
+### Receive Booking Confirmation
+After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
 
-Depending on the type of accommodation, I have two additional tables. The **Hall Table** manages availability for our halls, catering to various events like weddings, birthdays, parties, and more. On the other hand, the **Apartments Table** handles the availability of our apartments, specifying check-in and check-out dates, the number of guests, rooms, and the option to check availability.
+### Request Support and Assistance
+During the reservation process, I should have the option to request assistance from venue staff.
 
-## Payments
+## Venue Manager User Stories
 
-To ensure seamless and secure transactions, I have the **Payments Table**. This table connects with the **Tenant Table** using the **Tenant ID**. I store the tenant's payment details, including their full name, postal code, email address, contact details, billing address, payment method, and the option to add new cards. Additionally, tenants have the option to donate to charity through our system. The **Subtotal** and **Order Total** fields provide a clear overview of the payment details.
+### Manage Venue Listings
+As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable.
 
-## Business or Owner Name
+### Approve Reservation Requests
+I need to review and approve customer reservation requests, including payment status and event details.
 
-Finally, I have the **Business or Owner Name Table**. This table connects with the **Accommodation Table** and stores the details of the business or owner associated with each accommodation. It includes their name, business name, address, email address, and VAT information.
+### Set Pricing and Rental Policies
+I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
 
-That wraps up my story of the Accommodation Management System and the interconnected tables within it. With this system in place, you can efficiently manage tenant information, tenancy details, accommodation availability, and payments. 
+### Manage Event Calendar
+I need an event calendar to view confirmed reservations, pending requests, and blocked dates.
+
+### Coordinate Staff and Resources
+For approved reservations, I want to coordinate staff assignments, equipment setups, and logistical aspects.
+
+### Generate Reports and Analytics
+I need access to reports and analytics to analyze reservation trends, popular venues, and revenue generated.
+
+## Customer Support
+
+For assistance, customers can contact our support team at support@venuereserve.com or call 1-800-123-4567.
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/venue-reservation.git`
+2. Install dependencies: `npm install`
+3. Start the application: `npm start`
+
+## License
+
+Venue Reservation Management System is licensed under the [MIT License](LICENSE).
+
+---
+© 2023 Your Company Name
+
+## Logo Creator
+
+I used the website http://www.freelogocreator.com
+
 
 
 ## Logo Creator
