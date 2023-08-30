@@ -1,5 +1,5 @@
 # VenueDjango
-
+![Ariel Logo](/img/LogoAriel.webp)
 allauth app itself log in and out
 
 kaggle.com
