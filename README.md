@@ -136,10 +136,10 @@ During the reservation process, I should have the option to request assistance f
 
 ### Manage Venue Listings
 As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable.
-
+![Ariel Logo](/media/products/django_administration.webp)
 ### Approve Reservation Requests
 I need to review and approve customer reservation requests, including payment status and event details.
-
+![Ariel Logo](/media/products/django_categories.webp)
 ### Set Pricing and Rental Policies
 I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
 
