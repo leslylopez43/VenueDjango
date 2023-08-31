@@ -140,6 +140,17 @@ As a venue manager, I can manage venue listings by adding new venues, updating d
 ### Approve Reservation Requests
 I need to review and approve customer reservation requests, including payment status and event details.
 ![Ariel Logo](/media/products/django_categories.webp)
+### User Managment Menu
+![Ariel Logo](/media/products/django_menue.webp)
+### User Managment Product
+![Ariel Logo](/media/products/django_products.png)
+### User Managment order
+![Ariel Logo](/media/products/django_orders.webp)
+### User Managment Site
+![Ariel Logo](/media/products/django_sites.webp)
+### User Managment 
+![Ariel Logo](/media/products/django_user.webp)
+
 ### Set Pricing and Rental Policies
 I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
 
