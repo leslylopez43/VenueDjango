@@ -107,7 +107,6 @@ As a customer, I want to browse through a list of available event venues with de
 I should be able to check the real-time availability of a specific venue for my desired date and time.
 ![Ariel Logo](/media/products/events.webp)
 ![Ariel Logo](/media/products/features.webp)
-![Ariel Logo](/media/products/features.webp)
 ![Ariel Logo](/media/products/special_offer.webp)
 
 ### Reserve a Venue
