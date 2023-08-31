@@ -9,7 +9,11 @@ kaggle.com
 ## Wireframe
 ![Ariel Logo](/media/products/wireframe_search.webp)
 #### Front Website
-![Ariel Logo](/media/products/wireframe_frontpage.webp)
+![Ariel Logo](/media/products/wireframefrontpagewebsite.webp)
+#### Front Website air ipad
+![Ariel Logo](/media/products/wireframeipad_frontpage.webp)
+#### Front Website iphone 14 pro max
+![Ariel Logo](/media/products/wireframeiphonefrontpage.webp)
 
 
 
@@ -105,16 +109,20 @@ As a customer, I want to browse through a list of available event venues with de
 
 ### Check Venue Availability
 I should be able to check the real-time availability of a specific venue for my desired date and time.
+### Website front page
 ![Ariel Logo](/media/products/events.webp)
 ![Ariel Logo](/media/products/features.webp)
 ![Ariel Logo](/media/products/special_offer.webp)
-
+### Ipad Air front page
+![Ariel Logo](/media/products/ipad_allproducts.webp)
+### Iphone 14 pro max front page
+![Ariel Logo](/media/products/iphone_fronts.webp)
 ### Reserve a Venue
 I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
 
 ### View and Manage Reservations
 I need a dashboard to view and manage my reservations, including editing event details, updating timings, and making payments.
-
+![Ariel Logo](/media/products/shopping.webp)
 ### Make Payments Online
 I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
 
