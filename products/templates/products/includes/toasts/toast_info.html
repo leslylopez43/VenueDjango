@@ -1,4 +1,4 @@
-<div class="toast" role="alert" aria-live="info" aria-atomic="true">
+<!-- <div class="toast" role="alert" aria-live="info" aria-atomic="true">
     <div class="toast-header">
       <img src="..." class="rounded me-2" alt="...">
       <strong class="me-auto">Alert!</strong>
@@ -8,4 +8,17 @@
     <div class="toast-body">
       {{'message'}}
     </div>
+  </div> -->
+
+  <div class="toast" role="alert" aria-live="info" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">{% trans "Info" %}</strong>
+      <small></small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="{% trans 'Close' %}"></button>
+    </div>
+    <div class="toast-body">
+      {{ message }}
+    </div>
   </div>
+  

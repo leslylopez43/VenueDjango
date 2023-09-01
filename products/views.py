@@ -5,6 +5,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from django.conf import settings
 
+# Create your views here.
 
 def all_products(request):
     
@@ -74,15 +75,18 @@ def checkout(request):
     return render(request, 'checkout/checkout.html', {'stripe_public_key': stripe_public_key})
 
 
-def venue_detail(request, venue_id):
-    """A view to show venue details"""
-    product = get_object_or_404(Product, pk=venue_id)  # Correct the model name to 'Product'
+# def edit_product(request, product_id):
+#     product = get_object_or_404(Product, pk=product_id)
+#     # Other view logic, if any
+#     return render(request, 'products/venue_detail.html', {'product': product})
+
+# def delete_product(request, product_id):
+#     product = get_object_or_404(Product, pk=product_id)
+#     # Other view logic, if any
+#     return render(request, 'products/venue_detail.html', {'product': product})
+
+
     
-    context = {
-        'product': product,
-    }
-    
-    return render(request, 'products/venue_detail.html', context)
 
 
 
