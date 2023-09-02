@@ -18,61 +18,85 @@ kaggle.com
 
 
 
-## Tenant Table
+## Tenants Table
 
 | Field            | Description            |
 |------------------|------------------------|
-| Tenant ID        | Unique identifier for the tenant      |
-| Name             | Tenant's first name     |
+| Tenant ID        | Unique identifier for the tenant  |
+| First Name       | Tenant's first name     |
 | Last Name        | Tenant's last name      |
-| DOB              | Tenant's date of birth  |
-| Plus 18's        | Number of tenants aged 18 and above   |
-| Under 18's       | Number of tenants below 18 years old  |
+| Date of Birth    | Tenant's date of birth  |
 | Email Address    | Tenant's email address  |
-| Mobile Phone     | Tenant's mobile phone number |
-| Address          | Tenant's address        |
-| Post Code        | Tenant's postal code    |
-| Country          | Tenant's country        |
+| Contact Details  | Tenant's contact details |
 | Billing Address  | Tenant's billing address |
 
-
-## Tenancy Table
-
-| Field            | Description            |
-|------------------|------------------------|
-| Accommodation ID | Unique identifier for the accommodation  |
-| Tenant ID        | Unique identifier for the tenant  |
-| Check-in         | Date and time of check-in  |
-| Check-out        | Date and time of check-out |
-| Sleeps           | Number of people accommodated |
-| Venue Type       | Type of venue (e.g., hall, apartment) |
-
-## Accommodation Table
+## Products Table
 
 | Field            | Description            |
 |------------------|------------------------|
-| Tenant ID        | Unique identifier for the tenant  |
-| Accommodation ID | Unique identifier for the accommodation  |
+| Product ID       | Unique identifier for the product |
+| Price            | Price of the product    |
+| Rating           | Rating of the product   |
+| Category         | Category of the product |
+| Description      | Description of the product |
+| Image URL        | URL of the product image |
+| Has Sizes        | Indicates if the product has sizes |
+| Capacity         | Capacity of the product (e.g., people) |
+| Square Feet      | Square footage of the product |
+| Has Free Wi-Fi   | Indicates if free Wi-Fi is available |
+| Has Catering     | Indicates if catering is available |
+| Is Accessible    | Indicates if the product is accessible |
 
-### Hall 
+## Events Table
 
 | Field            | Description            |
 |------------------|------------------------|
-| Accommodation ID | Unique identifier for the hall  |
+| Event ID         | Unique identifier for the event |
+| Product ID       | ID of the associated product |
 | Weddings         | Availability for weddings |
 | Birthdays        | Availability for birthdays |
 | Parties          | Availability for parties   |
 | Baby Shower      | Availability for baby showers |
 | Corporate Events | Availability for corporate events |
 | Christmas        | Availability for Christmas events |
-| Lilmedshoot & Photoshoot | Availability for lifestyle and photoshoots |
+| Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
+| Event Type       | Type of venue (e.g., hall, apartment) |
 
+## Features Table
 
-## Payments
+| Field            | Description            |
+|------------------|------------------------|
+| Feature ID       | Unique identifier for the feature |
+| Product ID       | ID of the associated product |
+| Outdoor Space    | Availability of outdoor space |
+| Music            | Availability of music      |
+| City             | Availability of a city view |
+| Big Screen       | Availability of a big screen |
+| Exclusive Hire   | Availability for exclusive hire |
+| Disabled Access  | Availability of disabled access |
+| Air Conditioning | Availability of air conditioning |
+
+## Special Offer Table
+
+| Field            | Description            |
+|------------------|------------------------|
+| Offer ID         | Unique identifier for the special offer |
+| Product ID       | ID of the associated product |
+| Family Packages  | Availability for family packages |
+| Summer Party     | Availability for summer parties |
+| Club             | Availability for club events |
+| All Special Offers | Availability for all special offers |
+| Baby Shower      | Availability for baby showers |
+| Corporate Events | Availability for corporate events |
+| Christmas        | Availability for Christmas events |
+| Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
+
+## Payments Table
 
 | Field              | Description            |
 |--------------------|------------------------|
-| Tenant ID          | Unique identifier for the tenant  |
+| Payment ID         | Unique identifier for the payment |
+| Tenant ID          | ID of the associated tenant |
 | Full Name          | Full name of the tenant  |
 | Post Code          | Tenant's postal code    |
 | Email Address      | Tenant's email address  |
@@ -84,16 +108,6 @@ kaggle.com
 | Subtotal           | Subtotal amount for the payment |
 | Order Total        | Total amount to be paid |
 
-## Business or Owner Name
-
-| Field              | Description            |
-|--------------------|------------------------|
-| Accommodation ID   | Unique identifier for the accommodation  |
-| Name               | Name of the business or owner  |
-| Business Name      | Name of the business  |
-| Address            | Business or owner's address |
-| Email Address      | Business or owner's email address |
-| VAT                | VAT (Value Added Tax) information |
 
 
 
@@ -127,6 +141,8 @@ as a user members can easily find the section for special offers. You can includ
 as a user how can easy see the website in Ipad Screen size
 ### Ipad Air front page
 ![Ariel Logo](/media/products/ipad_allproducts.webp)
+
+
 as a user how can easy see the website in Iphone 14 pro Screen size
 ### Iphone 14 pro max front page
 ![Ariel Logo](/media/products/iphone_fronts.webp)
