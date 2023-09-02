@@ -18,11 +18,11 @@ kaggle.com
 
 
 
-## Tenants Table
+## Customer Table
 
 | Field            | Description            |
 |------------------|------------------------|
-| Tenant ID        | Unique identifier for the tenant  |
+| Tenant ID        | Unique identifier for the Customer  |
 | First Name       | Tenant's first name     |
 | Last Name        | Tenant's last name      |
 | Date of Birth    | Tenant's date of birth  |
@@ -30,7 +30,7 @@ kaggle.com
 | Contact Details  | Tenant's contact details |
 | Billing Address  | Tenant's billing address |
 
-## Products Table
+## Venue Table
 
 | Field            | Description            |
 |------------------|------------------------|
