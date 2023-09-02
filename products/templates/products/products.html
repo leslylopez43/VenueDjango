@@ -71,9 +71,31 @@
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                    <i class="fas fa-building mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
+                                            <div class="product-details">
+                                                {% if product.capacity %}
+                                                    <p class="small mt-1 mb-0"><i class="fas fa-users mr-1"></i>Capacity: {{ product.capacity }}</p>
+                                                {% endif %}
+                                            
+                                                {% if product.square_feet %}
+                                                    <p class="small mt-1 mb-0"><i class="fas fa-ruler mr-1"></i>Square Feet: {{ product.square_feet }}</p>
+                                                {% endif %}
+                                            
+                                                <p class="small mt-1 mb-0">
+                                                    <i class="fas fa-wifi mr-1"></i>Wi-Fi: {% if product.has_free_wifi %}Yes{% else %}No{% endif %}
+                                                </p>
+                                            
+                                                <p class="small mt-1 mb-0">
+                                                    <i class="fas fa-utensils mr-1"></i>Catering: {% if product.has_catering %}Yes{% else %}No{% endif %}
+                                                </p>
+                                            
+                                                <p class="small mt-1 mb-0">
+                                                    <i class="fas fa-wheelchair mr-1"></i>Accessible: {% if product.is_accessible %}Yes{% else %}No{% endif %}
+                                                </p>
+                                            </div>
+                                            
                                             {% endif %}
                                             {% if product.rating %}
                                                     <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>

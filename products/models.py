@@ -28,7 +28,7 @@ class Product(models.Model):
 
     capacity = models.PositiveIntegerField(null=True, blank=True)
     square_feet = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    has_free_wifi = models.BooleanField(default=False)
+    has_wifi = models.BooleanField(default=False)
     has_catering = models.BooleanField(default=False)
     is_accessible = models.BooleanField(default=False)
 
