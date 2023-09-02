@@ -114,13 +114,27 @@ by Price, Rating Category, By Products.
 I should be able to check the real-time availability of a specific venue for my desired date and time. and for the Type of the event
 
 ![Ariel Logo](/media/products/events.webp)
-### 
+### check venue Features
+as a user I can xploring the Features
+with the List in menu features or functionalities of the venue.
+For each feature, provide a clear description of what it does and how users can use it.
+Include any relevant tips or best practices.
 ![Ariel Logo](/media/products/features.webp)
+### special Offer
+as a user members can easily find the section for special offers. You can include a dedicated "Special Offers"
 ![Ariel Logo](/media/products/special_offer.webp)
+
+as a user how can easy see the website in Ipad Screen size
 ### Ipad Air front page
 ![Ariel Logo](/media/products/ipad_allproducts.webp)
+as a user how can easy see the website in Iphone 14 pro Screen size
 ### Iphone 14 pro max front page
 ![Ariel Logo](/media/products/iphone_fronts.webp)
+
+### Enjoy Browsing: 
+Now, you can easily see and interact with the website on your website, iPad's or iphone screen. You can tap links, buttons, and images to navigate and explore the Venue Ariel website's content.
+
+
 ### Reserve a Venue
 I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
 
