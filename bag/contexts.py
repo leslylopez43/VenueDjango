@@ -18,7 +18,6 @@ def bag_contents(request):
                 "item_id": item_id,
                 'quantity': item_data,
                 'product': product,
-                'size': item_data.get('size'),  # Add size if it's stored in the bag
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
@@ -29,7 +28,7 @@ def bag_contents(request):
                     'item_id': item_id,
                     'quantity': quantity,
                     'product': product,
-                    'size': size,
+                
                 })
 
     if total < settings.FREE_MEMBERS_THRESHOLD:

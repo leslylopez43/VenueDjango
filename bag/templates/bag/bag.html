@@ -2,6 +2,7 @@
 {% load static %}
 {% load bag_tools %}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -108,23 +109,14 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    {% if item.product.has_sizes %}
-                                                        <input type="hidden" name="product_size" value="{{ item.size }}">
-                                                    {% endif %}
                                                 </div>
                                             </div>
                                         </form>
                                         <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
+                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
-                                    </td>
-                                </tr>
-                                        {% include "bag/quantity-form.html" %}
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0"£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -160,48 +152,42 @@
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+    {{ block.super }}
 
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
- {% block postloadjs %}
- {{ block.super }}
+    <script type="text/javascript">
+        $('.btt-link').click(function(e) {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
- <!-- Include jQuery library -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // Update quantity on click
+        $('.update-link').click(function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            var form = $(this).prev('.update-form');
+            form.submit();
+        });
 
- <script type="text/javascript">
-     $('.btt-link').click(function(e) {
-         window.scrollTo(0, 0);
-     });
- </script>
+        // Remove item and reload on click
+        $('.remove-item').click(function(e) {
+            e.preventDefault(); // Prevent default link behavior
 
- {% include 'products/includes/quantity_input_script.html' %}
+            var csrfToken = "{{ csrf_token }}";
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var url = `/bag/remove/${itemId}/`;
 
- <script type="text/javascript">
-     // Update quantity on click
-     $('.update-link').click(function(e) {
-         e.preventDefault(); // Prevent default link behavior
-         var form = $(this).prev('.update-form');
-         form.submit();
-     });
-
-     // Remove item and reload on click
-     $('.remove-item').click(function(e) {
-         e.preventDefault(); // Prevent default link behavior
-
-         var csrfToken = "{{ csrf_token }}";
-         var itemId = $(this).attr('id').split('remove_')[1];
-         var size = $(this).data('product_size');
-         var url = `/bag/remove/${itemId}/`;
-         var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
-
-         // Use jQuery's $.post to send a POST request
-         $.post(url, data)
-             .done(function() {
-                 location.reload();
-             })
-             .fail(function() {
-                 console.log("Failed to remove item.");
-             });
-     });
- </script>
+            // Use jQuery's $.post to send a POST request
+            $.post(url, { 'csrfmiddlewaretoken': csrfToken })
+                .done(function() {
+                    location.reload();
+                })
+                .fail(function() {
+                    console.log("Failed to remove item.");
+                });
+        });
+    </script>
 {% endblock %}

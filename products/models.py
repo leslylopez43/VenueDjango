@@ -20,10 +20,17 @@ class Product(models.Model):
     description = models.TextField()
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     # image = models.ImageField(null=True, blank=True)
     image = models.ImageField(upload_to='products/', null=True, blank=True, default='products/default.webp')
+
+    capacity = models.PositiveIntegerField(null=True, blank=True)
+    square_feet = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    has_free_wifi = models.BooleanField(default=False)
+    has_catering = models.BooleanField(default=False)
+    is_accessible = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
