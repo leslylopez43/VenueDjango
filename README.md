@@ -167,7 +167,7 @@ After making a reservation and payment, I should receive a booking confirmation 
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
 
-## Venue Manager User Stories
+# Venue Manager User Stories
 
 ### Data Store Access Control
 
