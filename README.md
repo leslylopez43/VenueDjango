@@ -169,6 +169,38 @@ During the reservation process, I should have the option to request assistance f
 
 ## Venue Manager User Stories
 
+### Data Store Access Control
+
+In our Venue Reservation Management System, we have implemented security measures to ensure that non-admin users cannot access the data store directly without going through the code. This is done to protect sensitive data and maintain the integrity of the system.  This ensures that sensitive data can only be accessed through the provided application interfaces, rather than through direct database queries or URL manipulation.
+
+### How It Works
+
+We have employed a custom middleware, `AdminAccessMiddleware`, to intercept incoming requests. This middleware checks whether the user attempting to access the data store is an admin (staff member) or not. If the user is not an admin, they will encounter a `PermissionDenied` exception, preventing them from accessing the data store directly.
+
+### Why Is This Important?
+
+1. **Data Security**: By restricting direct access, we enhance data security, ensuring that only authorized personnel can interact with the data store.
+
+2. **Controlled Access**: This approach enforces controlled access to sensitive information, reducing the risk of unauthorized data retrieval.
+
+### What Happens When a Non-Admin User Tries to Access the Data Store?
+
+When a non-admin user attempts to access the data store directly, they will receive a `PermissionDenied` exception. This exception can be customized to handle the situation according to your application's requirements. For instance, you can redirect the user to a login page, display a custom error message, or take any other appropriate action.
+
+### Customizing Exception Handling
+
+To customize the behavior when a non-admin user encounters the `PermissionDenied` exception, you can modify the `AdminAccessMiddleware` or create a custom view and URL pattern to handle this exception gracefully.
+
+Here's an example of how to create a custom view for handling the exception:
+
+```python
+from django.core.exceptions import PermissionDenied
+from django.shortcuts import render
+
+def permission_denied_view(request, exception):
+    return render(request, 'custom_permission_denied.html', {'exception': exception})
+![Ariel Logo](/media/products/middleware.webp)
+
 ### Manage Venue Listings
 As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable.
 ![Ariel Logo](/media/products/django_administration.webp)

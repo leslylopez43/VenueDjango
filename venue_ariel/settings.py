@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'venue_ariel.middleware.AdminAccessMiddleware',  # Add your custom middleware here
+    'venue_ariel.middleware.AdminAccessMiddleware',  
 ]
 
 ROOT_URLCONF = 'venue_ariel.urls'
