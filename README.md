@@ -159,6 +159,7 @@ I need a dashboard to view and manage my reservations, including editing event d
 ![Ariel Logo](/media/products/shopping.webp)
 ### Make Payments Online
 I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
+![Ariel Logo](/media/products/checkup.webp)
 
 ### Receive Booking Confirmation
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
