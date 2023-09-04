@@ -6,8 +6,19 @@ from products.models import Product
 
 def view_bag(request):
     """ A view that renders the bag contents page """
+    bag_items = []  # Initialize an empty list to hold bag items
 
-    return render(request, 'bag/bag.html', {'bag_items': Product})
+    # Retrieve bag items from the session and create a list of products
+    bag = request.session.get('bag', {})
+    for item_id, quantity in bag.items():
+        product = Product.objects.get(pk=item_id)
+        bag_items.append({
+            'product': product,
+            'quantity': quantity,
+        })
+
+    return render(request, 'bag/bag.html', {'bag_items': bag_items})
+
     
 
 
