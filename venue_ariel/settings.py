@@ -26,11 +26,16 @@ SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!
 
 STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
 
+STRIPE_SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!'
+
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['venue-ariel.herokuapp.com', 'localhost','127.0.0.1',
+
+]
 
 
 # Application definition
