@@ -1,6 +1,5 @@
 {% if product.id %}
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' product.id %}">
-    
     {% csrf_token %}
     <div class="form-group">
         <div class="input-group input-group-{{ item.item_id }}">
@@ -26,41 +25,47 @@
         </div>
     </div>
 </form>
+<a class="update-link text-info" href="javascript:void(0);" data-item_id="{{ item.item_id }}">
+    <small>Update</small>
+</a>
+<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}">
+    <small>Remove</small>
+</a>
 {% endif %}
-<a class="update-link text-info"><small>Update</small></a>
-<a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
 
 {% block postloadjs %}
-    
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.remove-item').click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}/`;
 
-
-    <script>
-        $('.remove-item').click(function(e) {
-            e.preventDefault(); // Prevent default link behavior
-            var itemId = $(this).attr('id').split('remove_')[1];
-            var url = `/bag/remove/${itemId}/`;
-        
-            // Send an AJAX request to the server to remove the item
-            $.ajax({
-                type: 'POST',  // Use POST method if appropriate for your backend view
-                url: url,
-                data: {
-                    csrfmiddlewaretoken: '{{ csrf_token }}',
-                },
-                success: function(response) {
-                    // Handle the success response (e.g., update the cart total)
-                    // You may also want to remove the item from the DOM.
-                },
-                error: function(error) {
-                    // Handle any errors that occur during the AJAX request
-                    console.error('Error:', error);
-                }
-            });
+        // Send an AJAX request to the server to remove the item
+        $.ajax({
+            type: 'POST',  // Use POST method if appropriate for your backend view
+            url: url,
+            data: {
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+            },
+            success: function(response) {
+                // Handle the success response (e.g., update the cart total)
+                // You may also want to remove the item from the DOM.
+            },
+            error: function(error) {
+                // Handle any errors that occur during the AJAX request
+                console.error('Error:', error);
+            }
         });
-        </script>
+    });
 
-        
-
-    {% endblock %}
+    $('.update-link').click(function(e) {
+        e.preventDefault(); // Prevent default link behavior
+        var itemId = $(this).data('item_id');
+        var form = $('.update-form[data-item_id="' + itemId + '"]');
+        form.submit();
+    });
+});
+</script>
+{% endblock %}

@@ -121,7 +121,7 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">£{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -157,3 +157,37 @@
     </div>
     
         {% endblock %}
+        {% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    // Scroll to top when clicking a button with the 'btt-link' class
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0, 0);
+    });
+
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        var form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    // Remove item and reload the page on click
+    $('.remove-item').click(function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`; // Use ${} for variable interpolation
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+            .done(function() {
+                location.reload(); // Reload the page after successfully removing the item
+            })
+            .fail(function(error) {
+                console.error('Error:', error);
+            });
+    });
+</script>
+{% endblock %}
