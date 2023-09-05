@@ -4,6 +4,12 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from django.conf import settings
+from .forms import BookingForm 
+from django.http import Http404
+from django.http import HttpResponse
+
+# Your other import statements and view functions
+
 
 # Create your views here.
 
@@ -61,12 +67,17 @@ def all_products(request):
 def venue_detail(request, venue_id):
     """A view to show venue details"""
     product = get_object_or_404(Product, pk=venue_id)  # Rename 'products' to 'product'
-
+    
+    try:
+        booking_date = request.GET.get('booking_date', 'default_value_if_not_provided')
+    except KeyError:
+        raise Http404("Booking date not provided in the URL.")
+    
     context = {
         'product': product,  # Rename 'products' to 'product' here as well
+        'booking_date': booking_date,
     }
-
-    return render(request, 'products/venue_detail.html', context)
+    return render(request, 'products/venue_detail.html', {'product': product})
 
 
 def checkout(request):
@@ -86,7 +97,7 @@ def checkout(request):
 #     return render(request, 'products/venue_detail.html', {'product': product})
 
 
-    
+
 
 
 

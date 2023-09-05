@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 {% load static %}
 {% load bag_tools %}
@@ -12,6 +13,10 @@
 {% endblock %}
 
 {% block content %}
+
+    
+
+    <br>
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
@@ -85,7 +90,7 @@
                                         <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" method="POST" action="{% url 'adjust_bag item.item_id' %}">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
@@ -150,44 +155,5 @@
             </div>
         </div>
     </div>
-{% endblock %}
-
-{% block postloadjs %}
-    {{ block.super }}
-
-    <!-- Include jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script type="text/javascript">
-        $('.btt-link').click(function(e) {
-            window.scrollTo(0, 0);
-        });
-    </script>
-
-    <script type="text/javascript">
-        // Update quantity on click
-        $('.update-link').click(function(e) {
-            e.preventDefault(); // Prevent default link behavior
-            var form = $(this).prev('.update-form');
-            form.submit();
-        });
-
-        // Remove item and reload on click
-        $('.remove-item').click(function(e) {
-            e.preventDefault(); // Prevent default link behavior
-
-            var csrfToken = "{{ csrf_token }}";
-            var itemId = $(this).attr('id').split('remove_')[1];
-            var url = `/bag/remove/${itemId}/`;
-
-            // Use jQuery's $.post to send a POST request
-            $.post(url, { 'csrfmiddlewaretoken': csrfToken })
-                .done(function() {
-                    location.reload();
-                })
-                .fail(function() {
-                    console.log("Failed to remove item.");
-                });
-        });
-    </script>
-{% endblock %}
+    
+        {% endblock %}

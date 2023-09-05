@@ -12,7 +12,11 @@
 {% endblock %}
 
 {% block content %}
+
 <br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
@@ -66,6 +70,22 @@
                             <i class="fas fa-wheelchair mr-1"></i>Accessible: {% if product.is_accessible %}Yes{% else %}No{% endif %}
                         </p>
                     </div>
+                   <div class="col-12">
+    <p class="mt-3"><strong>Choose Date:</strong></p>
+    <div class="form-group w-50">
+        <div class="input-group">
+            <input class="form-control datepicker" type="text" id="booking_date" name="booking_date"
+                value="{{ booking_date }}">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="date_picker_btn">
+                    <i class="fas fa-calendar"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    
                     
                     <p class="mt-3">{{ product.description }}</p>
                     
@@ -119,6 +139,27 @@
 {% endblock %}
 
 {% block postloadjs %}
+<script>
+    $(document).ready(function() {
+        // Initialize date picker
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd', // Define the date format
+            startDate: 'today', // Set the minimum date to today
+        });
+
+        // Optionally, handle the date selection event
+        $('.datepicker').on('changeDate', function(e) {
+            var selectedDate = e.format();
+            // You can do something with the selected date here, such as sending it to the server.
+        });
+
+        // Optionally, show the date picker when clicking the button
+        $('#date_picker_btn').click(function() {
+            $('.datepicker').datepicker('show');
+        });
+    });
+</script>
+
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

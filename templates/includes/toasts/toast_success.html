@@ -22,7 +22,6 @@
                 </div>
                 <div class="col-9">
                     <p class="-0"><strong>{{ item.product.name }}</strong></p>
-                    <p class="-0">{{ item.product.has_sizes }}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                     <p class="-0 small text text-muted">QTY: {{ item.quantity }}</p>
                 </div>
             </div>
@@ -40,7 +39,7 @@
                     Spend <strong>${{ free_delivery_delta }}</strong> more to get free!
                 </p>
                 {% endif %}
-                <a href="{{ url 'view_bag' }}" class="btn btn-black btn-block rounde-0">
+                <a href="{ url 'view_bag' }" class="btn btn-black btn-block rounde-0">
                     <span class="text-uppercase">Go to secure checkout</span>
                     <span class="icon"></span>
                     <i class="fas fa-lock"></i>
