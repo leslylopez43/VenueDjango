@@ -4,7 +4,7 @@
         <i class="fas fa-building mr-1"></i>{{ item.product.category.friendly_name }}
     </a>
 </p>
-<div class="product-details">
+<div class="product-details" data-content="calendar">
     {% if item.product.capacity %}
     <p class="small mt-1 mb-0"><i class="fas fa-users mr-1"></i>Capacity: {{ item.product.capacity }}</p>
     {% endif %}
@@ -24,9 +24,12 @@
     <p class="small mt-1 mb-0">
         <i class="fas fa-wheelchair mr-1"></i>Accessible: {% if item.product.is_accessible %}Yes{% else %}No{% endif %}
     </p>
+    <div id="calendar"> 
     <p class="small mt-1 mb-0">
         <i class="fas fa-calendar mr-1"></i> Booking Date {% if booking_date.available %}NO{% else %}Available{% endif %}
     </p>
+   
+</div>
 </div>
 <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
 
