@@ -24,9 +24,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!'
 
-STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
-
-STRIPE_SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!'
 
 
 
@@ -61,6 +58,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'storages',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -198,3 +197,28 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_MEMBERS_THRESHOLD = 10
 STANDARD_DELIVERY_PERCENTAGE = 10
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'GBP'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
+                     
+
+STRIPE_SECRET_KEY = 'sk_test_51NiAvcCBSejQRjV886vQFPdD7bu5p9osxm07gFHcOdFBnJEHtPRWxWKldgrFv1iM7drq8ibiLpRQFlD83DIbL9Wf00MCXtgPvG'
+
+
+
+if 'DEVELOPMENT' in os.environ:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_PORT = 587
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
+    DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
