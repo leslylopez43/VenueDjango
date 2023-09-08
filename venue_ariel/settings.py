@@ -221,7 +221,7 @@ STRIPE_SECRET_KEY = 'sk_test_51NiAvcCBSejQRjV886vQFPdD7bu5p9osxm07gFHcOdFBnJEHtP
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+    DEFAULT_FROM_EMAIL = 'arielvenue@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
