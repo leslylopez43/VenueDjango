@@ -4,7 +4,7 @@ from .models import Product, Category
 # 
 #     booking_date = forms.DateField()  # Replace with the actual form field you're using
 
-class BookingForm(forms.Form):
+class ProductForm(forms.ModelForm):
 
     class Meta:
         model = Product
