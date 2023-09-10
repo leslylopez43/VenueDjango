@@ -21,9 +21,6 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html', {'bag_items': bag_items})
 
-    
-
-
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
     product = get_object_or_404(Product, pk=item_id)

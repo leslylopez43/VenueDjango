@@ -13,9 +13,6 @@
 {% endblock %}
 
 {% block content %}
-
-    
-
     <br>
     <div class="overlay"></div>
     <div class="container mb-2">
@@ -178,7 +175,7 @@
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`; // Use ${} for variable interpolation
+        var url = `/bag/remove/£{itemId}/`; // Use ${} for variable interpolation
         var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)

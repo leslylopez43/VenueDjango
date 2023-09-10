@@ -6,7 +6,7 @@
     * which prevents any errors 
     */
     function handleEnableDisable(itemId) {
-    var currentValue = parseInt($(`.id_qty_${itemId}`).val());
+    var currentValue = parseInt($(`.id_qty_£{itemId}`).val());
     var minusDisabled = currentValue < 2;
     var plusDisabled = currentValue > 98;
 
@@ -32,7 +32,7 @@ $('.increment-qty').click(function (e) {
     e.preventDefault();
     var itemId = $(this).data('item_id');
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-    var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
+    var allQuantityInputs = $(`.input-group-£{itemId} input[name='quantity']`);
     var currentValue = parseInt($(closestInput).val());
     $(allQuantityInputs).val(currentValue + 1);
     handleEnableDisable(itemId);
@@ -43,7 +43,7 @@ $('.decrement-qty').click(function (e) {
     e.preventDefault();
     var itemId = $(this).data('item_id');
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-    var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
+    var allQuantityInputs = $(`.input-group-£{itemId} input[name='quantity']`);
     var currentValue = parseInt($(closestInput).val());
     $(allQuantityInputs).val(currentValue - 1);
     handleEnableDisable(itemId);

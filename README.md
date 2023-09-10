@@ -161,7 +161,9 @@ I should be able to make online payments for my reservations, displaying the tot
 ![Ariel Logo](/media/products/checkup.webp)
 
 ### Receive Booking Confirmation
+
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
+![Ariel Logo](/media/products/checkup.webp)
 
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
