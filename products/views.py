@@ -143,9 +143,9 @@ def edit_product(request, venue_id):
 
 @login_required
 def delete_product(request, venue_id):
-    """ Delete a product from the store """
+    """ Delete a Venue from the website """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+        messages.error(request, 'Sorry, only Venue owners can do that.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=venue_id)
