@@ -151,4 +151,4 @@ def delete_product(request, venue_id):
     product = get_object_or_404(Product, pk=venue_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return render(request, 'products/edit_product.html', {'product': product})
+    return redirect('products')
