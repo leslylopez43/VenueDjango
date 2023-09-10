@@ -186,7 +186,7 @@ After making a reservation and payment, I should receive a booking confirmation 
 
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
-with a Toast Windows
+#### With a Toast Windows
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
 
