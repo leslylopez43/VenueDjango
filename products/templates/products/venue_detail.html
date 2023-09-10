@@ -49,6 +49,11 @@
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url 'edit_product' product.id %}">Edit</a> 
+                                             </small>
+                    {% endif %}
                     <div class="product-details">
                         {% if product.capacity %}
                             <p class="small mt-1 mb-0"><i class="fas fa-users mr-1"></i>Capacity: {{ product.capacity }}</p>
