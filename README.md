@@ -117,6 +117,20 @@ Welcome to the Venue Reservation Management System! This system allows customers
 ![Ariel Logo](/media/products/frontwebsite.webp)
 ## Customer User Stories
 
+
+as a user how can easy see the website in Ipad Screen size
+### Ipad Air front page
+
+![Ariel Logo](/media/products/ipad_allproducts.webp)
+
+
+as a user how can easy see the website in Iphone 14 pro Screen size
+### Iphone 14 pro max front page
+![Ariel Logo](/media/products/iphone_fronts.webp)
+
+### Enjoy Browsing: 
+Now, you can easily see and interact with the website on your website, iPad's or iphone screen. You can tap links, buttons, and images to navigate and explore the Venue Ariel website's content.
+
 ### Browse Available Venues
 As a customer, I want to browse through a list of available event venues with details such as types, capacities, amenities, and photos.
 by Price, Rating Category, By Products.
@@ -136,18 +150,10 @@ Include any relevant tips or best practices.
 ### special Offer
 as a user members can easily find the section for special offers. You can include a dedicated "Special Offers"
 ![Ariel Logo](/media/products/special_offer.webp)
-
-as a user how can easy see the website in Ipad Screen size
-### Ipad Air front page
-![Ariel Logo](/media/products/ipad_allproducts.webp)
+### Searchin By Price up or down, Rating , Venue Name A to Z Categoririe
+![Ariel Logo](/media/products/sort_by.webp)
 
 
-as a user how can easy see the website in Iphone 14 pro Screen size
-### Iphone 14 pro max front page
-![Ariel Logo](/media/products/iphone_fronts.webp)
-
-### Enjoy Browsing: 
-Now, you can easily see and interact with the website on your website, iPad's or iphone screen. You can tap links, buttons, and images to navigate and explore the Venue Ariel website's content.
 
 
 ### Reserve a Venue
@@ -156,17 +162,56 @@ I want to reserve a venue by specifying the event date, time, and amenities, as 
 ### View and Manage Reservations
 I need a dashboard to view and manage my reservations, including editing event details, updating timings, and making payments.
 ![Ariel Logo](/media/products/shopping.webp)
+
+![Ariel Logo](/media/products/checkup.webp)
 ### Make Payments Online
 I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
-![Ariel Logo](/media/products/checkup.webp)
+![Ariel Logo](/media/products/order_details_checkout.webp)
+
+add to the cart 
+![Ariel Logo](/media/products/add_to_the_cart.webp)
+
+#### Order Checkout adjust Bag
+
+![Ariel Logo](/media/products/order_details_checkout_adjust_bag.webp)
+
+Order Checkout Before Signup
+
+![Ariel Logo](/media/products/order_update_before_loging.webp)
 
 ### Receive Booking Confirmation
 
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
-![Ariel Logo](/media/products/checkup.webp)
+![Ariel Logo](/media/products/add_to_the_cart.webp)
+![Ariel Logo](/media/products/add_to_the_cart.webp)
+
+
+Boking with avalilable calendare Date
+![Ariel Logo](/media/products/checkup_with_calendar.webp)
+
+after filling the form and  making the payment As a Cutomer I will receibe the automated Email confirmation.
+![Ariel Logo](/media/products/email_confirmation.webp)
+![Ariel Logo](/media/products/customer_confirmation_order.webp)
+
+![Ariel Logo](/media/products/email_will_receibe.webp)
+![Ariel Logo](/media/products/email_confirmation_sent.webp)
+
+
+### Product Managment
+![Ariel Logo](/media/products/My_account.webp)
+
+as a customer I can Login
+![Ariel Logo](/media/products/sigin_customer.webp)
+as a Customer I can signup
+![Ariel Logo](/media/products/sigup_customer.webp)
+as a customer I can Logout
+![Ariel Logo](/media/products)
+as a customer I can Update the Order
 
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
+
+
 
 # Venue Manager User Stories
 
