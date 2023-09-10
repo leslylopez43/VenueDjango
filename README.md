@@ -17,8 +17,7 @@ kaggle.com
 
 
 
-
-## Customer Table
+## Product
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -30,7 +29,7 @@ kaggle.com
 | Contact Details  | Tenant's contact details |
 | Billing Address  | Tenant's billing address |
 
-## Venue Table
+## Order
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -47,7 +46,7 @@ kaggle.com
 | Has Catering     | Indicates if catering is available |
 | Is Accessible    | Indicates if the product is accessible |
 
-## Events Table
+## OrderLineItem
 
 | Field            | Description            |
 |------------------|------------------------|
