@@ -52,13 +52,14 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-    current_sorting = f'(sort) -- (direction)'
+    current_sorting = f'Sort by {sort} ({direction})'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories, 
         'current_sorting' : current_sorting,
+        
     }
 
     return render(request, 'products/products.html', context)
@@ -75,6 +76,7 @@ def venue_detail(request, venue_id):
     context = {
         'product': product,  # Rename 'products' to 'product' here as well
         'booking_date': booking_date,
+        'venue_id': venue_id,
     }
     return render(request, 'products/venue_detail.html', {'product': product})
 
@@ -102,29 +104,29 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+
     }
 
     return render(request, template, context)
 
 
 @login_required
-def edit_product(request, product_id):
+def edit_product(request, venue_id):
     """ Edit a product in the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=venue_id)
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
-            return redirect(reverse('venue_detail', args=[product.id]))
+            messages.success(request, 'Successfully updated Venue!')
+            return redirect(reverse('edit_product', args=[venue_id]))
         else:
-            messages.error(request,
-                           ('Failed to update product. '
-                            'Please ensure the form is valid.'))
+            messages.error(request, 'Failed to update venue. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -133,19 +135,20 @@ def edit_product(request, product_id):
     context = {
         'form': form,
         'product': product,
+        'venue_id': venue_id,
     }
 
     return render(request, template, context)
 
 
 @login_required
-def delete_product(request, product_id):
+def delete_product(request, venue_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=venue_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    return render(request, 'products/edit_product.html', {'product': product})
