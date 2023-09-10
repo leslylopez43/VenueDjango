@@ -166,7 +166,7 @@ I need a dashboard to view and manage my reservations, including editing event d
 ![Ariel Logo](/media/products/checkup.webp)
 ### Make Payments Online
 I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
-![Ariel Logo](/media/products/order_details_checkout.webp)
+
 
 add to the cart 
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
@@ -188,12 +188,13 @@ After making a reservation and payment, I should receive a booking confirmation 
 
 Boking with avalilable calendare Date
 ![Ariel Logo](/media/products/checkup_with_calendar.webp)
+![Ariel Logo](/media/products/email_will_receibe.webp)
 
 after filling the form and  making the payment As a Cutomer I will receibe the automated Email confirmation.
 ![Ariel Logo](/media/products/email_confirmation.webp)
 ![Ariel Logo](/media/products/customer_confirmation_order.webp)
 
-![Ariel Logo](/media/products/email_will_receibe.webp)
+
 ![Ariel Logo](/media/products/email_confirmation_sent.webp)
 
 
@@ -204,9 +205,10 @@ as a customer I can Login
 ![Ariel Logo](/media/products/sigin_customer.webp)
 as a Customer I can signup
 ![Ariel Logo](/media/products/sigup_customer.webp)
-as a customer I can Logout
-![Ariel Logo](/media/products)
+
 as a customer I can Update the Order
+![Ariel Logo](/media/products/order_update_before_loging.webp)
+
 
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
@@ -239,15 +241,12 @@ To customize the behavior when a non-admin user encounters the `PermissionDenied
 
 Here's an example of how to create a custom view for handling the exception:
 
-```python
+python
 from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 
-def permission_denied_view(request, exception):
-    return render(request, 'custom_permission_denied.html', {'exception': exception})
-![Ariel Logo](/media/products/middleware.webp)
 
-### Manage Venue Listings
+###  Manage Venue Listings
 As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable.
 ![Ariel Logo](/media/products/django_administration.webp)
 ### Approve Reservation Requests
