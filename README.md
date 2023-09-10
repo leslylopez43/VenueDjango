@@ -182,7 +182,11 @@ Order Checkout Before Signup
 ### Receive Booking Confirmation
 
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
+
+
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
+
+with a Toast Windows
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
 
