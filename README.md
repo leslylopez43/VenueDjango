@@ -18,7 +18,7 @@
 ![Ariel Logo](/media/products/product_wireframe_web.webp)
 
 #### wireframe Venue Product List ipad
-![Ariel Logo](/media/products/ipad_allproducts.webp)
+![Ariel Logo](/media/products/product_wireframe_ipad.webp)
 
 #### wireframe Venue Product List iphone 14 pro max
 ![Ariel Logo](/media/products/product_wireframe_iphone.webp)
