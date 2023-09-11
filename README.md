@@ -1,10 +1,5 @@
 # VenueDjango
-![Ariel Logo](/media/logoariel.webp)
-allauth app itself log in and out
-
-kaggle.com
-
-###  "GET /favicon.ico HTTP/1.1" 404 2109
+![Ariel Logo](/media/products/logoariel.webp)
 
 ## Wireframe
 ![Ariel Logo](/media/products/wireframe_search.webp)
@@ -202,7 +197,17 @@ after filling the form and  making the payment As a Cutomer I will receibe the a
 ![Ariel Logo](/media/products/email_confirmation_sent.webp)
 
 
+
+
+
+allauth app itself log in and out
+
+kaggle.com
+
+###  "GET /favicon.ico HTTP/1.1" 404 2109
+
 ### Product Managment
+
 ![Ariel Logo](/media/products/My_account.webp)
 
 as a customer I can Login
