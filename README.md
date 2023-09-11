@@ -150,7 +150,7 @@ Include any relevant tips or best practices.
 ### special Offer
 as a user members can easily find the section for special offers. You can include a dedicated "Special Offers"
 ![Ariel Logo](/media/products/special_offer.webp)
-### Searchin By Price up or down, Rating , Venue Name A to Z Categoririe
+### Searchin By Price up or down, Rating , Venue Name A to Z Categorie
 ![Ariel Logo](/media/products/sort_by.webp)
 
 
