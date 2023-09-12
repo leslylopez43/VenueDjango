@@ -264,7 +264,24 @@ Order Checkout Before Signup
 
 ![Ariel Logo](/media/products/order_update_before_loging.webp)
 
-If you're a new user, you may need to create an account. Click on the "Sign Up" or "Register" button and follow the on-screen instructions to create your account.
+
+
+### If you're a new user, you may need to create an account. Click on the "Sign Up" or "Register" button and follow the on-screen instructions to create your account.
+
+### Product Managment
+
+![Ariel Logo](/media/products/My_account.webp)
+
+as a customer I can Login
+![Ariel Logo](/media/products/sigin_customer.webp)
+as a Customer I can signup
+![Ariel Logo](/media/products/sigup_customer.webp)
+
+as a customer I can Update the Order
+![Ariel Logo](/media/products/order_update_before_loging.webp)
+
+
+
 ### Receive Booking Confirmation
 
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
@@ -308,24 +325,10 @@ Invoice Email: A separate email containing an invoice for your booking will be s
 
 
 
-
-
-### Product Managment
-
-![Ariel Logo](/media/products/My_account.webp)
-
-as a customer I can Login
-![Ariel Logo](/media/products/sigin_customer.webp)
-as a Customer I can signup
-![Ariel Logo](/media/products/sigup_customer.webp)
-
-as a customer I can Update the Order
-![Ariel Logo](/media/products/order_update_before_loging.webp)
-
-
-
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
+
+That's it! You should now be able to access, navigate, reserve bookings, make payments, and receive invoices and confirmations through our website. If you encounter any issues or have further questions, please contact our customer support at [Customer Support Email/Phone].
 
 
 
@@ -336,8 +339,10 @@ During the reservation process, I should have the option to request assistance f
 In our Venue Reservation Management System, we have implemented security measures to ensure that non-admin users cannot access the data store directly without going through the code. This is done to protect sensitive data and maintain the integrity of the system.  This ensures that sensitive data can only be accessed through the provided application interfaces, rather than through direct database queries or URL manipulation.
 
 ### How It Works
+## `AdminAccessMiddleware`
+We have employed a custom middleware, `AdminAccessMiddleware`, to intercept incoming requests. This middleware checks whether the user attempting to access the data store is an admin (staff member) or not. If the user is not an admin, they will encounter a # `PermissionDenied` exception, preventing them from accessing the data store directly.
+![Ariel Logo](/media/products/middleware.webp)
 
-We have employed a custom middleware, `AdminAccessMiddleware`, to intercept incoming requests. This middleware checks whether the user attempting to access the data store is an admin (staff member) or not. If the user is not an admin, they will encounter a `PermissionDenied` exception, preventing them from accessing the data store directly.
 
 ### Why Is This Important?
 
@@ -346,6 +351,7 @@ We have employed a custom middleware, `AdminAccessMiddleware`, to intercept inco
 2. **Controlled Access**: This approach enforces controlled access to sensitive information, reducing the risk of unauthorized data retrieval.
 
 ### What Happens When a Non-Admin User Tries to Access the Data Store?
+![Ariel Logo](/media/products/middleware_denied%20acces.webp)
 
 When a non-admin user attempts to access the data store directly, they will receive a `PermissionDenied` exception. This exception can be customized to handle the situation according to your application's requirements. For instance, you can redirect the user to a login page, display a custom error message, or take any other appropriate action.
 
