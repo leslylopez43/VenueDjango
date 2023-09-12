@@ -92,16 +92,14 @@
 
 
 ## Wireframe
-- [Wireframe](#wireframe)
 
 ##### Front Website
 ![Ariel Logo](/media/products/wireframe_search.webp)
-- [Front Website](#front-website)
 
 ![Ariel Logo](/media/products/wireframefrontpagewebsite.webp)
 
 #### Front Website air iPad
-- [Front Website air iPad](#front-website-air-ipad)
+
 
 ![Ariel Logo](/media/products/wireframeipad_frontpage.webp)
 
