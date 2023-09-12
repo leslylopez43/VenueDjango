@@ -1,10 +1,6 @@
 # VenueDjango
 ![Ariel Logo](/media/products/logoariel.webp)
 
-# VenueDjango
-
-![Ariel Logo](/media/products/logoariel.webp)
-
 ## Table of Contents
 - [Wireframe](#wireframe)
 - [Front Website](#front-website)
@@ -933,6 +929,12 @@ I will ensure that the front end of the application is designed with user-friend
 
 #### Produce a Robust Codebase:
 I will focus on producing a clean, maintainable, and robust codebase. This includes adhering to best coding practices, proper documentation, and writing code that is easy to understand and extend. I will also ensure that the project structure is organized and follows industry standards.
+
+## Lighthouse Integration
+
+In our Venue Ariel Reservation Management System, we have integrated Lighthouse, a powerful and essential tool for optimizing the performance and quality of our web application. Lighthouse plays a crucial role in ensuring that our website meets high standards for user experience and performance.
+
+![Ariel Logo](/media/products/lighthouse.webp)
 
 #### Follow Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
