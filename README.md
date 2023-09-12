@@ -351,6 +351,7 @@ We have employed a custom middleware, `AdminAccessMiddleware`, to intercept inco
 2. **Controlled Access**: This approach enforces controlled access to sensitive information, reducing the risk of unauthorized data retrieval.
 
 ### What Happens When a Non-Admin User Tries to Access the Data Store?
+
 ![Ariel Logo](/media/products/middleware_denied%20acces.webp)
 
 When a non-admin user attempts to access the data store directly, they will receive a `PermissionDenied` exception. This exception can be customized to handle the situation according to your application's requirements. For instance, you can redirect the user to a login page, display a custom error message, or take any other appropriate action.
@@ -358,6 +359,8 @@ When a non-admin user attempts to access the data store directly, they will rece
 ### Customizing Exception Handling
 
 To customize the behavior when a non-admin user encounters the `PermissionDenied` exception, you can modify the `AdminAccessMiddleware` or create a custom view and URL pattern to handle this exception gracefully.
+
+
 
 Here's an example of how to create a custom view for handling the exception:
 
@@ -367,8 +370,11 @@ from django.shortcuts import render
 
 
 ###  Manage Venue Listings
-As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable.
+Superuser acces is the owner or Staff managment that can get access to the Admin Sistem
+As a venue manager, I can manage venue listings by adding new venues, updating details, and marking venues as unavailable like(repair, leaking, fixing etc.).
+
 ![Ariel Logo](/media/products/django_administration.webp)
+
 ### Approve Reservation Requests
 I need to review and approve customer reservation requests, including payment status and event details.
 ![Ariel Logo](/media/products/django_categories.webp)
