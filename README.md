@@ -24,13 +24,6 @@
 
 
 
-- [Payments Table](#payments-table)
-- [Venue Ariel Reservation Management System](#venue-ariel-reservation-management-system)
-- [User History](#user-history)
-- [Website Front Page](#website-front-page)
-- [Customer User Stories](#customer-user-stories)
-- [Ipad Air Front Page](#ipad-air-front-page)
-- [Iphone 14 Pro Max Front Page](#iphone-14-pro-max-front-page)
 - [Enjoy Browsing](#enjoy-browsing)
 - [Browse and Navigate Available Venues](#browse-and-navigate-available-venues)
 - [Check Venue Availability](#check-venue-availability)
@@ -88,9 +81,11 @@
 ![Ariel Logo](/media/products/product_wireframe_web.webp)
 
 - [Wireframe Venue Product List iPad](#wireframe-venue-product-list-ipad)
+
 ![Ariel Logo](/media/products/product_wireframe_ipad.webp)
 
 - [Wireframe Venue Product List iPhone 14 Pro Max](#wireframe-venue-product-list-iphone-14-pro-max)
+
 ![Ariel Logo](/media/products/product_wireframe_iphone.webp)
 
 
@@ -141,7 +136,7 @@
 
 ![Ariel Logo](/media/products/wireframe_signin.webp)
 
-#- [Wireframe Venue Sign-in iPad](#wireframe-venue-sign-in-ipad)
+- [Wireframe Venue Sign-in iPad](#wireframe-venue-sign-in-ipad)
 
 ![Ariel Logo](/media/products/wireframe_signin_ipad.webp)
 
@@ -239,7 +234,8 @@
 | Bill Address to:         | Category of the product |
 
 
-## Payments Table
+
+- [Payments Table](#payments-table)
 
 | Field              | Description            |
 |--------------------|------------------------|
@@ -258,7 +254,8 @@
 
 
 
-## Venue Ariel Reservation Management System
+
+- [Venue Ariel Reservation Management System](#venue-ariel-reservation-management-system)
 # User History
 
 Welcome to [Ariel Venue]!
@@ -269,7 +266,7 @@ while venue managers can efficiently manage reservations and resources.
 
 ## Let's explore the detailed user stories and features of this system.
 
-## Website front page
+## Website front page (#website-front-page)
 1. Accessing the Website
 
 To access our website, follow these steps:
@@ -282,6 +279,12 @@ If you're a new user, you may need to create an account. Click on the "Sign Up" 
 ![Ariel Logo](/media/products/frontwebsite.webp)
 ## Customer User Stories
 
+
+- [User History](#user-history)
+- [Website Front Page]
+- [Customer User Stories](#customer-user-stories)
+- [Ipad Air Front Page](#ipad-air-front-page)
+- [Iphone 14 Pro Max Front Page](#iphone-14-pro-max-front-page)
 
 as a user how can easy see the website in Ipad Screen size
 ### Ipad Air front page
