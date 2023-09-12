@@ -74,6 +74,12 @@
 ![Ariel Logo](/media/products/wireframe_payment_iphone.webp)
 
 
+## Table of Contents
+- [Wireframe](#wireframe)
+- [Front Website](#front-website)
+- [Front Website air iPad](#front-website-air-ipad)
+- [Front Website iPhone 14 Pro Max](#front-website-iphone-14-pro-max)
+
 
 ## Products
 
@@ -481,7 +487,6 @@ For assistance, customers can contact our support team at support@venuereserve.c
 1. Clone the repository: `git clone https://github.com/venue-reservation.git`
 
 
-
 #### Admin Superuser Creation
 
 To create a superuser with administrative privileges, use the following command:
@@ -558,6 +563,23 @@ The deployed code is free of commented-out code and has no broken internal links
 
 The final version of the code has been successfully deployed to a hosting platform and thoroughly tested to match the development version.
 
+#### Design and Build a User-Friendly Front End:
+I will ensure that the front end of the application is designed with user-friendliness in mind. I'll follow user experience (UX) design principles to create an intuitive and easily navigable interface. Users will have full control of their interactions, and all data CRUD actions will provide immediate feedback in the user interface. The application's purpose will be clearly evident to new users, and it will effectively meet their demands and expectations. Additionally, the application will have a well-defined purpose tailored to a specific target audience or multiple related audiences.
+
+#### Produce a Robust Codebase:
+I will focus on producing a clean, maintainable, and robust codebase. This includes adhering to best coding practices, proper documentation, and writing code that is easy to understand and extend. I will also ensure that the project structure is organized and follows industry standards.
+
+#### Follow Test-Driven Development (TDD):
+Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
+
+#### Efficient Project Configuration:
+I will maintain an efficient project configuration with a well-maintained Procfile, requirements.txt file, and settings files. The data store configuration will be in a single location for easy modification. Additionally, I will provide a detailed data schema description in the project README file for reference.
+
+#### Solid Understanding of Django:
+My experience with Django and Django template syntax will allow me to efficiently handle data, logic, and views. I will ensure that Django logic is appropriately placed in the components where it is best suited, such as models for data handling and views for business logic.
+
+#### Effective Use of Version Control:
+I will use version control software effectively, providing a clear record of the development process. Regular commits and meaningful commit messages will be used to document each stage of the project's development.
 
 ## License
 
