@@ -92,18 +92,29 @@
 
 
 ## Wireframe
+#### Wireframe for Screen Sizes: iPad Air, iPhone, and Desktop Website
+
+Our wireframes provide a visual representation of our application's user interface across various screen sizes. We've meticulously designed wireframes for three key platforms: iPad Air, iPhone (specifically the iPhone 14 Pro Max), and desktop websites.
+
 
 ##### Front Website
+In summary, our wireframes demonstrate our commitment to delivering a consistent and user-centric experience across multiple screen sizes. Whether you're using an iPad Air, iPhone 14 Pro Max, or accessing our desktop website, we've designed our wireframes to ensure that you have a seamless and enjoyable interaction with our Venue Ariel Reservation Management System.
+
 ![Ariel Logo](/media/products/wireframe_search.webp)
 
+#### Desktop Website screen Size
+Our wireframes for the desktop website bring the full power of our application to larger screens. We've taken advantage of the spacious canvas to present a comprehensive view of venue listings, reservation details, and advanced features. Navigating through the desktop website is a delight, and users can easily explore all that our platform has to offer.
 ![Ariel Logo](/media/products/wireframefrontpagewebsite.webp)
 
-#### Front Website air iPad
+#### Front Website air iPad screen size
+The wireframes for iPad Air showcase how our application adapts to tablet-sized screens. We've optimized the layout and interactions to provide a seamless and enjoyable experience for iPad Air users. Whether you're browsing venues, making reservations, or managing your bookings, our wireframes ensure that every action feels intuitive and effortless.
 
 
 ![Ariel Logo](/media/products/wireframeipad_frontpage.webp)
 
-#### Front Website iPhone 14 Pro Max
+#### Front Website iPhone 14 Pro Max Screen size
+For users on the go with the iPhone 14 Pro Max, our wireframes cater to the unique challenges and opportunities of smaller screens. We've designed a mobile-friendly interface that retains all the functionality of our desktop version while ensuring that interactions are touch-friendly and responsive. Whether you're checking venue availability or making payments, our wireframes on the iPhone 14 Pro Max make it a breeze.
+
 
 ![Ariel Logo](/media/products/wireframeiphonefrontpage.webp)
 
@@ -189,8 +200,32 @@
 
 
 ## Table of Contents
+In this section, we provide a structured overview of the contents of this Django Python project. The Table of Contents (ToC) serves as a guide, enabling you to quickly navigate to specific sections and topics of interest within this README document.
 
-#### Products]
+
+#### Services Venue Booking
+
+The "Hall Venue" section provides a comprehensive overview of the various event venues and services offered within the Venue Ariel Reservation Management System. It includes the following key fields and descriptions:
+
+- **Venue Name**: This serves as a unique identifier for each venue and helps users distinguish between different locations.
+
+- **Image**: Visual representation of the venue, typically in the form of an image.
+
+- **Price**: The booking price for the venue, denominated in British Pounds (£).
+
+- **Capacity**: Indicates the maximum number of guests that the venue can accommodate.
+
+- **Square Feet**: Specifies the size of the venue in square feet.
+
+- **Wi-Fi**: Denotes whether the venue offers access to a Wi-Fi connection.
+
+- **Catering**: Indicates whether catering services are available, with options for self-service or included catering.
+
+- **Accessible**: Highlights whether the venue is disability-friendly and accessible.
+
+- **Rating**: A rating system, typically ranging from 0 to 5 stars, provides a quick reference for the quality of the venue.
+
+- **Actions**: Offers options to update or delete venue information, giving administrators control over venue management.
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -223,7 +258,7 @@
 | Event Type       | Type of venue (e.g., hall, apartment) |
 
 
-- [Features Table](#features-table)
+#### Features Table
 
 
 | Field            | Description            |
@@ -239,7 +274,7 @@
 | Air Conditioning | Availability of air conditioning |
 
 
-- [Special Offer Table](#special-offer-table)
+#### Special Offer Table
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -255,7 +290,7 @@
 | Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
 
 
-- [Order](#order)
+#### Order
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -266,7 +301,7 @@
 
 
 
-- [Payments Table](#payments-table)
+### Payments Table
 
 | Field              | Description            |
 |--------------------|------------------------|
@@ -286,7 +321,6 @@
 
 
 ### Venue Ariel Reservation Management System
-- [Venue Ariel Reservation Management System](#venue-ariel-reservation-management-system)
 # User History
 
 Welcome to [Ariel Venue]!
@@ -297,7 +331,7 @@ while venue managers can efficiently manage reservations and resources.
 
 ## Let's explore the detailed user stories and features of this system.
 
-## - [Website Front Page](#website-front-page)
+### Website Front Page
 1. Accessing the Website
 
 To access our website, follow these steps:
@@ -312,28 +346,22 @@ If you're a new user, you may need to create an account. Click on the "Sign Up" 
 
 ## Customer User Stories
 
-- [Customer User Stories](#customer-user-stories)
-
 as a user how can easy see the website in Ipad Screen size
 ### Ipad Air front page 
-- [Ipad Air Front Page](#ipad-air-front-page)
 ![Ariel Logo](/media/products/ipad_allproducts.webp)
 
 
 as a user how can easy see the website in Iphone 14 pro Screen size
 ### Iphone 14 pro max front page
-- [Iphone 14 Pro Max Front Page](#iphone-14-pro-max-front-page)
+
 ![Ariel Logo](/media/products/iphone_fronts.webp)
 
 
 ### Enjoy Browsing: 
-- [Enjoy Browsing](#enjoy-browsing)
 Now, you can easily see and interact with the website on your website, iPad's or iphone screen. You can tap links, buttons, and images to navigate and explore the Venue Ariel website's content.
 
 
 ### Browse  Navigating Available Venues
-
-- [Browse and Navigate Available Venues](#browse-and-navigate-available-venues)
 Once you're on the homepage, here's how to navigate:
 
 Main Navigation Menu: Use the main navigation menu at the top of the page to explore different sections of the website, including venues, bookings, and payments.
@@ -344,14 +372,12 @@ by Price, Rating Category, By Products.
 ![Ariel Logo](/media/products/all_products.webp)
 
 ### Check Venue Availability
-
-- [Check Venue Availability](#check-venue-availability)
 I should be able to check the real-time availability of a specific venue for my desired date and time. and for the Type of the event
 
 ![Ariel Logo](/media/products/events.webp)
+
 ### check venue Features
 
-- [Check Venue Features](#check-venue-features)
 as a user I can xploring the Features
 with the List in menu features or functionalities of the venue.
 For each feature, provide a clear description of what it does and how users can use it.
@@ -359,17 +385,14 @@ Include any relevant tips or best practices.
 ![Ariel Logo](/media/products/features.webp)
 
 ### special Offer
-- [Special Offers](#special-offers)
 as a user members can easily find the section for special offers. You can include a dedicated "Special Offers"
 ![Ariel Logo](/media/products/special_offer.webp)
 
 
-- [Search by Price, Rating, Venue Name, Category](#search-by-price-rating-venue-name-category)
 ### Searchin By Price up or down, Rating , Venue Name A to Z Categorie
 ![Ariel Logo](/media/products/sort_by.webp)
 
 ### Reserving Bookings
-- [Reserving Bookings](#reserving-bookings)
 
 To reserve bookings, follow these steps:
 
@@ -380,18 +403,17 @@ Click the "Reserve Now" or "Book" button.
 Follow the prompts to confirm your booking details.
 
 ### Reserve a Venue
-- [Reserve a Venue](#reserve-a-venue)
 I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
 
 ### View and Manage Reservations
-- [View and Manage Reservations](#view-and-manage-reservations)
+
 I need a dashboard to view and manage my reservations, including editing event details, updating timings, and making payments.
 ![Ariel Logo](/media/products/shopping.webp)
 
 ![Ariel Logo](/media/products/checkup.webp)
 
 ### Make Payments Online
-- [Make Payments Online](#make-payments-online)
+
 I should be able to make online payments for my reservations, displaying the total cost and additional service fees.
 
 
@@ -399,12 +421,11 @@ add to the cart
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
 #### Order Checkout adjust Bag
-- [Order Checkout Adjust Bag](#order-checkout-adjust-bag)
+
 
 ![Ariel Logo](/media/products/order_details_checkout_adjust_bag.webp)
 
-Order Checkout Before Signup
-- [Order Checkout Before Signup](#order-checkout-before-signup)
+#### Order Checkout Before Signup
 
 ![Ariel Logo](/media/products/order_update_before_loging.webp)
 
@@ -413,29 +434,26 @@ Order Checkout Before Signup
 ### If you're a new user, you may need to create an account. Click on the "Sign Up" or "Register" button and follow the on-screen instructions to create your account.
 
 ### Product Managment
-- [Product Management](#product-management)
 
 
 ![Ariel Logo](/media/products/My_account.webp)
 
-- [Login](#login)
+#### Login
 as a customer I can Login
 
 
-- [Signup](#signup)
+#### Signup
 ![Ariel Logo](/media/products/sigin_customer.webp)
 as a Customer I can signup
 
 
 ![Ariel Logo](/media/products/sigup_customer.webp)
 
-- [Update the Order](#update-the-order)
+#### Update the Order
 as a customer I can Update the Order
 ![Ariel Logo](/media/products/order_update_before_loging.webp)
 
 
-
-- [Receive Booking Confirmation](#receive-booking-confirmation)
 ### Receive Booking Confirmation
 
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
@@ -447,18 +465,15 @@ After making a reservation and payment, I should receive a booking confirmation 
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
 
-- [Boking with Available Calendar Date](#booking-with-available-calendar-date)
 Boking with avalilable calendare Date
 ![Ariel Logo](/media/products/checkup_with_calendar.webp)
 
 
-- [Making Payments](#making-payments)
 ### Making Payments
 
 To make payments for your bookings, follow these steps:
 
 
-- [Set Pricing and Rental Policies](#set-pricing-and-rental-policies)
 #### Set Pricing and Rental Policies
 I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
 
@@ -470,7 +485,6 @@ Review the payment summary and click "Submit" or "Pay Now."
 
 ![Ariel Logo](/media/products/email_will_receibe.webp)
 
-- [Receiving Invoices and Confirmations](#receiving-invoices-and-confirmations)
 ### Receiving Invoices and Confirmations
 
 After completing your booking and payment, you will receive the following by email:
@@ -487,7 +501,6 @@ Invoice Email: A separate email containing an invoice for your booking will be s
 ![Ariel Logo](/media/products/email_confirmation_sent.webp)
 
 
-- [Request Support and Assistance](#request-support-and-assistance)
 ### Request Support and Assistance
 During the reservation process, I should have the option to request assistance from venue staff.
 
@@ -495,27 +508,22 @@ That's it! You should now be able to access, navigate, reserve bookings, make pa
 
 
 
-- [Venue Manager User Stories](#venue-manager-user-stories)
 # Venue Manager User Stories
 
 
-- [Data Store Access Control](#data-store-access-control)
 ### Data Store Access Control
 
 In our Venue Reservation Management System, we have implemented security measures to ensure that non-admin users cannot access the data store directly without going through the code. This is done to protect sensitive data and maintain the integrity of the system.  This ensures that sensitive data can only be accessed through the provided application interfaces, rather than through direct database queries or URL manipulation.
 
 
-- [How It Works](#how-it-works)
 ### How It Works
 
 
-- [Admin Access Middleware](#admin-access-middleware)
 
 ## `AdminAccessMiddleware`
 We have employed a custom middleware, `AdminAccessMiddleware`, to intercept incoming requests. This middleware checks whether the user attempting to access the data store is an admin (staff member) or not. If the user is not an admin, they will encounter a # `PermissionDenied` exception, preventing them from accessing the data store directly.
 ![Ariel Logo](/media/products/middleware.webp)
 
-- [Why Is This Important?](#why-is-this-important)
 ### Why Is This Important?
 
 1. **Data Security**: By restricting direct access, we enhance data security, ensuring that only authorized personnel can interact with the data store.
@@ -523,7 +531,6 @@ We have employed a custom middleware, `AdminAccessMiddleware`, to intercept inco
 2. **Controlled Access**: This approach enforces controlled access to sensitive information, reducing the risk of unauthorized data retrieval.
 
 
-- [What Happens When a Non-Admin User Tries to Access the Data Store?](#what-happens-when-a-non-admin-user-tries-to-access-the-data-store)
 
 ### What Happens When a Non-Admin User Tries to Access the Data Store?
 
@@ -531,7 +538,6 @@ We have employed a custom middleware, `AdminAccessMiddleware`, to intercept inco
 
 When a non-admin user attempts to access the data store directly, they will receive a `PermissionDenied` exception. This exception can be customized to handle the situation according to your application's requirements. For instance, you can redirect the user to a login page, display a custom error message, or take any other appropriate action.
 
-- [Customizing Exception Handling](#customizing-exception-handling)
 ### Customizing Exception Handling
 
 To customize the behavior when a non-admin user encounters the `PermissionDenied` exception, you can modify the `AdminAccessMiddleware` or create a custom view and URL pattern to handle this exception gracefully.
@@ -545,7 +551,6 @@ from django.core.exceptions import PermissionDenied
 from django.shortcuts import render
 
 
-- [Manage Venue Listings](#manage-venue-listings)
 
 ###  Manage Venue Listings
 Superuser acces is the owner or Staff managment that can get access to the Admin Sistem
@@ -553,33 +558,26 @@ As a venue manager, I can manage venue listings by adding new venues, updating d
 
 ![Ariel Logo](/media/products/django_administration.webp)
 
-- [Approve Reservation Requests](#approve-reservation-requests)
 ### Approve Reservation Requests
 I need to review and approve customer reservation requests, including payment status and event details.
 ![Ariel Logo](/media/products/django_categories.webp)
 
-- [User Management Menu](#user-management-menu)
 
 ### User Managment Menu
 ![Ariel Logo](/media/products/django_menue.webp)
 
-- [User Management Product](#user-management-product)
 ### User Managment Product
 
-- [User Management Site](#user-management-site)
 ![Ariel Logo](/media/products/django_products.png)
 ### User Managment order
 ![Ariel Logo](/media/products/django_orders.webp)
 
-- [User Management Order](#user-management-order)
 ### User Managment Site
 ![Ariel Logo](/media/products/django_sites.webp)
 
-- [User Management](#user-management)
 ### User Managment 
 ![Ariel Logo](/media/products/django_user.webp)
 
-- [As an Owner or Member of Staff](#as-an-owner-or-member-of-staff)
 ### as A Owner Or member of staff
 I can update or delete  product from the website logn-in, without to enter in Admin system 
 
@@ -592,11 +590,9 @@ I can update or delete  product from the website logn-in, without to enter in Ad
 ![Ariel Logo](/media/products/succesful_update.webp)
 
 
-- [Full Stack Web Application Project](#full-stack-web-application-project)
 # Full Stack Web Application Project 
 
 ## Venue Ariel
-- [Project Description](#project-description)
 ### This project is a Full Stack web application built using the Django framework. The application incorporates a relational database and multiple apps, each serving as a potentially reusable component. The primary goals of this project are:
 
 - Design a user-friendly front-end that follows accessibility guidelines and UX design principles.
@@ -621,7 +617,7 @@ I can update or delete  product from the website logn-in, without to enter in Ad
 9. [Project README](#project-readme)
 
 ---
-- [Design](#design)
+
 ##  Design
 ### allauth app itself log in and out
 In this section, it appears that the design of the application's authentication system is discussed. The "allauth" app is mentioned, suggesting that it is responsible for handling user login and logout functionalities.
@@ -684,7 +680,7 @@ Flake8 (Code Linter)
 Install Flake8, a code linter for Python, to ensure code quality:
 pip install flake8
 
-- [Deployment](#deployment)
+## Deployment
 #### Production Dependencies Installation
 For deploying your Django application in a production environment, you may need additional dependencies. Install them using the following commands:
 
@@ -735,8 +731,9 @@ python3 manage.py makemigrations --dry-run
 Security measures have been taken to ensure that sensitive information, such as passwords and secret keys, is not exposed in the code repository. DEBUG mode is turned off to enhance security.
 
 
-- [E-commerce Functionality](#e-commerce-functionality)
 ##  E-commerce Functionality
+We detail the e-commerce capabilities integrated into the project, such as shopping cart functionality and online payment processing using a platform like Stripe.
+
 
 At least one Django app contains e-commerce functionality, which may include features such as shopping cart checkout, subscription-based payments, single payments, donations, etc. An online payment processing system, e.g., Stripe, has been integrated.
 
@@ -767,15 +764,8 @@ My experience with Django and Django template syntax will allow me to efficientl
 I will use version control software effectively, providing a clear record of the development process. Regular commits and meaningful commit messages will be used to document each stage of the project's development.
 
 ## License
-- [License](#license)
 
 Venue Reservation Management System is licensed under the [MIT License](LICENSE).
 
 ---
 © 2023 Your Company Name
-
-
-
-
-
-- [Version Control](#version-control)
