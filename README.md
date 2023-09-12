@@ -75,40 +75,22 @@
 
 
 
-
-
-## Product
-
 ## Products
 
-| Product Name | Image | Price | Category | Capacity | Square Feet | Wi-Fi | Catering | Accessible | Rating | Actions |
-|--------------|-------|-------|----------|----------|-------------|-------|----------------------|--------|---------|
-| Venue name   | ![Image 1](/media/products/corporate.jpeg) | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) / [Delete](delete-link) |
-| Venue name   | ![Image 2](/media/products/corporate2.webp) | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) / [Delete](delete-link) |
-| Venue name   | ![Image 3](/media/products/hall2_1mu4NJ9.jpeg) | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) / [Delete](delete-link) |
-
-## Customer Details
-
 | Field            | Description            |
 |------------------|------------------------|
-| Order Number     | Unique identifier for the Customer  |
-| Order Date       | Date when the order was placed  |
-| Tenant           | Tenant's name (first and last) |
-| Date of Birth    | Tenant's date of birth  |
-| Email Address    | Tenant's email address  |
-| Contact Details  | Tenant's contact details |
-| Billing Address  | Tenant's billing address |
+| Venue Name     | Unique identifier for the Venue  |
+| Image       | Img  |
+| Price           | Bokings Price £) |
+| Capacity    | Guest  |
+| Square Feet  | in Foots square |
+| Wi-Fi | Access to Wifi Connection
+|Catering |  Self service / or Catering include|
+| Accessible |  Disability Friendly|
+| Rating |  from 0 to 5 * |
+| Actions | Update/ delete|
 
 
-## Order
-
-| Field            | Description            |
-|------------------|------------------------|
-| Order Number       | Unique identifier for the product |
-| Order Date            | Price of the product    |
-| Order details           | Rating of the product   |
-| Bill Address to:         | Category of the product |
-| 
 
 ## Venue List
 
@@ -154,6 +136,17 @@
 | Christmas        | Availability for Christmas events |
 | Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
 
+
+## Order
+
+| Field            | Description            |
+|------------------|------------------------|
+| Order Number       | Unique identifier for the product |
+| Order Date            | Price of the product    |
+| Order details           | Rating of the product   |
+| Bill Address to:         | Category of the product |
+
+
 ## Payments Table
 
 | Field              | Description            |
@@ -167,10 +160,8 @@
 | Billing Address    | Tenant's billing address |
 | Pay with           | Payment method (e.g., credit card, PayPal) |
 | Add new card       | Option to add a new payment card |
-| Donate to Charity  | Option to donate to charity |
 | Subtotal           | Subtotal amount for the payment |
 | Order Total        | Total amount to be paid |
-
 
 
 
