@@ -77,16 +77,27 @@
 
 
 
+## Product
+
 ## Products
 
 | Product Name | Image | Price | Category | Capacity | Square Feet | Wi-Fi | Catering | Accessible | Rating | Actions |
 |--------------|-------|-------|----------|----------|-------------|-------|----------------------|--------|---------|
-| Venue name   | | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) | [Delete](delete-link) |
-| Venue name   | | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) | [Delete](delete-link) |
-| Venue name   | | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) | [Delete](delete-link) |
+| Venue name   | ![Image 1](/media/products/corporate.jpeg) | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) / [Delete](delete-link) |
+| Venue name   | ![Image 2](/media/products/corporate2.webp) | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) / [Delete](delete-link) |
+| Venue name   | ![Image 3](/media/products/hall2_1mu4NJ9.jpeg) | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) / [Delete](delete-link) |
 
+## Customer Details
 
-
+| Field            | Description            |
+|------------------|------------------------|
+| Order Number     | Unique identifier for the Customer  |
+| Order Date       | Date when the order was placed  |
+| Tenant           | Tenant's name (first and last) |
+| Date of Birth    | Tenant's date of birth  |
+| Email Address    | Tenant's email address  |
+| Contact Details  | Tenant's contact details |
+| Billing Address  | Tenant's billing address |
 
 
 ## Order
