@@ -79,39 +79,31 @@
 
 ## Product
 
-| Field            | Description            |
-|------------------|------------------------|
-| Tenant ID        | Unique identifier for the Customer  |
-| First Name       | Tenant's first name     |
-| Last Name        | Tenant's last name      |
-| Date of Birth    | Tenant's date of birth  |
-| Email Address    | Tenant's email address  |
-| Contact Details  | Tenant's contact details |
-| Billing Address  | Tenant's billing address |
+## Products
+
+| Product Name | Image | Price | Category | Capacity | Square Feet | Wi-Fi | Catering | Accessible | Rating | Actions |
+|--------------|-------|-------|----------|----------|-------------|-------|----------------------|--------|---------|
+| Product 1    | ![Image 1](image1.jpg) | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) / [Delete](delete-link) |
+| Product 2    | ![Image 2](image2.jpg) | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) / [Delete](delete-link) |
+| Product 3    | ![Image 3](image3.jpg) | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) / [Delete](delete-link) |
+
 
 ## Order
 
 | Field            | Description            |
 |------------------|------------------------|
-| Product ID       | Unique identifier for the product |
-| Price            | Price of the product    |
-| Rating           | Rating of the product   |
-| Category         | Category of the product |
-| Description      | Description of the product |
-| Image URL        | URL of the product image |
-| Has Sizes        | Indicates if the product has sizes |
-| Capacity         | Capacity of the product (e.g., people) |
-| Square Feet      | Square footage of the product |
-| Has Free Wi-Fi   | Indicates if free Wi-Fi is available |
-| Has Catering     | Indicates if catering is available |
-| Is Accessible    | Indicates if the product is accessible |
+| Order Number       | Unique identifier for the product |
+| Order Date            | Price of the product    |
+| Order details           | Rating of the product   |
+| Bill Address to:         | Category of the product |
+| 
 
-## OrderLineItem
+## Venue List
 
 | Field            | Description            |
 |------------------|------------------------|
-| Event ID         | Unique identifier for the event |
-| Product ID       | ID of the associated product |
+| Venue Id   | Unique identifier for the event |
+| Venue Descpription       | ID of the associated product |
 | Weddings         | Availability for weddings |
 | Birthdays        | Availability for birthdays |
 | Parties          | Availability for parties   |
@@ -154,7 +146,7 @@
 
 | Field              | Description            |
 |--------------------|------------------------|
-| Payment ID         | Unique identifier for the payment |
+| Billing Address         | Unique identifier for the payment |
 | Tenant ID          | ID of the associated tenant |
 | Full Name          | Full name of the tenant  |
 | Post Code          | Tenant's postal code    |
