@@ -166,8 +166,8 @@
 
 
 
-# Venue Ariel Reservation Management System
-# user Historie
+## Venue Ariel Reservation Management System
+# User History
 
 Welcome to [Ariel Venue]!
 
@@ -300,6 +300,10 @@ Boking with avalilable calendare Date
 
 To make payments for your bookings, follow these steps:
 
+
+#### Set Pricing and Rental Policies
+I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
+
 After confirming your booking details, you will be directed to the payment page.
 Choose your preferred payment method (credit card, PayPal, etc.).
 Enter your payment information as prompted.
@@ -401,13 +405,63 @@ I can update or delete  product from the website logn-in, without to enter in Ad
 
 ![Ariel Logo](/media/products/succesful_update.webp)
 
-allauth app itself log in and out
 
-kaggle.com
 
-###  "GET /favicon.ico HTTP/1.1" 404 2109
-### Set Pricing and Rental Policies
-I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
+# Full Stack Web Application Project 
+
+## Venue Ariel
+
+### This project is a Full Stack web application built using the Django framework. The application incorporates a relational database and multiple apps, each serving as a potentially reusable component. The primary goals of this project are:
+
+- Design a user-friendly front-end that follows accessibility guidelines and UX design principles.
+- Develop a Full Stack web application with interactive features and immediate data updates.
+- Implement forms with validation for creating and editing models in the backend.
+- Ensure a consistent and logical Django file structure.
+- Write clean and well-organized code.
+- Define application URLs consistently.
+- Incorporate a main navigation menu and structured layout.
+- Utilize Python effectively, including functions with compound statements.
+- Design and implement comprehensive test procedures to assess functionality, usability, responsiveness, and data management.
+
+
+
+## Table of Contents
+1. [Venue Ariel](#project-description)
+2. [Design](#design)
+3. [Development](#development)
+4. [Database](#database)
+5. [Authentication](#authentication)
+6. [E-commerce Functionality](#e-commerce-functionality)
+7. [Deployment](#deployment)
+8. [Version Control](#version-control)
+9. [Project README](#project-readme)
+
+---
+
+## 2. Design
+### allauth app itself log in and out
+In this section, it appears that the design of the application's authentication system is discussed. The "allauth" app is mentioned, suggesting that it is responsible for handling user login and logout functionalities.
+
+
+An authentication mechanism has been implemented, allowing users to register and log in. Clear reasons for user registration are provided.
+
+ ## Logo Creator
+ ## Favicon.ico Retrieval
+
+Within our project, you'll find a reference to the retrieval of a "favicon.ico" file. A favicon.ico file, often recognized as a small icon displayed in a web browser's tab or bookmark, is a significant component of web design. It serves as the visual representation of a website and enhances its recognition and user experience.
+
+The inclusion of a favicon.ico file can contribute to the branding and identity of a web application. By associating a distinctive icon with our project, we aim to provide a memorable and visually appealing experience for users as they interact with our web application.
+
+Please note that the favicon.ico file may vary in design and purpose, but its significance lies in its ability to create a recognizable visual identity for our project.
+
+## Logo Creator - FreeLogoCreator.com
+
+In our project, we utilized the services of [FreeLogoCreator.com](http://www.freelogocreator.com) to craft a distinctive logo for our project's README file.
+
+[FreeLogoCreator.com](http://www.freelogocreator.com) is an online platform that offers user-friendly tools for creating logos and visual branding elements. Despite the minor typo in the URL, the website proved to be a valuable resource for designing a unique and visually appealing logo that complements our project documentation.
+
+The logo not only enhances the aesthetics of my Project but also serves as a visual representation of our project, making it more memorable and recognizable to our users.
+
 
 ### Manage Event Calendar
 I need an event calendar to view confirmed reservations, pending requests, and blocked dates.
@@ -425,8 +479,85 @@ For assistance, customers can contact our support team at support@venuereserve.c
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/venue-reservation.git`
-2. Install dependencies: `npm install`
-3. Start the application: `npm start`
+
+
+
+#### Admin Superuser Creation
+
+To create a superuser with administrative privileges, use the following command:
+ython3 manage.py createsuperuser
+
+### Gunicorn (Web Server)
+Install Gunicorn, a popular web server for Django applications:
+pip install gunicorn
+
+### Whitenoise (Static File Server Middleware)
+Whitenoise is a middleware that serves static files efficiently. Install it with:
+pip install whitenoise
+
+#### Development Tools Installation
+
+Flake8 (Code Linter)
+Install Flake8, a code linter for Python, to ensure code quality:
+pip install flake8
+
+#### Production Dependencies Installation
+For deploying your Django application in a production environment, you may need additional dependencies. Install them using the following commands:
+
+Gunicorn (Web Server):
+pip install gunicorn
+
+psycopg2-binary (PostgreSQL Database Adapter):
+pip3 install psycopg2-binary
+
+#### Create a Requirements File
+
+To keep track of your project's dependencies and versions, create a requirements.txt file using the following command:
+
+pip3 freeze --local > requirements.txt
+
+#### This file can be used to recreate the environment on another system or server using pip:
+pip install -r requirements.txt
+
+
+#### Show Available Migrations
+To view a list of available database migrations, run:
+
+
+#### Execute Migrations
+To apply pending database migrations, follow these steps:
+
+Plan the migrations using:
+shell
+Copy code
+python3 manage.py migrate
+python3 manage.py migrate --plan
+
+## Database 
+A relational database schema has been designed with clear relationships between entities. At least two custom Django models have been created, and forms with validation enable users to create records in the database.
+
+The Django file structure is consistent and logical, following Django conventions. The codebase adheres to 'clean code' principles, making it readable and maintainable.
+
+### Preview Migrations (Dry Run)
+To preview database migrations without actually applying them, use the following command:
+shell
+python3 manage.py makemigrations --dry-run
+
+
+
+### 3.3 Security 
+Security measures have been taken to ensure that sensitive information, such as passwords and secret keys, is not exposed in the code repository. DEBUG mode is turned off to enhance security.
+
+## 4. E-commerce Functionality
+
+At least one Django app contains e-commerce functionality, which may include features such as shopping cart checkout, subscription-based payments, single payments, donations, etc. An online payment processing system, e.g., Stripe, has been integrated.
+
+### 5.2 Code Cleanup
+
+The deployed code is free of commented-out code and has no broken internal links.
+
+The final version of the code has been successfully deployed to a hosting platform and thoroughly tested to match the development version.
+
 
 ## License
 
@@ -435,29 +566,11 @@ Venue Reservation Management System is licensed under the [MIT License](LICENSE)
 ---
 © 2023 Your Company Name
 
-## Logo Creator
-
-I used the website http://www.freelogocreator.com
 
 
 
-## Logo Creator
-
-I used the website hhttp:/www/freelogocreator.com
 
 
-makemigrations --dry-run
-showmigrations
-migrate --plan
-migrate
 
-create a super user admin
-python3 manage.py createsuperuser
 
-install flake8 
 
-pip install gunicorn whitenoise
-pip3 install psycopg2-binary
-pip3 install gunicorn
-
-how to create a file pip3 freeze --local > requirements.txt
