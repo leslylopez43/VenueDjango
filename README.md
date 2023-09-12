@@ -227,6 +227,7 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 
 - **Actions**: Offers options to update or delete venue information, giving administrators control over venue management.
 
+##### Services Venue Booking
 | Field            | Description            |
 |------------------|------------------------|
 | Venue Name     | Unique identifier for the Venue  |
@@ -244,6 +245,31 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 
 #### Venue List
 
+The "Venue List" section provides essential details about each venue within the Venue Ariel Reservation Management System:
+
+- **Venue Id**: A unique identifier assigned to each event venue for internal tracking purposes.
+
+- **Venue Description**: A brief description or summary of the associated product or venue.
+
+- **Weddings**: Indicates the availability of the venue for hosting weddings.
+
+- **Birthdays**: Specifies whether the venue can be booked for birthday celebrations.
+
+- **Parties**: Highlights the venue's suitability for hosting parties.
+
+- **Baby Shower**: Indicates whether the venue is suitable for hosting baby shower events.
+
+- **Corporate Events**: Specifies the availability of the venue for corporate events.
+
+- **Christmas**: Highlights the venue's suitability for Christmas events and celebrations.
+
+- **Lifestyle & Photoshoots**: Indicates whether the venue is appropriate for lifestyle and photoshoot sessions.
+
+- **Event Type**: Specifies the type of venue, which can range from halls to apartments, providing users with an idea of the venue's layout and purpose.
+
+##### Venue List
+
+
 | Field            | Description            |
 |------------------|------------------------|
 | Venue Id   | Unique identifier for the event |
@@ -257,8 +283,29 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 | Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
 | Event Type       | Type of venue (e.g., hall, apartment) |
 
-
 #### Features Table
+
+The "Features Table" outlines the unique features and amenities associated with each event venue. It includes:
+
+- **Feature ID**: A unique identifier for each feature.
+
+- **Product ID**: The ID of the associated product or venue to which the feature belongs.
+
+- **Outdoor Space**: Indicates whether the venue offers outdoor space for events.
+
+- **Music**: Specifies the availability of music at the venue.
+
+- **City**: Highlights the availability of a city view from the venue.
+
+- **Big Screen**: Indicates whether the venue is equipped with a big screen.
+
+- **Exclusive Hire**: Specifies whether the venue can be exclusively hired for events.
+
+- **Disabled Access**: Highlights whether the venue offers disabled access and facilities.
+
+- **Air Conditioning**: Specifies whether the venue is equipped with air conditioning.
+
+##### Features Table
 
 
 | Field            | Description            |
@@ -276,6 +323,30 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 
 #### Special Offer Table
 
+The "Special Offer Table" presents special deals and offers associated with event venues:
+
+- **Offer ID**: A unique identifier for each special offer.
+
+- **Product ID**: The ID of the associated product or venue eligible for the special offer.
+
+- **Family Packages**: Indicates the availability of family packages for events.
+
+- **Summer Party**: Specifies whether special offers apply to summer parties.
+
+- **Club**: Indicates availability for club events with special promotions.
+
+- **All Special Offers**: Highlights overarching special offers that apply to various events and celebrations.
+
+- **Baby Shower**: Specifies special offers related to baby shower events.
+
+- **Corporate Events**: Indicates special offers for corporate events.
+
+- **Christmas**: Specifies special offers for Christmas events and festivities.
+
+- **Lifestyle & Photoshoots**: Indicates special offers related to lifestyle and photoshoot sessions.
+
+##### Special Offer Table
+
 | Field            | Description            |
 |------------------|------------------------|
 | Offer ID         | Unique identifier for the special offer |
@@ -290,7 +361,20 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 | Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
 
 
+
 #### Order
+
+The "Order" section tracks customer orders and includes essential details:
+
+- **Order Number**: A unique identifier assigned to each product order.
+
+- **Order Date**: Specifies the date when the order was placed.
+
+- **Order Details**: Provides information about the ordered product, including its price and rating.
+
+- **Billing Address**: Specifies the billing address related to the order.
+
+##### Order
 
 | Field            | Description            |
 |------------------|------------------------|
@@ -300,8 +384,34 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 | Bill Address to:         | Category of the product |
 
 
+#### Payments Table
 
-### Payments Table
+The "Payments Table" records payment-related information associated with each order:
+
+- **Billing Address**: A unique identifier for each payment, linked to the billing address.
+
+- **Tenant ID**: The ID of the tenant (customer) associated with the payment.
+
+- **Full Name**: The full name of the tenant.
+
+- **Post Code**: The postal code of the tenant's address.
+
+- **Email Address**: The tenant's email address, used for communication.
+
+- **Contact Details**: Additional contact information of the tenant.
+
+- **Billing Address**: The tenant's billing address, used for payment verification.
+
+- **Pay With**: The chosen payment method, such as credit card or PayPal.
+
+- **Add New Card**: An option to add a new payment card for future transactions.
+
+- **Subtotal**: The subtotal amount of the payment, reflecting the cost of the ordered product.
+
+- **Order Total**: The total amount to be paid, inclusive of any additional service fees.
+
+
+#### Payments Table
 
 | Field              | Description            |
 |--------------------|------------------------|
@@ -318,6 +428,7 @@ The "Hall Venue" section provides a comprehensive overview of the various event 
 | Order Total        | Total amount to be paid |
 
 
+##### These tables and descriptions offer a comprehensive view of the data and functionality within the Venue Ariel Reservation Management System.
 
 
 ### Venue Ariel Reservation Management System
