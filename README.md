@@ -1,59 +1,159 @@
+
+## Table of Contents
+
+
+
+
 # VenueDjango
 ![Ariel Logo](/media/products/logoariel.webp)
 
+- [Wireframe](#wireframe)
 ## Wireframe
 ![Ariel Logo](/media/products/wireframe_search.webp)
-
+- [Front Website](#front-website)
 #### Front Website
 ![Ariel Logo](/media/products/wireframefrontpagewebsite.webp)
 
+- [Front Website air iPad](#front-website-air-ipad)
 #### Front Website air ipad
 ![Ariel Logo](/media/products/wireframeipad_frontpage.webp)
 
+- [Front Website iPhone 14 Pro Max](#front-website-iphone-14-pro-max)
 #### Front Website iphone 14 pro max
 ![Ariel Logo](/media/products/wireframeiphonefrontpage.webp)
 
 
+
+
+
+- [Wireframe Venue Sign-in iPad](#wireframe-venue-sign-in-ipad)
+- [Wireframe Venue Sign-in iPhone 14 Pro Max](#wireframe-venue-sign-in-iphone-14-pro-max)
+- [Wireframe Venue Email Confirmation Reservation Website](#wireframe-venue-email-confirmation-reservation-website)
+- [Wireframe Venue Email Confirmation Reservation iPad](#wireframe-venue-email-confirmation-reservation-ipad)
+- [Wireframe Venue Email Confirmation Reservation iPhone 14 Pro Max](#wireframe-venue-email-confirmation-reservation-iphone-14-pro-max)
+- [Products](#products)
+- [Venue List](#venue-list)
+- [Features Table](#features-table)
+- [Special Offer Table](#special-offer-table)
+- [Order](#order)
+- [Payments Table](#payments-table)
+- [Venue Ariel Reservation Management System](#venue-ariel-reservation-management-system)
+- [User History](#user-history)
+- [Website Front Page](#website-front-page)
+- [Customer User Stories](#customer-user-stories)
+- [Ipad Air Front Page](#ipad-air-front-page)
+- [Iphone 14 Pro Max Front Page](#iphone-14-pro-max-front-page)
+- [Enjoy Browsing](#enjoy-browsing)
+- [Browse and Navigate Available Venues](#browse-and-navigate-available-venues)
+- [Check Venue Availability](#check-venue-availability)
+- [Check Venue Features](#check-venue-features)
+- [Special Offers](#special-offers)
+- [Search by Price, Rating, Venue Name, Category](#search-by-price-rating-venue-name-category)
+- [Reserving Bookings](#reserving-bookings)
+- [Reserve a Venue](#reserve-a-venue)
+- [View and Manage Reservations](#view-and-manage-reservations)
+- [Make Payments Online](#make-payments-online)
+- [Order Checkout Adjust Bag](#order-checkout-adjust-bag)
+- [Order Checkout Before Signup](#order-checkout-before-signup)
+- [Product Management](#product-management)
+- [Login](#login)
+- [Signup](#signup)
+- [Update the Order](#update-the-order)
+- [Receive Booking Confirmation](#receive-booking-confirmation)
+- [Boking with Available Calendar Date](#booking-with-available-calendar-date)
+- [Making Payments](#making-payments)
+- [Set Pricing and Rental Policies](#set-pricing-and-rental-policies)
+- [Receiving Invoices and Confirmations](#receiving-invoices-and-confirmations)
+- [Request Support and Assistance](#request-support-and-assistance)
+- [Venue Manager User Stories](#venue-manager-user-stories)
+- [Data Store Access Control](#data-store-access-control)
+- [How It Works](#how-it-works)
+- [Admin Access Middleware](#admin-access-middleware)
+- [Why Is This Important?](#why-is-this-important)
+- [What Happens When a Non-Admin User Tries to Access the Data Store?](#what-happens-when-a-non-admin-user-tries-to-access-the-data-store)
+- [Customizing Exception Handling](#customizing-exception-handling)
+- [Manage Venue Listings](#manage-venue-listings)
+- [Approve Reservation Requests](#approve-reservation-requests)
+- [User Management Menu](#user-management-menu)
+- [User Management Product](#user-management-product)
+- [User Management Order](#user-management-order)
+- [User Management Site](#user-management-site)
+- [User Management](#user-management)
+- [As an Owner or Member of Staff](#as-an-owner-or-member-of-staff)
+- [Update or Delete Product](#update-or-delete-product)
+- [Full Stack Web Application Project](#full-stack-web-application-project)
+- [Venue Ariel](#venue-ariel)
+- [Project Description](#project-description)
+- [Design](#design)
+- [Development](#development)
+- [Database](#database)
+- [Authentication](#authentication)
+- [E-commerce Functionality](#e-commerce-functionality)
+- [Deployment](#deployment)
+- [Version Control](#version-control)
+- [Project README](#project-readme)
+- [License](#license)
+
+
+- [Wireframe Venue Product List Website](#wireframe-venue-product-list-website)
 #### wireframe Venue Product List Website
 ![Ariel Logo](/media/products/product_wireframe_web.webp)
 
+- [Wireframe Venue Product List iPad](#wireframe-venue-product-list-ipad)
 #### wireframe Venue Product List ipad
 ![Ariel Logo](/media/products/product_wireframe_ipad.webp)
 
+- [Wireframe Venue Product List iPhone 14 Pro Max](#wireframe-venue-product-list-iphone-14-pro-max)
 #### wireframe Venue Product List iphone 14 pro max
 ![Ariel Logo](/media/products/product_wireframe_iphone.webp)
 
 
+- [Wireframe Venue Product Checkout Booking Reservation Website](#wireframe-venue-product-checkout-booking-reservation-website)
 #### wireframe Venue Product Checkout Booking Reservation Website
 ![Ariel Logo](/media/products/checkout_wireframe_web.webp)
 
+
+- [Wireframe Venue Product Checkout Booking Reservation air iPad](#wireframe-venue-product-checkout-booking-reservation-air-ipad)
 #### Wireframe Venue Product Checkout Booking Reservation air ipad
 ![Ariel Logo](/media/products/checkout_wireframe_ipad.webp)
 
+
+- [Wireframe Venue Product Checkout Booking Reservation iPhone 14 Pro Max](#wireframe-venue-product-checkout-booking-reservation-iphone-14-pro-max)
 #### Wireframe Venue Product Checkout Booking Reservation iphone 14 pro max
 ![Ariel Logo](/media/products/checkout_wireframe_iphone.webp)
 
 
+- [Wireframe Venue Product Shopping Bag Website](#wireframe-venue-product-shopping-bag-website)
 #### Wireframe Venue Product Shopping bag Website
 ![Ariel Logo](/media/products/shoppingbag_wireframe.webp)
 
+
+- [Wireframe Venue Product Shopping Bag iPad](#wireframe-venue-product-shopping-bag-ipad)
 #### wireframe Venue Product Shopping bag ipad
 ![Ariel Logo](/media/products/shoppingbag_wireframe_ipad.webp)
 
+
+- [Wireframe Venue Product Shopping Bag iPhone 14 Pro Max](#wireframe-venue-product-shopping-bag-iphone-14-pro-max)
 #### wireframe Venue Product Shopping bag iphone 14 pro max
 ![Ariel Logo](/media/products/shoppingbag_wireframe_iphone.webp)
 
 
+- [Wireframe Venue Product Card Payment Reservation Website](#wireframe-venue-product-card-payment-reservation-website)
 #### Wireframe Venue Product Card Payment Reservation Website
 ![Ariel Logo](/media/products/Wireframe_cardpayment.webp)
 
+
+- [Wireframe Venue Product Card Payment Reservation iPad](#wireframe-venue-product-card-payment-reservation-ipad)
 #### wireframe Venue Product Card Payment Reservationipad
 ![Ariel Logo](/media/products/wireframe_carpayment_ipad.webp)
 
+
+- [Wireframe Venue Product Card Payment Reservation iPhone 14 Pro Max](#wireframe-venue-product-card-payment-reservation-iphone-14-pro-max)
 #### wireframe Venue Product Card payment Reservation iphone 14 pro max
 ![Ariel Logo](/media/products/wireframe_carpayment_Iphone.webp)
 
 
+- [Wireframe Venue Sign-in Website](#wireframe-venue-sign-in-website)
 #### Wireframe Venue signin Website
 ![Ariel Logo](/media/products/wireframe_signin.webp)
 
@@ -74,11 +174,6 @@
 ![Ariel Logo](/media/products/wireframe_payment_iphone.webp)
 
 
-## Table of Contents
-- [Wireframe](#wireframe)
-- [Front Website](#front-website)
-- [Front Website air iPad](#front-website-air-ipad)
-- [Front Website iPhone 14 Pro Max](#front-website-iphone-14-pro-max)
 
 
 ## Products
