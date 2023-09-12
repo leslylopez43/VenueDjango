@@ -81,7 +81,7 @@
 |------------------|------------------------|
 | Venue Name     | Unique identifier for the Venue  |
 | Image       | Img  |
-| Price           | Bokings Price £) |
+| Price           | Bokings Price £ |
 | Capacity    | Guest  |
 | Square Feet  | in Foots square |
 | Wi-Fi | Access to Wifi Connection
@@ -165,10 +165,28 @@
 
 
 
-# Venue Ariel Reservation Management System
 
-Welcome to the Venue Reservation Management System! This system allows customers to browse, reserve, and manage event venues, while venue managers can efficiently manage reservations and resources. Let's explore the detailed user stories and features of this system.
-### Website front page
+# Venue Ariel Reservation Management System
+# user Historie
+
+Welcome to [Ariel Venue]!
+
+This README file will guide you through the process of accessing,browse, reserve, navigating, and using our website to reserve bookings, check available options, make payments,and manage event venues, and receive invoices and confirmations by email.
+
+while venue managers can efficiently manage reservations and resources. 
+
+## Let's explore the detailed user stories and features of this system.
+
+## Website front page
+1. Accessing the Website
+
+To access our website, follow these steps:
+
+Open your web browser (we recommend using the latest version of Chrome, Firefox, Safari, or Edge).
+In the address bar, type [Venue Ariel] and press Enter.
+You will land on our homepage.
+If you're a new user, you may need to create an account. Click on the "Sign Up" or "Register" button and follow the on-screen instructions to create your account.
+
 ![Ariel Logo](/media/products/frontwebsite.webp)
 ## Customer User Stories
 
@@ -186,9 +204,14 @@ as a user how can easy see the website in Iphone 14 pro Screen size
 ### Enjoy Browsing: 
 Now, you can easily see and interact with the website on your website, iPad's or iphone screen. You can tap links, buttons, and images to navigate and explore the Venue Ariel website's content.
 
-### Browse Available Venues
+
+### Browse  Navigating Available Venues
+Once you're on the homepage, here's how to navigate:
+
+Main Navigation Menu: Use the main navigation menu at the top of the page to explore different sections of the website, including venues, bookings, and payments.
 As a customer, I want to browse through a list of available event venues with details such as types, capacities, amenities, and photos.
 by Price, Rating Category, By Products.
+ 
 
 ![Ariel Logo](/media/products/all_products.webp)
 
@@ -208,8 +231,15 @@ as a user members can easily find the section for special offers. You can includ
 ### Searchin By Price up or down, Rating , Venue Name A to Z Categorie
 ![Ariel Logo](/media/products/sort_by.webp)
 
+### Reserving Bookings
 
+To reserve bookings, follow these steps:
 
+Click on the "Venues" or "Bookings" section in the main menu.
+Browse the available venues and select the one you're interested in.
+Choose your desired date, time, and any additional options.
+Click the "Reserve Now" or "Book" button.
+Follow the prompts to confirm your booking details.
 
 ### Reserve a Venue
 I want to reserve a venue by specifying the event date, time, and amenities, as well as customize event details.
@@ -234,6 +264,7 @@ Order Checkout Before Signup
 
 ![Ariel Logo](/media/products/order_update_before_loging.webp)
 
+If you're a new user, you may need to create an account. Click on the "Sign Up" or "Register" button and follow the on-screen instructions to create your account.
 ### Receive Booking Confirmation
 
 After making a reservation and payment, I should receive a booking confirmation email with event details and contact information.
@@ -247,13 +278,32 @@ After making a reservation and payment, I should receive a booking confirmation 
 
 Boking with avalilable calendare Date
 ![Ariel Logo](/media/products/checkup_with_calendar.webp)
+
+### Making Payments
+
+To make payments for your bookings, follow these steps:
+
+After confirming your booking details, you will be directed to the payment page.
+Choose your preferred payment method (credit card, PayPal, etc.).
+Enter your payment information as prompted.
+Review the payment summary and click "Submit" or "Pay Now."
+
+
 ![Ariel Logo](/media/products/email_will_receibe.webp)
+
+### Receiving Invoices and Confirmations
+
+After completing your booking and payment, you will receive the following by email:
 
 after filling the form and  making the payment As a Cutomer I will receibe the automated Email confirmation.
 ![Ariel Logo](/media/products/email_confirmation.webp)
+
+#### Confirmation Email: You will receive an email confirming your booking details shortly after payment. This serves as your booking confirmation.
+Invoice Email: A separate email containing an invoice for your booking will be sent to you.
+
 ![Ariel Logo](/media/products/customer_confirmation_order.webp)
 
-
+#### Please make sure to check your email inbox and spam folder if you do not receive these emails within a reasonable time.
 ![Ariel Logo](/media/products/email_confirmation_sent.webp)
 
 
