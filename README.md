@@ -96,35 +96,28 @@
 
 
 - [Wireframe Venue Product List Website](#wireframe-venue-product-list-website)
-#### wireframe Venue Product List Website
 ![Ariel Logo](/media/products/product_wireframe_web.webp)
 
 - [Wireframe Venue Product List iPad](#wireframe-venue-product-list-ipad)
-#### wireframe Venue Product List ipad
 ![Ariel Logo](/media/products/product_wireframe_ipad.webp)
 
 - [Wireframe Venue Product List iPhone 14 Pro Max](#wireframe-venue-product-list-iphone-14-pro-max)
-#### wireframe Venue Product List iphone 14 pro max
 ![Ariel Logo](/media/products/product_wireframe_iphone.webp)
 
 
 - [Wireframe Venue Product Checkout Booking Reservation Website](#wireframe-venue-product-checkout-booking-reservation-website)
-#### wireframe Venue Product Checkout Booking Reservation Website
 ![Ariel Logo](/media/products/checkout_wireframe_web.webp)
 
 
 - [Wireframe Venue Product Checkout Booking Reservation air iPad](#wireframe-venue-product-checkout-booking-reservation-air-ipad)
-#### Wireframe Venue Product Checkout Booking Reservation air ipad
 ![Ariel Logo](/media/products/checkout_wireframe_ipad.webp)
 
 
 - [Wireframe Venue Product Checkout Booking Reservation iPhone 14 Pro Max](#wireframe-venue-product-checkout-booking-reservation-iphone-14-pro-max)
-#### Wireframe Venue Product Checkout Booking Reservation iphone 14 pro max
 ![Ariel Logo](/media/products/checkout_wireframe_iphone.webp)
 
 
 - [Wireframe Venue Product Shopping Bag Website](#wireframe-venue-product-shopping-bag-website)
-#### Wireframe Venue Product Shopping bag Website
 ![Ariel Logo](/media/products/shoppingbag_wireframe.webp)
 
 
