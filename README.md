@@ -334,7 +334,7 @@ I need to review and approve customer reservation requests, including payment st
 
 
 ### as A Owner Or member of staff
-I can update or delete  product from the website log in with out to enter in admin system 
+I can update or delete  product from the website logn-in, without to enter in Admin system 
 
 ![Ariel Logo](/media/products/add_or_edit.webp)
 
