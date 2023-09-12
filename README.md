@@ -77,15 +77,14 @@
 
 
 
-## Product
 
 ## Products
 
 | Product Name | Image | Price | Category | Capacity | Square Feet | Wi-Fi | Catering | Accessible | Rating | Actions |
 |--------------|-------|-------|----------|----------|-------------|-------|----------------------|--------|---------|
-| Product 1    | ![Image 1](image1.jpg) | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) / [Delete](delete-link) |
-| Product 2    | ![Image 2](image2.jpg) | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) / [Delete](delete-link) |
-| Product 3    | ![Image 3](image3.jpg) | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) / [Delete](delete-link) |
+| Venue name    | ![Image 1](/media/products/corporate.jpeg) | £100 | Category 1 | 100 | 1000 | Yes | Yes | Yes | 4.5 / 5 | [Edit](edit-link) / [Delete](delete-link) |
+| Venue name    | ![Image 2](media/products/corporate2.webp) | £120 | Category 2 | 80  | 800  | Yes | No  | No  | No Rating | [Edit](edit-link) / [Delete](delete-link) |
+| Venue name    | ![Image 3](/media/products/hall2_1mu4NJ9.jpeg) | £80  | Category 1 | 120 | 1200 | No  | Yes | Yes | 3.0 / 5  | [Edit](edit-link) / [Delete](delete-link) |
 
 
 ## Order
