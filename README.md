@@ -151,7 +151,7 @@
 
 | Field              | Description            |
 |--------------------|------------------------|
-| Billing Address         | Unique identifier for the payment |
+| Billing Address    | Unique identifier for the payment |
 | Tenant ID          | ID of the associated tenant |
 | Full Name          | Full name of the tenant  |
 | Post Code          | Tenant's postal code    |
