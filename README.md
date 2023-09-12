@@ -265,12 +265,6 @@ after filling the form and  making the payment As a Cutomer I will receibe the a
 
 
 
-allauth app itself log in and out
-
-kaggle.com
-
-###  "GET /favicon.ico HTTP/1.1" 404 2109
-
 ### Product Managment
 
 ![Ariel Logo](/media/products/My_account.webp)
@@ -282,6 +276,7 @@ as a Customer I can signup
 
 as a customer I can Update the Order
 ![Ariel Logo](/media/products/order_update_before_loging.webp)
+
 
 
 ### Request Support and Assistance
@@ -337,6 +332,23 @@ I need to review and approve customer reservation requests, including payment st
 ### User Managment 
 ![Ariel Logo](/media/products/django_user.webp)
 
+
+### as A Owner Or member of staff
+I can update or delete  product from the website log in with out to enter in admin system 
+
+![Ariel Logo](/media/products/add_or_edit.webp)
+
+![Ariel Logo](/media/products/add_delete.webp)
+
+![Ariel Logo](/media/products/update_img.webp)
+
+![Ariel Logo](/media/products/succesful_update.webp)
+
+allauth app itself log in and out
+
+kaggle.com
+
+###  "GET /favicon.ico HTTP/1.1" 404 2109
 ### Set Pricing and Rental Policies
 I should be able to set pricing for venues and additional services, such as rental rates and amenity fees.
 
