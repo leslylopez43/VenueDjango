@@ -1,1 +1,1 @@
-web: gunicorn venuedjango.wsgi:application
+web: gunicorn venue_ariel.wsgi.application
