@@ -954,4 +954,4 @@ I will use version control software effectively, providing a clear record of the
 Venue Reservation Management System is licensed under the [MIT License](LICENSE).
 
 ---
-© 2023 Your Company Name
+© 2023 Arial Venue
