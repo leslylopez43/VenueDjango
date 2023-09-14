@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path, os
+from pathlib import Path, os, environ
 
 
 
@@ -36,7 +36,7 @@ import os
 import dj_database_url
 
 
-ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost','127.0.0.1',
+ALLOWED_HOSTS = ['VENUEDJANGO-venueariel.herokuapp.com', 'localhost','127.0.0.1',
 
 ]
 
