@@ -31,10 +31,9 @@ SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True 
 # "development" in os.environ
-
+# DEBUG = True if "development" in os.environ else False
 import os
 import dj_database_url
-
 
 ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost', '127.0.0.1']
 
