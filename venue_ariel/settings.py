@@ -36,9 +36,8 @@ import os
 import dj_database_url
 
 
-ALLOWED_HOSTS = ['VENUEDJANGO-venueariel.herokuapp.com', 'localhost','127.0.0.1',
+ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost', '127.0.0.1']
 
-]
 
 
 # Application definition
