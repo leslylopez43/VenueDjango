@@ -938,6 +938,7 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
 ![Ariel Logo](/media/products/lighthouse.webp)
 
 
+
 #### Follow Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
 
