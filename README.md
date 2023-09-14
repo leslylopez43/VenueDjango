@@ -837,6 +837,7 @@ Our goal is to ensure that your payments are processed smoothly and securely, co
 
 
 ## Deployment
+https://venueariel-3a442b56d3de.herokuapp.com
 #### Production Dependencies Installation
 For deploying your Django application in a production environment, you may need additional dependencies. Install them using the following commands:
 
