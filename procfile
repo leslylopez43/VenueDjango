@@ -1,0 +1,4 @@
+web: python manage.py runserver 0.0.0.0:$PORT
+
+web: gunicorn venueariel.wsgi:application
+web: gunicorn venue_ariel.wsgi:application
