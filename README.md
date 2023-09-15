@@ -771,7 +771,7 @@ Gunicorn, short for "Green Unicorn," is a popular Python Web Server Gateway Inte
 
 ##### Here are some key features and points about Gunicorn:
 
-###### WSGI Compatibility: Gunicorn is WSGI-compliant, which means it can work seamlessly with any Python web application that adheres to the WSGI standard. This compatibility allows you to deploy a wide range of web applications using Gunicorn.
+## WSGI Compatibility: Gunicorn is WSGI-compliant, which means it can work seamlessly with any Python web application that adheres to the WSGI standard. This compatibility allows you to deploy a wide range of web applications using Gunicorn.
 -**Concurrency**: Gunicorn provides support for multiple worker processes or threads. This concurrency allows Gunicorn to handle multiple requests simultaneously, making it suitable for serving web applications with concurrent user access.
 Preloading: Gunicorn allows for process preloading, where worker processes are forked at startup. This helps minimize the latency associated with creating new processes when handling incoming requests.
 -**Graceful Worker Processes**: Gunicorn can gracefully restart worker processes, which is crucial for maintaining the availability of a web application during updates or code deployments. This feature ensures that existing requests are completed before worker processes are replaced.
