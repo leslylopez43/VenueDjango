@@ -979,6 +979,7 @@ In heroku.com
 | 8    | Comment out the original DATABASE  | In your Django project's `settings.py`, comment out or delete the    |
 |      | settings                            | original database settings that you're replacing with the `DATABASE_URL`. |
 
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -986,17 +987,20 @@ In heroku.com
 #     }
 # }
 
-9
-Copy and Paste the DATABASE settings
-DATABASES = {
-   'default': dj_database_url.parse('postgres://DATABASE_URL')
-}
-
-
-10
-Import dj_database_url
-from pathlib import Path
-import dj_database_url
+| Step | Code                                                              | Your Notes                                          |
+|------|-------------------------------------------------------------------|-----------------------------------------------------|
+| 9    | **Copy and Paste the DATABASE settings**                         | Update your `DATABASES` settings in `settings.py` with the following code: |
+|      |                                                                   | ```python
+|      |                                                                   | DATABASES = {
+|      |                                                                   |     'default': dj_database_url.parse('postgres://DATABASE_URL')
+|      |                                                                   | }
+|      |                                                                   | ```
+|      |                                                                   | Make sure to replace `'DATABASE_URL'` with the actual URL you obtained in step 7. |
+| 10   | **Import `dj_database_url` and other necessary modules**         | At the top of your `settings.py` file, import `dj_database_url` and any other required modules: |
+|      |                                                                   | ```python
+|      |                                                                   | from pathlib import Path
+|      |                                                                   | import dj_database_url
+|      |                                                                   | ```
 
 
 ## Important! Error Fix!
