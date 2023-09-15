@@ -910,6 +910,137 @@ Our goal is to ensure that your payments are processed smoothly and securely, co
 
 ## Deployment
 https://venueariel-3a442b56d3de.herokuapp.com
+
+Create an account with Heroku.com
+If necessary, install the heroku CLI in your IDE terminal. (If using the CI template it’s already installed)
+
+Login to Heroku in in the IDE terminal
+Enter your email, and password
+
+1 To view any other commands, just type heroku
+Install Postgres -**pip3 install psycopg2-binary**
+2 Install webserver
+pip3 install gunicorn
+3Create a requirements file
+pip3 freeze --local > requirements.txt
+4Create the app
+heroku apps:create APPNAME --region eu
+
+## Creating a new Database on ElephantSQL
+-**I  elephantsql.com**:
+1
+Log in to your ElephantSQL account
+2
+Click “Create New Instance”
+
+3
+Set up your plan
+Give your plan a Name (this is commonly the name of the project)
+Select the Tiny Turtle (Free) plan
+You can leave the Tags field blank
+
+4
+Click “Select Region”
+Select a data center near you
+
+5
+Click “Review”
+Check that your details are correct. Then click “Create instance”
+
+6
+Return to the ElephantSQL dashboard and click on the database instance name for this project
+
+7
+Copy your ElephantSQL database URL using the Copy icon. It will start with postgres://
+
+## Connecting our Remote Database
+In heroku.com 
+#
+Step
+Code
+Your Notes
+1
+Open your App in Heroku
+
+
+
+
+2
+Open the settings tab
+
+
+
+
+3
+Click Reveal Config Vars
+
+
+
+
+4
+Add a Config Var called DATABASE_URL
+
+
+
+
+## In the Terminal 
+Step
+Code
+Your Notes
+5
+Install a database url package
+pip3 install dj-database-url
+
+6
+Refreeze the requirements file
+pip3 freeze --local > requirements.txt
+
+
+7
+Get the url of the remote database
+heroku config
+
+### In django_todo / settings.py
+Step
+Code
+Your Notes
+8
+Comment out the original DATABASE settings
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+9
+Copy and Paste the DATABASE settings
+DATABASES = {
+   'default': dj_database_url.parse('postgres://DATABASE_URL')
+}
+
+
+10
+Import dj_database_url
+from pathlib import Path
+import dj_database_url
+
+
+## Important! Error Fix!
+If you get the error below while following these instructions:
+django.db.utils.OperationalError: FATAL: role "somerandomletters" does not exist
+Please run the following command in the terminal to fix it:
+unset PGHOSTADDR
+
+-**In this context, PGHOSTADDR likely refers to the host address for a PostgreSQL database server. PostgreSQL is a popular open-source relational database management system. When connecting to a PostgreSQL database, you typically specify connection parameters such as the host address, port, username, and password. PGHOSTADDR specifically sets the host address for the PostgreSQL server**.
+
+-**By running unset PGHOSTADDR, you are effectively removing the value assigned to the PGHOSTADDR environment variable. This can be useful when you want to clear or reset this variable, especially if you no longer want to use a specific host address for PostgreSQL connections or if you want to revert to the default settings**.
+
+-**After running this command, the PGHOSTADDR environment variable will be empty, and if your PostgreSQL client or application relies on it, it will likely revert to its default behavior or prompt you for the host address when establishing a database connection**.
+
+
+
+
 #### Production Dependencies Installation
 For deploying your Django application in a production environment, you may need additional dependencies. Install them using the following commands:
 
@@ -918,6 +1049,23 @@ pip install gunicorn
 
 psycopg2-binary (PostgreSQL Database Adapter):
 pip3 install psycopg2-binary
+
+## Creating an env.py file
+
+Create a file called env.py.
+Add the following code:
+import os 
+
+##### and then create a 
+os.environ["DATABASE_URL"] = "paste-your-database-url-here"
+In settings.py:
+At the top of the file, add the following import:
+import os 
+
+if os.path.isfile("env.py"):
+    import env
+Replace the pasted-in database url with the following code: 
+os.environ.get("DATABASE_URL")
 
 #### Create a Requirements File
 
