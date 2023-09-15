@@ -780,6 +780,7 @@ Preloading: Gunicorn allows for process preloading, where worker processes are f
 -**Logging**: Gunicorn provides detailed logging options, making it easier to monitor and troubleshoot your web application. You can configure log levels and choose where log messages are written.
 -**Compatibility with Process Managers**: Gunicorn can be managed by process management tools like systemd or Supervisor, which helps ensure that the server is running reliably and can automatically restart if it crashes.
 
+
 ### Whitenoise (Static File Server Middleware)
 Whitenoise is a middleware that serves static files efficiently. Install it with:
 pip install whitenoise
