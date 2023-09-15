@@ -427,15 +427,26 @@ The "Payments Table" records payment-related information associated with each or
 ##### These tables and descriptions offer a comprehensive view of the data and functionality within the Venue Ariel Reservation Management System.
 
 
-## Venue Ariel Reservation Management System
 # User History
 
-Welcome to [Ariel Venue]!
+## Welcome to Ariel Venue
 
-This README file will guide you through the process of accessing,browse, reserve, navigating, and using our website to reserve bookings, check available options, make payments,and manage event venues, and receive invoices and confirmations by email.
+This README file serves as a comprehensive guide to help you make the most of your experience with Ariel Venue. Whether you are looking to explore available event venues, reserve spaces, or manage your reservations, this guide has you covered.
 
-while venue managers can efficiently manage reservations and resources. 
+What is Ariel Venue?
 
+Ariel Venue is a user-friendly platform designed to simplify the process of finding and booking event venues for various occasions. It caters to both event organizers and venue managers, offering a seamless and efficient solution for all your venue-related needs.
+
+For Event Organizers
+Discover and Reserve Event Spaces: Ariel Venue provides an extensive catalog of event venues, ranging from elegant ballrooms to cozy meeting rooms. You can easily browse through available options, filter by location, capacity, and amenities, and select the perfect space for your event.
+
+Effortless Booking: Making a reservation is a breeze on Ariel Venue. Once you've found your ideal venue, you can check its availability, choose your preferred date and time, and reserve it with just a few clicks.
+
+Secure Payments: Our platform ensures safe and secure payment processing. You can complete your booking by making payments online, giving you peace of mind during the reservation process.
+
+Manage Reservations: Ariel Venue offers a user-friendly dashboard where you can view and manage all your reservations. Keep track of upcoming events, make changes to your bookings, and receive timely notifications and reminders.
+
+Invoices and Confirmations: After confirming your reservation, you'll receive detailed invoices and booking confirmations via email, making it easy to keep all your event-related documentation organized.
 ## Let's explore the detailed user stories and features of this system.
 
 ### Website Front Page
@@ -925,35 +936,33 @@ Enter your email, and password
 | 2    | Install PostgreSQL | `pip3 install psycopg2-binary` |
 | 3    | Install a Web Server (e.g., Gunicorn) | `pip3 install gunicorn` |
 | 4    | Create a Requirements File | `pip3 freeze --local > requirements.txt` |
-| 5    | Create Your Heroku App (Replace `APPNAME` with your app's name) | `heroku apps:create APPNAME --region eu` |
+| 5    | Create Your Heroku App (Venue Ariel) | `heroku apps:create Venue-Ariel --region eu` |
 
 
 ## Creating a new Database on ElephantSQL
--**I  elephantsql.com**:
+-**I  used elephantsql.com**:
 | Step | Instructions                                                     |
 |------|------------------------------------------------------------------|
 | 1    | Log in to your ElephantSQL account.                              |
 | 2    | Click on "Create New Instance."                                   |
 | 3    | Set up your plan:                                                |
-|      |   - Give your plan a Name (commonly the project name).            |
-|      |   - Select the Tiny Turtle (Free) plan.                           |
-|      |   - You can leave the Tags field blank.                           |
+|      |   - Give your plan a Name (Venue Ariel).            |
+|      |   - Select the Tiny Turtle (Free) plan.                           |                          
 | 4    | Click "Select Region."                                           |
-|      |   - Select a data center near your location.                      |
-| 5    | Click "Review."                                                  |
-|      |   - Verify that your details are correct.                         |
+|      |   - Select a data center EU.                      |
+| 5    | Click "Review."                                                   |
 |      |   - Then click "Create instance."                                 |
 | 6    | Return to the ElephantSQL dashboard and click on the database   |
-|      | instance name for this project.                                   |
+|      |  Venue Ariel.                                   |
 | 7    | Copy your ElephantSQL database URL using the Copy icon.          |
 |      |   - It will start with `postgres://`.                             |
 
 ## Connecting our Remote Database
-In heroku.com 
+I Used heroku.com 
 
 | Step | Code                    | Your Notes                                             |
 |------|-------------------------|-------------------------------------------------------|
-| 1    | Open your App in Heroku |                                                       |
+| 1    | Open your Ariel Venue APP in Heroku |                                                       |
 | 2    | Open the settings tab   |                                                       |
 | 3    | Click Reveal Config Vars|                                                       |
 | 4    | Add a Config Var called| In the "Key" field, enter "DATABASE_URL".              |
@@ -970,7 +979,6 @@ In heroku.com
 | 6    | Refreeze the requirements file  | Run `pip3 freeze --local > requirements.txt` to update it.     |
 | 7    | Get the URL of the remote      | Run `heroku config` to view the configuration variables.        |
 |      | database                        | Locate the `DATABASE_URL` variable for your remote database.   |
-|      |                                  | You'll need this in the next step.                             |
 
 ### In venue_Ariel/settings.py
 
