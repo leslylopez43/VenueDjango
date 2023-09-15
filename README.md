@@ -870,6 +870,18 @@ Copy code
 python3 manage.py migrate
 python3 manage.py migrate --plan
 
+### Pillow Python Imaging Library
+Pillow is a powerful Python Imaging Library (PIL) fork that provides easy-to-use methods for opening, manipulating, and saving various image file formats. It is a widely-used library for working with images in Python applications. Here are some key points about Pillow:
+
+- **Image Processing**: Pillow allows you to perform a wide range of image processing tasks, such as resizing, cropping, rotating, filtering, and enhancing images. You can apply various filters and transformations to images to achieve the desired visual effects.
+Format Support: Pillow supports a broad spectrum of image file formats, including JPEG, PNG, BMP, GIF, TIFF, and many others. It enables you to read images in different formats and convert between them effortlessly.
+- **Ease** of Use: Pillow provides a simple and consistent API for working with images, making it accessible to both beginners and experienced developers. You can load an image, apply transformations, and save it back to disk with just a few lines of code.
+- **Cross-Platform**: Pillow is a cross-platform library, which means you can use it on various operating systems, including Windows, macOS, and Linux. It is compatible with Python 2 and Python 3.
+- **Integration**: Pillow integrates seamlessly with popular Python frameworks and libraries, such as Django and Flask, making it an excellent choice for building web applications that involve image handling.
+- **Image Enhancement**: You can use Pillow to enhance image quality by adjusting parameters like brightness, contrast, and sharpness. It's also helpful for adding text or annotations to images.
+- **Batch Processing**: Pillow is suitable for batch image processing tasks. You can write scripts to automate repetitive image-related operations, making it efficient for tasks like resizing a large number of images.
+- **Open Source**: Pillow is an open-source project, so you can use it freely in your applications, and it benefits from an active community of contributors and users.
+
 ## Database 
 A relational database schema has been designed with clear relationships between entities. At least two custom Django models have been created, and forms with validation enable users to create records in the database.
 
