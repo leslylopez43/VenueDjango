@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path, os
 
-
+if os.path.isfile("env.py"):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +38,7 @@ import dj_database_url
 
 ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com', 'localhost', '127.0.0.1']
 
-
+os.environ.get("DATABASE_URL")
 
 
 # Application definition
