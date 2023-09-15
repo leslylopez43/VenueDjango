@@ -911,101 +911,74 @@ Our goal is to ensure that your payments are processed smoothly and securely, co
 ## Deployment
 https://venueariel-3a442b56d3de.herokuapp.com
 
-Create an account with Heroku.com
+### Create an account with Heroku.com
 If necessary, install the heroku CLI in your IDE terminal. (If using the CI template it’s already installed)
 
-Login to Heroku in in the IDE terminal
+### Login to Heroku in in the IDE terminal
 Enter your email, and password
 
-1 To view any other commands, just type heroku
-Install Postgres -**pip3 install psycopg2-binary**
-2 Install webserver
-pip3 install gunicorn
-3Create a requirements file
-pip3 freeze --local > requirements.txt
-4Create the app
-heroku apps:create APPNAME --region eu
+## Setting Up Your Heroku Application
+
+| Step | Description | Command |
+| ---- | ----------- | ------- |
+| 1    | View Available Heroku Commands | `heroku` |
+| 2    | Install PostgreSQL | `pip3 install psycopg2-binary` |
+| 3    | Install a Web Server (e.g., Gunicorn) | `pip3 install gunicorn` |
+| 4    | Create a Requirements File | `pip3 freeze --local > requirements.txt` |
+| 5    | Create Your Heroku App (Replace `APPNAME` with your app's name) | `heroku apps:create APPNAME --region eu` |
+
 
 ## Creating a new Database on ElephantSQL
 -**I  elephantsql.com**:
-1
-Log in to your ElephantSQL account
-2
-Click “Create New Instance”
-
-3
-Set up your plan
-Give your plan a Name (this is commonly the name of the project)
-Select the Tiny Turtle (Free) plan
-You can leave the Tags field blank
-
-4
-Click “Select Region”
-Select a data center near you
-
-5
-Click “Review”
-Check that your details are correct. Then click “Create instance”
-
-6
-Return to the ElephantSQL dashboard and click on the database instance name for this project
-
-7
-Copy your ElephantSQL database URL using the Copy icon. It will start with postgres://
+| Step | Instructions                                                     |
+|------|------------------------------------------------------------------|
+| 1    | Log in to your ElephantSQL account.                              |
+| 2    | Click on "Create New Instance."                                   |
+| 3    | Set up your plan:                                                |
+|      |   - Give your plan a Name (commonly the project name).            |
+|      |   - Select the Tiny Turtle (Free) plan.                           |
+|      |   - You can leave the Tags field blank.                           |
+| 4    | Click "Select Region."                                           |
+|      |   - Select a data center near your location.                      |
+| 5    | Click "Review."                                                  |
+|      |   - Verify that your details are correct.                         |
+|      |   - Then click "Create instance."                                 |
+| 6    | Return to the ElephantSQL dashboard and click on the database   |
+|      | instance name for this project.                                   |
+| 7    | Copy your ElephantSQL database URL using the Copy icon.          |
+|      |   - It will start with `postgres://`.                             |
 
 ## Connecting our Remote Database
 In heroku.com 
-#
-Step
-Code
-Your Notes
-1
-Open your App in Heroku
 
-
-
-
-2
-Open the settings tab
-
-
-
-
-3
-Click Reveal Config Vars
-
-
-
-
-4
-Add a Config Var called DATABASE_URL
+| Step | Code                    | Your Notes                                             |
+|------|-------------------------|-------------------------------------------------------|
+| 1    | Open your App in Heroku |                                                       |
+| 2    | Open the settings tab   |                                                       |
+| 3    | Click Reveal Config Vars|                                                       |
+| 4    | Add a Config Var called| In the "Key" field, enter "DATABASE_URL".              |
+|      | DATABASE_URL            | In the "Value" field, paste the ElephantSQL database  |
+|                            | URL you copied earlier (starts with `postgres://`).    |
 
 
 
 
 ## In the Terminal 
-Step
-Code
-Your Notes
-5
-Install a database url package
-pip3 install dj-database-url
+| Step | Code                             | Your Notes                                                      |
+|------|----------------------------------|-----------------------------------------------------------------|
+| 5    | Install a database URL package  | Run `pip3 install dj-database-url` to install the package.     |
+| 6    | Refreeze the requirements file  | Run `pip3 freeze --local > requirements.txt` to update it.     |
+| 7    | Get the URL of the remote      | Run `heroku config` to view the configuration variables.        |
+|      | database                        | Locate the `DATABASE_URL` variable for your remote database.   |
+|      |                                  | You'll need this in the next step.                             |
 
-6
-Refreeze the requirements file
-pip3 freeze --local > requirements.txt
+### In venue_Ariel/settings.py
 
+| Step | Code                                | Your Notes                                                            |
+|------|-------------------------------------|-----------------------------------------------------------------------|
+| 8    | Comment out the original DATABASE  | In your Django project's `settings.py`, comment out or delete the    |
+|      | settings                            | original database settings that you're replacing with the `DATABASE_URL`. |
 
-7
-Get the url of the remote database
-heroku config
-
-### In django_todo / settings.py
-Step
-Code
-Your Notes
-8
-Comment out the original DATABASE settings
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
