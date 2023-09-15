@@ -501,6 +501,7 @@ as a user members can easily find the section for special offers. You can includ
 
 ### Reserving Bookings
 
+
 To reserve bookings, follow these steps:
 
 Click on the "Venues" or "Bookings" section in the main menu.
