@@ -433,20 +433,24 @@ The "Payments Table" records payment-related information associated with each or
 
 This README file serves as a comprehensive guide to help you make the most of your experience with Ariel Venue. Whether you are looking to explore available event venues, reserve spaces, or manage your reservations, this guide has you covered.
 
-What is Ariel Venue?
+### What is Ariel Venue?
 
 Ariel Venue is a user-friendly platform designed to simplify the process of finding and booking event venues for various occasions. It caters to both event organizers and venue managers, offering a seamless and efficient solution for all your venue-related needs.
 
-For Event Organizers
+### For Event Organizers
 Discover and Reserve Event Spaces: Ariel Venue provides an extensive catalog of event venues, ranging from elegant ballrooms to cozy meeting rooms. You can easily browse through available options, filter by location, capacity, and amenities, and select the perfect space for your event.
 
-Effortless Booking: Making a reservation is a breeze on Ariel Venue. Once you've found your ideal venue, you can check its availability, choose your preferred date and time, and reserve it with just a few clicks.
+### Effortless Booking:
+ Making a reservation is a breeze on Ariel Venue. Once you've found your ideal venue, you can check its availability, choose your preferred date and time, and reserve it with just a few clicks.
 
-Secure Payments: Our platform ensures safe and secure payment processing. You can complete your booking by making payments online, giving you peace of mind during the reservation process.
+### Secure Payments:
+ Our platform ensures safe and secure payment processing. You can complete your booking by making payments online, giving you peace of mind during the reservation process.
 
-Manage Reservations: Ariel Venue offers a user-friendly dashboard where you can view and manage all your reservations. Keep track of upcoming events, make changes to your bookings, and receive timely notifications and reminders.
+### Manage Reservations: 
+Ariel Venue offers a user-friendly dashboard where you can view and manage all your reservations. Keep track of upcoming events, make changes to your bookings, and receive timely notifications and reminders.
 
-Invoices and Confirmations: After confirming your reservation, you'll receive detailed invoices and booking confirmations via email, making it easy to keep all your event-related documentation organized.
+### Invoices and Confirmations: 
+After confirming your reservation, you'll receive detailed invoices and booking confirmations via email, making it easy to keep all your event-related documentation organized.
 ## Let's explore the detailed user stories and features of this system.
 
 ### Website Front Page
@@ -629,9 +633,19 @@ That's it! You should now be able to access, navigate, reserve bookings, make pa
 
 # Venue Manager User Stories
 
+### Efficient Reservation Management: 
+Ariel Venue streamlines the reservation management process for venue owners and managers. You can access a centralized dashboard that provides a real-time overview of all reservations, making it simple to optimize venue usage.
+
+### Resource Management: 
+Manage your venue's resources, such as meeting equipment, catering services, and staff availability, ensuring that everything runs smoothly for your clients.
+
+### Communication: 
+Stay in touch with event organizers through our messaging system, facilitating seamless communication regarding event details, changes, and special requests.
+
+### Performance Insights: 
+Gain valuable insights into your venue's performance with analytics and reporting tools. Monitor occupancy rates, revenue, and customer feedback to make informed decisions and enhance your offerings.
 
 ### Data Store Access Control
-
 In our Venue Reservation Management System, we have implemented security measures to ensure that non-admin users cannot access the data store directly without going through the code. This is done to protect sensitive data and maintain the integrity of the system.  This ensures that sensitive data can only be accessed through the provided application interfaces, rather than through direct database queries or URL manipulation.
 
 
