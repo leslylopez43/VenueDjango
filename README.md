@@ -955,8 +955,7 @@ I install **pytest**
 | Plugins                                       | Extend pytest's functionality using a rich ecosystem of plugins for various integrations and tools.             |
 | Test Discovery                                | pytest can automatically discover and run tests without complex configurations, based on naming conventions.    |
 | Parallel Test Execution                       | Benefit from faster test runs with pytest's support for parallel test execution, ideal for multi-core processors. |
-| Integration                                   | Seamlessly integrate pytest with popular tools like code coverage and continuous integration services.          |
-| Community Support                             | Join an active and supportive community with extensive documentation and resources available online.            |
+| Integration                                   | Seamlessly integrate pytest with popular tools |
 
 ![Ariel Logo](/media/products/pytest.webp)
 
