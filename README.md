@@ -936,6 +936,7 @@ Our goal is to ensure that your payments are processed smoothly and securely, co
 # Consistent Testing
 
 At Venue Ariel, we prioritize the consistent testing of our application to maintain its high performance and reliability. Regular testing helps us identify and address any issues promptly, ensuring a seamless experience for our users and venue managers.
+the images avobe is a part of the testing  as well, they are taking in realtime.
 
 ### Automated Testing
 
@@ -943,7 +944,7 @@ We employ automated testing techniques to verify that the application's core fun
 ###### python manage.py test
 
 ## Run pytest tests
-i install **pytest**
+I install **pytest**
 
 | Benefit                                       | Description                                                                                                        |
 |-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -957,7 +958,7 @@ i install **pytest**
 | Integration                                   | Seamlessly integrate pytest with popular tools like code coverage and continuous integration services.          |
 | Community Support                             | Join an active and supportive community with extensive documentation and resources available online.            |
 
-
+![Ariel Logo](/media/products/pytest.webp)
 
 
 ## Deployment
