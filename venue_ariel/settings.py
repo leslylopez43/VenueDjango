@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False 
 # "development" in os.environ
 # DEBUG = True if "development" in os.environ else False
 import os
@@ -44,6 +44,8 @@ ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com', 'localhost', '127.0.0.
 os.environ.get("DATABASE_URL")
 
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Application definition
 
 INSTALLED_APPS = [
