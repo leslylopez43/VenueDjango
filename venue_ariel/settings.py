@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = False 
 # "development" in os.environ
 # DEBUG = True if "development" in os.environ else False
 import os
@@ -78,7 +78,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'venue_ariel.middleware.AdminAccessMiddleware',  
 ]
 
 ROOT_URLCONF = 'venue_ariel.urls'

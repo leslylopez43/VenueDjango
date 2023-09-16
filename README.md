@@ -957,6 +957,7 @@ I install **pytest**
 | Parallel Test Execution                       | Benefit from faster test runs with pytest's support for parallel test execution, ideal for multi-core processors. |
 | Integration                                   | Seamlessly integrate pytest with popular tools |
 
+
 ![Ariel Logo](/media/products/pytest.webp)
 
 
