@@ -933,6 +933,33 @@ We are committed to continuously improving our Stripe integration. In the future
 Our goal is to ensure that your payments are processed smoothly and securely, contributing to a hassle-free reservation and booking process within Venue Ariel.
 
 
+# Consistent Testing
+
+At Venue Ariel, we prioritize the consistent testing of our application to maintain its high performance and reliability. Regular testing helps us identify and address any issues promptly, ensuring a seamless experience for our users and venue managers.
+
+### Automated Testing
+
+We employ automated testing techniques to verify that the application's core functionalities work as expected. We use testing frameworks like Django's built-in testing tools and pytest. To run the automated tests, execute the following commands:
+###### python manage.py test
+
+## Run pytest tests
+i install **pytest**
+
+| Benefit                                       | Description                                                                                                        |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Simplicity                                    | pytest provides a simple and easy-to-use framework for writing and running tests. It's beginner-friendly and has clean and readable syntax. |
+| Powerful Assertions                           | pytest offers a wide range of built-in assertion helpers for expressive and informative test assertions.        |
+| Fixture Support                               | pytest supports fixtures, making it easy to set up and clean up test contexts.                                    |
+| Parameterized Testing                         | Easily perform parameterized testing with pytest by defining multiple input data sets and expected outcomes.     |
+| Plugins                                       | Extend pytest's functionality using a rich ecosystem of plugins for various integrations and tools.             |
+| Test Discovery                                | pytest can automatically discover and run tests without complex configurations, based on naming conventions.    |
+| Parallel Test Execution                       | Benefit from faster test runs with pytest's support for parallel test execution, ideal for multi-core processors. |
+| Integration                                   | Seamlessly integrate pytest with popular tools like code coverage and continuous integration services.          |
+| Community Support                             | Join an active and supportive community with extensive documentation and resources available online.            |
+
+
+
+
 ## Deployment
 https://venueariel-3a442b56d3de.herokuapp.com
 
@@ -954,7 +981,7 @@ Enter your email, and password
 
 
 ## Creating a new Database on ElephantSQL
--**I  used elephantsql.com**:
+**I  used elephantsql.com**:
 | Step | Instructions                                                     |
 |------|------------------------------------------------------------------|
 | 1    | Log in to your ElephantSQL account.                              |
