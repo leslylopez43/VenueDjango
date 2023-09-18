@@ -83,7 +83,7 @@
 - [Authentication](#authentication)
 - [E-commerce Functionality](#e-commerce-functionality)
 - [Deployment](#deployment)
-- [Project README](#project-readme)
+- [Lighthouse Integration](#Lighthouse Integration)
 - [License](#license)
 
 
@@ -1199,18 +1199,15 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
 **![Ariel Logo](/media/products/lighthouse_web.webp)**
 
 
-| Field            | Description            |
+| Light House Name Page            | Lighthouse Report            |
 |------------------|------------------------|
 | Products         | ![Ariel Logo](/media/products/products_lighthouse.webp) |
 | Order       |  ![Ariel Logo](/media/products/order_lighthouse.webp.png) |
-| Family Packages  | Availability for family packages |
-| Summer Party     | Availability for summer parties |
-| Club             | Availability for club events |
-| All Special Offers | Availability for all special offers |
-| Baby Shower      | Availability for baby showers |
-| Corporate Events | Availability for corporate events |
-| Christmas        | Availability for Christmas events |
-| Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
+| Shopping Bag  | ![Ariel Logo](/media/products/shoppingbag_lighthouse.webp) |
+| Checkout     | ![Ariel Logo](/media/products/checkout_lighthouse.webp) |
+| Order Done             | ![Ariel Logo](/media/products/orderdone_lighthouse.webp.png) |
+| Signin | ![Ariel Logo](/media/products/signin_lighthouse.webp.png)|
+| My Profile      | ![Ariel Logo](/media/products/myprofile_lighthouse.webp.png) |
 
 #### Follow Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
