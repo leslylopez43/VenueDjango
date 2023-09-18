@@ -1200,7 +1200,7 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
 
 | Field            | Description            |
 |------------------|------------------------|
-| Main WEb Page         | ![Ariel Logo](/media/products/lighthouse_web.webp) |
+| Main WEb Page         | ![Ariel Logo](/media/products/lighthouse.webp) |
 | Product ID       | ID of the associated product |
 | Family Packages  | Availability for family packages |
 | Summer Party     | Availability for summer parties |
