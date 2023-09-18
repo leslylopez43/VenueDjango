@@ -1192,9 +1192,24 @@ I will focus on producing a clean, maintainable, and robust codebase. This inclu
 
 ## Lighthouse Integration
 
+
 In our Venue Ariel Reservation Management System, we have integrated Lighthouse, a powerful and essential tool for optimizing the performance and quality of our web application. Lighthouse plays a crucial role in ensuring that our website meets high standards for user experience and performance.
 
 ![Ariel Logo](/media/products/lighthouse.webp)
+
+
+| Field            | Description            |
+|------------------|------------------------|
+| Main WEb Page         | ![Ariel Logo](/media/products/lighthouse_web.webp) |
+| Product ID       | ID of the associated product |
+| Family Packages  | Availability for family packages |
+| Summer Party     | Availability for summer parties |
+| Club             | Availability for club events |
+| All Special Offers | Availability for all special offers |
+| Baby Shower      | Availability for baby showers |
+| Corporate Events | Availability for corporate events |
+| Christmas        | Availability for Christmas events |
+| Lifestyle & Photoshoots | Availability for lifestyle and photoshoots |
 
 #### Follow Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
