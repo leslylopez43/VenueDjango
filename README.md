@@ -1195,13 +1195,14 @@ I will focus on producing a clean, maintainable, and robust codebase. This inclu
 
 In our Venue Ariel Reservation Management System, we have integrated Lighthouse, a powerful and essential tool for optimizing the performance and quality of our web application. Lighthouse plays a crucial role in ensuring that our website meets high standards for user experience and performance.
 
-![Ariel Logo](/media/products/lighthouse.webp)
+**Light hose main page**
+**![Ariel Logo](/media/products/lighthouse_web.webp)**
 
 
 | Field            | Description            |
 |------------------|------------------------|
-| Main WEb Page         | ![Ariel Logo](/media/products/lighthouse.webp) |
-| Product ID       | ID of the associated product |
+| Products         | ![Ariel Logo](/media/products/products_lighthouse.webp) |
+| Order       |  ![Ariel Logo](/media/products/order_lighthouse.webp.png) |
 | Family Packages  | Availability for family packages |
 | Summer Party     | Availability for summer parties |
 | Club             | Availability for club events |
