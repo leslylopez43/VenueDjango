@@ -112,87 +112,26 @@ The wireframes for iPad Air showcase how our application adapts to tablet-sized 
 For users on the go with the iPhone 14 Pro Max, our wireframes cater to the unique challenges and opportunities of smaller screens. We've designed a mobile-friendly interface that retains all the functionality of our desktop version while ensuring that interactions are touch-friendly and responsive. Whether you're checking venue availability or making payments, our wireframes on the iPhone 14 Pro Max make it a breeze.
 
 
-![Ariel Logo](/media/products/wireframeiphonefrontpage.webp)
-
-#### Wireframe Venue Product List Website
-
-![Ariel Logo](/media/products/product_wireframe_web.webp)
-
-#### Wireframe Venue Product List iPad
-
-![Ariel Logo](/media/products/product_wireframe_ipad.webp)
-
-#### Wireframe Venue Product List iPhone 14 Pro Max
-
-![Ariel Logo](/media/products/product_wireframe_iphone.webp)
-
-
-#### Wireframe Venue Product Checkout Booking Reservation Website
-![Ariel Logo](/media/products/checkout_wireframe_web.webp)
-
-
-#### Wireframe Venue Product Checkout Booking Reservation air iPad
-![Ariel Logo](/media/products/checkout_wireframe_ipad.webp)
-
-
-#### Wireframe Venue Product Checkout Booking Reservation iPhone 14 Pro Max
-
-![Ariel Logo](/media/products/checkout_wireframe_iphone.webp)
-
-
-#### Wireframe Venue Product Shopping Bag Website
-
-![Ariel Logo](/media/products/shoppingbag_wireframe.webp)
-
-
-#### Wireframe Venue Product Shopping Bag iPad
-
-![Ariel Logo](/media/products/shoppingbag_wireframe_ipad.webp)
-
-
-#### Wireframe Venue Product Shopping Bag iPhone 14 Pro Max
-![Ariel Logo](/media/products/shoppingbag_wireframe_iphone.webp)
-
-
-#### Wireframe Venue Product Card Payment Reservation Website
-
-![Ariel Logo](/media/products/Wireframe_cardpayment.webp)
-
-
-#### Wireframe Venue Product Card Payment Reservation iPad
-
-![Ariel Logo](/media/products/wireframe_carpayment_ipad.webp)
-
-
-#### Wireframe Venue Product Card Payment Reservation iPhone 14 Pro Max
-
-![Ariel Logo](/media/products/wireframe_carpayment_Iphone.webp)
-
-
-#### Wireframe Venue Sign-in Website
-
-![Ariel Logo](/media/products/wireframe_signin.webp)
-
-#### Wireframe Venue Sign-in iPad
-![Ariel Logo](/media/products/wireframe_signin_ipad.webp)
-
-
-#### Wireframe Venue Sign-in iPhone 14 Pro Max
-
-![Ariel Logo](/media/products/wireframe_signin_iphone.webp)
-
-
-
-#### Wireframe Venue Email Confirmation Reservation Website
-
-![Ariel Logo](/media/products/wireframe_Payment.webp)
-
-#### Wireframe Venue Email Confirmation Reservation iPad
-![Ariel Logo](/media/products/wireframe_payment_ipad.webp)
-
-#### Wireframe Venue Email Confirmation Reservation iPhone 14 Pro Max
-
-![Ariel Logo](/media/products/wireframe_payment_iphone.webp)
+| Wireframe | Image |
+| --- | --- |
+| Wireframe Venue Product List Website | ![Ariel Logo](/media/products/wireframeiphonefrontpage.webp) |
+| Wireframe Venue Product List iPad | ![Ariel Logo](/media/products/product_wireframe_web.webp) |
+| Wireframe Venue Product List iPhone 14 Pro Max | ![Ariel Logo](/media/products/product_wireframe_ipad.webp) |
+| Wireframe Venue Product Checkout Booking Reservation Website | ![Ariel Logo](/media/products/checkout_wireframe_web.webp) |
+| Wireframe Venue Product Checkout Booking Reservation iPad | ![Ariel Logo](/media/products/checkout_wireframe_ipad.webp) |
+| Wireframe Venue Product Checkout Booking Reservation iPhone 14 Pro Max | ![Ariel Logo](/media/products/checkout_wireframe_iphone.webp) |
+| Wireframe Venue Product Shopping Bag Website | ![Ariel Logo](/media/products/shoppingbag_wireframe.webp) |
+| Wireframe Venue Product Shopping Bag iPad | ![Ariel Logo](/media/products/shoppingbag_wireframe_ipad.webp) |
+| Wireframe Venue Product Shopping Bag iPhone 14 Pro Max | ![Ariel Logo](/media/products/shoppingbag_wireframe_iphone.webp) |
+| Wireframe Venue Product Card Payment Reservation Website | ![Ariel Logo](/media/products/Wireframe_cardpayment.webp) |
+| Wireframe Venue Product Card Payment Reservation iPad | ![Ariel Logo](/media/products/wireframe_carpayment_ipad.webp) |
+| Wireframe Venue Product Card Payment Reservation iPhone 14 Pro Max | ![Ariel Logo](/media/products/wireframe_carpayment_Iphone.webp) |
+| Wireframe Venue Sign-in Website | ![Ariel Logo](/media/products/wireframe_signin.webp) |
+| Wireframe Venue Sign-in iPad | ![Ariel Logo](/media/products/wireframe_signin_ipad.webp) |
+| Wireframe Venue Sign-in iPhone 14 Pro Max | ![Ariel Logo](/media/products/wireframe_signin_iphone.webp) |
+| Wireframe Venue Email Confirmation Reservation Website | ![Ariel Logo](/media/products/wireframe_Payment.webp) |
+| Wireframe Venue Email Confirmation Reservation iPad | ![Ariel Logo](/media/products/wireframe_payment_ipad.webp) |
+| Wireframe Venue Email Confirmation Reservation iPhone 14 Pro Max | ![Ariel Logo](/media/products/wireframe_payment_iphone.webp) |
 
 
 ## Table of Contents
