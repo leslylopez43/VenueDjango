@@ -83,7 +83,7 @@
 - [Authentication](#authentication)
 - [E-commerce Functionality](#e-commerce-functionality)
 - [Deployment](#deployment)
-- [Lighthouse Integration](#Lighthouse Integration)
+- [Lighthouse Integration](#Lighthouse-Integration)
 - [License](#license)
 
 
