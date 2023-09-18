@@ -905,14 +905,22 @@ These apps work in harmony to provide a comprehensive solution for venue reserva
 The Stripe integration is a vital component of our Venue Ariel Reservation Management System, designed to facilitate secure and convenient online payments for reservations and services. Stripe is a leading online payment processing platform that ensures the safety and reliability of financial transactions within our application.
 
 ##### Purpose
+The Stripe app plays a pivotal role in enhancing the overall user experience by providing a seamless and trustworthy payment process. It enables our users to make payments for their bookings, including venue reservations, additional services, and special offers, with confidence and ease.
+products_lighthouse.webp
+
+| Stripe Payment             | Stripe Report            |
+|------------------|------------------------|
+| ![Ariel Logo](/media/products/strip_payments.webp)        | - **Secure Payment Handling**: Stripe employs advanced security measures to safeguard     sensitive financial data, ensuring that all transactions are conducted securely. |
+| - **Payment Flexibility**: Our integration with Stripe offers users a wide range of payment options, 
+including credit card payments and PayPal, 
+making it convenient for users to choose their preferred method.     |  ![Ariel Logo](/media/products/strip_payments2.webp) |
+
 
 The Stripe app plays a pivotal role in enhancing the overall user experience by providing a seamless and trustworthy payment process. It enables our users to make payments for their bookings, including venue reservations, additional services, and special offers, with confidence and ease.
 
+
 ##### Key Features
 
-- **Secure Payment Handling**: Stripe employs advanced security measures to safeguard sensitive financial data, ensuring that all transactions are conducted securely.
-
-- **Payment Flexibility**: Our integration with Stripe offers users a wide range of payment options, including credit card payments and PayPal, making it convenient for users to choose their preferred method.
 
 - **Subscription and One-Time Payments**: Whether users require subscription-based services or want to make one-time payments for specific bookings, our Stripe integration supports both payment models.
 
@@ -1196,7 +1204,7 @@ I will focus on producing a clean, maintainable, and robust codebase. This inclu
 In our Venue Ariel Reservation Management System, we have integrated Lighthouse, a powerful and essential tool for optimizing the performance and quality of our web application. Lighthouse plays a crucial role in ensuring that our website meets high standards for user experience and performance.
 
 **Light hose main page**
-**![Ariel Logo](/media/products/lighthouse_web.webp)**
+        **![Ariel Logo](/media/products/lighthouse_web.webp)**
 
 
 | Light House Name Page            | Lighthouse Report            |
