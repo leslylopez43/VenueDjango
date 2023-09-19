@@ -363,7 +363,7 @@ The "Payments Table" records payment-related information associated with each or
 | Subtotal           | Subtotal amount for the payment |
 | Order Total        | Total amount to be paid |
 
-
+add
 ##### These tables and descriptions offer a comprehensive view of the data and functionality within the Venue Ariel Reservation Management System.
 
 
