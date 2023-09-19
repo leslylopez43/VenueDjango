@@ -12,12 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path, os
 
-if os.path.isfile("env.py"):
-    import env
-import os
-import dj_database_url 
-if os.path.isfile('env.py'):
-     import env
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,26 +22,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!'
-# SECRET_KEY = os.enviorement.get('SECRET_KEY', '')
-
-
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
-# "development" in os.environ
-# DEBUG = True if "development" in os.environ else False
+DEBUG = 'DEVELOPMENT' in os.environ
+
 import os
 import dj_database_url
 
-ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com', 'localhost', '127.0.0.1']
 
-os.environ.get("DATABASE_URL")
+ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost', '127.0.0.1']
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Application definition
 
 INSTALLED_APPS = [
@@ -80,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'venue_ariel.middleware.AdminAccessMiddleware',  
 ]
 
 ROOT_URLCONF = 'venue_ariel.urls'
@@ -134,8 +124,6 @@ EMAIL_HOST_USER = 'leslylopez43@someemail.com	'
 EMAIL_HOST_PASSWORD = 'London2320'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -146,7 +134,6 @@ LOGIN_REDIRECT_URL = '/'
 
 
 WSGI_APPLICATION = 'venue_ariel.wsgi.application'
-
 
 
 # Database
@@ -214,14 +201,42 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+# ///////AWS_STORAGE_BUCKET_NAME = 'venue-ariel'\\\\\\\\\
+if 'USE_AWS' in os.environ:
+    #/////////////Cache control/////////////////////
+    ws3_bucket_object_parameters = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+
+    AWS_STORAGE_BUCKET_NAME = 'venue-ariel'
+    aws_s3_region_name = 'eu-north-1'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    AWS_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# ///////Static and media file/////////////////////
+STATICFILES_STORAGES= 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+
+#///////Overade Static and media URL in production/////////////////////
+STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
 
+
+# ///////STRIPE/////////////////////
 
 FREE_MEMBERS_THRESHOLD = 10
 STANDARD_DELIVERY_PERCENTAGE = 10
@@ -231,6 +246,19 @@ STRIPE_CURRENCY = 'GBP'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+if 'DEVELOPMENT' in os.environ:
+
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'leslylopez43@hotmail.com'
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_USE_TLS = True
+    EMAIL_HOST = 'smtp.gmail.com'
+    EMAIL_PORT = 587
+    EMAIL_HOST_USER = 'os.environ.get("EMAIL_HOST_USER")'
+    EMAIL_HOST_PASSWORD = 'os.environ.get("EMAIL_HOST_PASSWORD")'
+    DEFAULT_FROM_EMAIL = 'os.environ.get("EMAIL_HOST_USER")'
 
 STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
                      
