@@ -365,7 +365,6 @@ The "Payments Table" records payment-related information associated with each or
 
 ##### These tables and descriptions offer a comprehensive view of the data and functionality within the Venue Ariel Reservation Management System.
 
-
 # User History
 
 ## Welcome to Ariel Venue
