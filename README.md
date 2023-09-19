@@ -134,6 +134,7 @@ For users on the go with the iPhone 14 Pro Max, our wireframes cater to the uniq
 | Wireframe Venue Email Confirmation Reservation iPhone 14 Pro Max | ![Ariel Logo](/media/products/wireframe_payment_iphone.webp) |
 
 
+
 ## Table of Contents
 In this section, we provide a structured overview of the contents of this Django Python project. The Table of Contents (ToC) serves as a guide, enabling you to quickly navigate to specific sections and topics of interest within this README document.
 
@@ -370,7 +371,7 @@ The "Payments Table" records payment-related information associated with each or
 
 ## Welcome to Ariel Venue
 
-This README file serves as a comprehensive guide to help you make the most of your experience with Ariel Venue. Whether you are looking to explore available event venues, reserve spaces, or manage your reservations, this guide has you covered.
+Ariel Venue. Whether you are looking to explore available event venues, reserve spaces, or manage your reservations, this guide has you covered.
 
 ### What is Ariel Venue?
 
