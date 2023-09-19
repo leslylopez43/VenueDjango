@@ -1005,7 +1005,7 @@ It creates an S3 client using boto3.client('s3'). This client allows you to inte
 | Step | AWS Bucket Creation                                       |
 |------|-----------------------------------------------------------|
 | 1    | We import the boto3 library, which is the AWS SDK for Python. |
-|      | ![Boto3 Logo](media/products/Bucket_1.webp)           |
+|      | ![Boto3 Logo](media/products/Buchet_1.webp)           |
 | 2    | We create an S3 client by calling `boto3.client('s3')`.     |
 |      | ![S3 Logo](media/products/bucket2.webp)                 |
 | 3    | We specify the desired bucket name (`bucket_name`) and the AWS region (`region`) where you want to create the bucket. |
@@ -1013,9 +1013,9 @@ It creates an S3 client using boto3.client('s3'). This client allows you to inte
 | 4    | We use `s3.create_bucket()` to create the S3 bucket. The `CreateBucketConfiguration` parameter specifies the region constraint for the bucket. |
 |      | ![Create Bucket](media/products/bucket4.webp)     |
 | 5    | We handle any exceptions that may occur during the bucket creation process. |
-|      | ![Create Bucket](media/products/bucket5.webp)     |
+|      | ![Create Bucket](media/products/buchet5.webp)     |
 | 6    | Finally, we print a success message if the bucket is created successfully, or an error message if an exception occurs. |
-|      | ![Create Bucket](media/products/bucket6.webp)     |
+
 
 
 
