@@ -1012,9 +1012,8 @@ It creates an S3 client using boto3.client('s3'). This client allows you to inte
 |      | ![Create Bucket](media/products/bucket3.webp)     |
 | 4    | We use `s3.create_bucket()` to create the S3 bucket. The `CreateBucketConfiguration` parameter specifies the region constraint for the bucket. |
 
-| 5    | We handle any exceptions that may occur during the bucket creation process. 
-![Create Bucket](media/products/bucket4.webp)     |
-| 6    | Finally, we print a success message if the bucket is created successfully, or an error message if an exception occurs. 
+| 5    | We handle any exceptions that may occur during the bucket creation process. |![Create Bucket](media/products/bucket4.webp)     |
+| 6    | Finally, we print a success message if the bucket is created successfully, or an error message if an exception occurs. |
 
 ![Create Bucket](media/products/buchet5.webp)     |
 
