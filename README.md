@@ -886,13 +886,16 @@ I Used heroku.com
 | 8    | Comment out the original DATABASE  | In your Django project's `settings.py`, comment out or delete the    |
 |      | settings                            | original database settings that you're replacing with the `DATABASE_URL`. |
 
-||
-|**DATABASES** = {
+|            |                              |
+|---------------|----------------------------|
+| **DATABASES**                                  
+                = {
     'default': {
          'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
      }
- }|
+ }|        |
+
 
 | Step | Code    | Your Notes                                          |
 |------|---------|-----------------------------------------------------|
