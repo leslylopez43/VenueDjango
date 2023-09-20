@@ -3,15 +3,8 @@
 
 ## Table of Contents
 - [Wireframe](#wireframe)
-- [Front Website](#front-website)
-- [Services Venue Booking](#Services-Venue-Booking)
-- [Table of Contents](#Table-of-Contents)
-- [Venue List](#venue-list)
-- [Features Table](#features-table)
-- [Special Offer Table](#special-offer-table)
-- [Order](#order)
-- [Payments Table](#payments-table)
-- [Venue Ariel Reservation Management System](#venue-ariel-reservation-management-system)
+- [Features Table](#Table-of-Contents)
+- [Venue Services](#venue-list)
 - [User History](#user-history)
 - [Website Front Page](#website-front-page)
 - [Customer User Stories](#customer-user-stories)
