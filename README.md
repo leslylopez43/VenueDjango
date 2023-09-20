@@ -1147,8 +1147,10 @@ to the official standards and rules defined by the World Wide Web Consortium (W3
 validator is to identify and report any errors or deviations in the HTML code of a webpage. These errors 
 can include syntax mistakes, missing or incorrectly nested tags, deprecated elements, and other issues 
 that might cause a webpage to display incorrectly or behave unexpectedly in web browsers. |
-|      | ![Boto3 Logo](media/products/)           |
-
+|      ![Boto3 Logo](media/products/htmlvalidator.png)           |
+| ![Boto3 Logo](media/products/htmlvalidator2.png) |
+| ![Boto3 Logo](media/products/html3validator.png) |
+| ![Boto3 Logo](media/products/html-validator4.png) |
 
 -An HTML validator is a tool or software that checks HTML documents (web pages) to ensure they conform to the official standards and rules defined by the World Wide Web Consortium (W3C). The main purpose of an HTML validator is to identify and report any errors or deviations in the HTML code of a webpage. These errors can include syntax mistakes, missing or incorrectly nested tags, deprecated elements, and other issues that might cause a webpage to display incorrectly or behave unexpectedly in web browsers.
 
