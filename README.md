@@ -15,38 +15,30 @@
 - [Make Payments Online](#make-payments-online)
 - [Order Checkout Adjust Bag](#order-checkout-adjust-bag)
 - [Order Checkout Before Signup](#order-checkout-before-signup)
-- [Product Management](#product-management)
 - [Login](#login)
 - [Signup](#signup)
 - [Update the Order](#update-the-order)
 - [Receive Booking Confirmation](#receive-booking-confirmation)
-- [Boking with Available Calendar Date](#booking-with-available-calendar-date)
 - [Making Payments](#making-payments)
 - [Set Pricing and Rental Policies](#set-pricing-and-rental-policies)
 - [Receiving Invoices and Confirmations](#receiving-invoices-and-confirmations)
 - [Request Support and Assistance](#request-support-and-assistance)
 - [Venue Manager User Stories](#venue-manager-user-stories)
 - [Data Store Access Control](#data-store-access-control)
-- [How It Works](#how-it-works)
-- [Admin Access Middleware](#admin-access-middleware)
-- [Why Is This Important?](#why-is-this-important)
 - [What Happens When a Non-Admin User Tries to Access the Data Store?](#what-happens-when-a-non-admin-user-tries-to-access-the-data-store)
-- [Customizing Exception Handling](#customizing-exception-handling)
 - [Manage Venue Listings](#manage-venue-listings)
 - [Approve Reservation Requests](#approve-reservation-requests)
-- [User Management Menu](#user-management-menu)
-- [As an Owner or Member of Staff](#as-an-owner-or-member-of-staff)
-- [Update or Delete Product](#update-or-delete-product)
+- [User Management Menu](#User-Managment-Menu)
+- [Owner or Staff Member](#Owner-or-Staff-Member)
 - [Full Stack Web Application Project](#full-stack-web-application-project)
 - [Venue Ariel](#venue-ariel)
-- [Project Description](#project-description)
-- [Design](#design)
-- [Development](#development)
+- [Design](#Design)
+- [Django Apps Overview](#Django-Apps-Overview)
 - [Database](#database)
-- [Authentication](#authentication)
 - [E-commerce Functionality](#e-commerce-functionality)
 - [Deployment](#deployment)
 - [Testing](#Testing)
+- [Conclusion](#Follow Test-Driven Development (TDD):)
 - [License](#license)
 
 
@@ -608,7 +600,7 @@ I need to review and approve customer reservation requests, including payment st
 ### User Managment 
 ![Ariel Logo](/media/products/django_user.webp)
 
-### as A Owner Or member of staff
+### Owner or Staff Member 
 I can update or delete  product from the website logn-in, without to enter in Admin system 
 
 ![Ariel Logo](/media/products/add_or_edit.webp)
