@@ -38,7 +38,7 @@
 - [E-commerce Functionality](#e-commerce-functionality)
 - [Deployment](#deployment)
 - [Testing](#Testing)
-- [Conclusion](#Follow-Test-Driven-Development-(TDD)-:-)
+- [Conclusion](#Follow-Test-Driven-Development-TDD)
 - [License](#license)
 
 
