@@ -1091,12 +1091,13 @@ I will focus on producing a clean, maintainable, and robust codebase. This inclu
 
 
 # Testing
--[Run pytest tests](#Run-pytest-tests)
--[Lighthouse Integration](#Lighthouse-Integration)
--[Html Validator](#Html-Validator)
--[CSS VALIDATOR](#HCSS-VALIDATOR)
-[JS Validator](#JS-Validator)
-[Python PEP8 Checker](#Python-PEP8-Checker)
+
+- [Run pytest tests](#run-pytest-tests)
+- [Lighthouse Integration](#lighthouse-integration)
+- [HTML Validator](#html-validator)
+- [CSS Validator](#css-validator)
+- [JS Validator](#js-validator)
+- [Python PEP8 Checker](#python-pep8-checker)
 
 
 ## Run pytest tests
