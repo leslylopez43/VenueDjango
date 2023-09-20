@@ -49,10 +49,6 @@
 - [Manage Venue Listings](#manage-venue-listings)
 - [Approve Reservation Requests](#approve-reservation-requests)
 - [User Management Menu](#user-management-menu)
-- [User Management Product](#user-management-product)
-- [User Management Order](#user-management-order)
-- [User Management Site](#user-management-site)
-- [User Management](#user-management)
 - [As an Owner or Member of Staff](#as-an-owner-or-member-of-staff)
 - [Update or Delete Product](#update-or-delete-product)
 - [Full Stack Web Application Project](#full-stack-web-application-project)
@@ -64,7 +60,7 @@
 - [Authentication](#authentication)
 - [E-commerce Functionality](#e-commerce-functionality)
 - [Deployment](#deployment)
-- [Lighthouse Integration](#Lighthouse-Integration)
+- [Testing](#Testing)
 - [License](#license)
 
 
@@ -435,7 +431,6 @@ as a user members can easily find the section for special offers. You can includ
 
 ### Reserving Bookings
 
-
 To reserve bookings, follow these steps:
 
 Click on the "Venues" or "Bookings" section in the main menu.
@@ -463,7 +458,6 @@ add to the cart
 ![Ariel Logo](/media/products/add_to_the_cart.webp)
 
 #### Order Checkout adjust Bag
-
 
 ![Ariel Logo](/media/products/order_details_checkout_adjust_bag.webp)
 
@@ -569,8 +563,6 @@ In our Venue Reservation Management System, we have implemented security measure
 
 
 ### How It Works
-
-
 
 ## `AdminAccessMiddleware`
 We have employed a custom middleware, `AdminAccessMiddleware`, to intercept incoming requests. This middleware checks whether the user attempting to access the data store is an admin (staff member) or not. If the user is not an admin, they will encounter a # `PermissionDenied` exception, preventing them from accessing the data store directly.
@@ -769,30 +761,6 @@ By incorporating the @login_required decorator, you can effectively control acce
 
 #### Development Tools Installation
 
-## Using Flake8 for Code Quality
-
-Code quality is essential for maintaining a clean, readable, and error-free codebase. Flake8 is a popular Python code linter that helps you ensure high-quality code by checking for style violations and potential errors in your code. It enforces PEP 8 style guidelines and can catch common programming mistakes.
-
-## Installing Flake8 A code linter for Python, to ensure code quality:
-
-Before you start using Flake8, you'll need to install it. You can do this easily using pip:
--**pip install flake8**
-
-Running Flake8
-Once Flake8 is installed, you can run it on your Python project to analyze your code. Open your terminal and navigate to your project's directory. Then, run the following command: Flake8 (Code Linter)
-##### Customizing Flake8 Configuration
-Flake8 provides various configuration options to customize its behavior. You can create a .flake8 configuration file in your project's root directory to specify rules, exclude files or directories from linting, and more. 
-
-##### Benefits of Using Flake8
-Integrating Flake8 into your development workflow offers several advantages:
-
-Improved Code Quality: Flake8 helps you identify and fix code style violations and potential errors, resulting in cleaner and more maintainable code.
-Consistency: Enforcing PEP 8 style guidelines ensures that your codebase follows a consistent coding style, making it easier for team members to collaborate.
-Reduced Bugs: By catching common programming mistakes early, Flake8 helps prevent bugs and reduces the likelihood of introducing errors.
-Enhanced Readability: Following style guidelines makes your code more readable and accessible to others.
-By using Flake8 in your Python projects, you can maintain a high level of code quality and ensure that your codebase remains efficient and error-free.
-
-
 ## Django Apps Overview
 
 Our Venue Ariel Reservation Management System is powered by various Django apps, each serving a specific purpose to deliver a seamless and feature-rich user experience.
@@ -870,22 +838,6 @@ the images avobe is a part of the testing  as well, they are taking in realtime.
 We employ automated testing techniques to verify that the application's core functionalities work as expected. We use testing frameworks like Django's built-in testing tools and pytest. To run the automated tests, execute the following commands:
 ###### python manage.py test
 
-## Run pytest tests
-I install **pytest**
-
-| Benefit                                       | Description                                                                                                        |
-|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Simplicity                                    | pytest provides a simple and easy-to-use framework for writing and running tests. It's beginner-friendly and has clean and readable syntax. |
-| Powerful Assertions                           | pytest offers a wide range of built-in assertion helpers for expressive and informative test assertions.        |
-| Fixture Support                               | pytest supports fixtures, making it easy to set up and clean up test contexts.                                    |
-| Parameterized Testing                         | Easily perform parameterized testing with pytest by defining multiple input data sets and expected outcomes.     |
-| Plugins                                       | Extend pytest's functionality using a rich ecosystem of plugins for various integrations and tools.             |
-| Test Discovery                                | pytest can automatically discover and run tests without complex configurations, based on naming conventions.    |
-| Parallel Test Execution                       | Benefit from faster test runs with pytest's support for parallel test execution, ideal for multi-core processors. |
-| Integration                                   | Seamlessly integrate pytest with popular tools |
-
-
-![Ariel Logo](/media/products/pytest.webp)
 
 
 ## Deployment
@@ -1137,6 +1089,34 @@ I will ensure that the front end of the application is designed with user-friend
 #### Produce a Robust Codebase:
 I will focus on producing a clean, maintainable, and robust codebase. This includes adhering to best coding practices, proper documentation, and writing code that is easy to understand and extend. I will also ensure that the project structure is organized and follows industry standards.
 
+
+# Testing
+[Run pytest tests](#Run-pytest-tests)
+[Lighthouse Integration](#Lighthouse-Integration)
+[Html Validator](#Html-Validator)
+[CSS VALIDATOR](#HCSS-VALIDATOR)
+[JS Validator](#JS-Validator)
+[Python PEP8 Checker](#Python-PEP8-Checker)
+
+
+## Run pytest tests
+I install **pytest**
+
+| Benefit                                       | Description                                                                                                        |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Simplicity                                    | pytest provides a simple and easy-to-use framework for writing and running tests. It's beginner-friendly and has clean and readable syntax. |
+| Powerful Assertions                           | pytest offers a wide range of built-in assertion helpers for expressive and informative test assertions.        |
+| Fixture Support                               | pytest supports fixtures, making it easy to set up and clean up test contexts.                                    |
+| Parameterized Testing                         | Easily perform parameterized testing with pytest by defining multiple input data sets and expected outcomes.     |
+| Plugins                                       | Extend pytest's functionality using a rich ecosystem of plugins for various integrations and tools.             |
+| Test Discovery                                | pytest can automatically discover and run tests without complex configurations, based on naming conventions.    |
+| Parallel Test Execution                       | Benefit from faster test runs with pytest's support for parallel test execution, ideal for multi-core processors. |
+| Integration                                   | Seamlessly integrate pytest with popular tools |
+
+
+![Ariel Logo](/media/products/pytest.webp)
+
+
 ## Lighthouse Integration
 
 
@@ -1146,7 +1126,7 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
         **![Ariel Logo](/media/products/lighthouse_web.webp)**
 
 
-| Light House Name Page            | Lighthouse Report            |
+| Lighthouse Page Name            | Lighthouse Report            |
 |------------------|------------------------|
 | Products         | ![Ariel Logo](/media/products/products_lighthouse.webp) |
 | Order       |  ![Ariel Logo](/media/products/order_lighthouse.webp.png) |
@@ -1155,6 +1135,61 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
 | Order Done             | ![Ariel Logo](/media/products/orderdone_lighthouse.webp.png) |
 | Signin | ![Ariel Logo](/media/products/signin_lighthouse.webp.png)|
 | My Profile      | ![Ariel Logo](/media/products/myprofile_lighthouse.webp.png) |
+
+
+## Html Validator
+-An HTML validator is a tool or software that checks HTML documents (web pages) to ensure they conform to the official standards and rules defined by the World Wide Web Consortium (W3C). The main purpose of an HTML validator is to identify and report any errors or deviations in the HTML code of a webpage. These errors can include syntax mistakes, missing or incorrectly nested tags, deprecated elements, and other issues that might cause a webpage to display incorrectly or behave unexpectedly in web browsers.
+
+--
+
+## CSS VALIDATOR
+-A CSS validator is a tool or service that checks Cascading Style Sheets (CSS) code for compliance with CSS specifications and standards. CSS is used to style web pages, defining how elements on a webpage should be presented, including attributes like fonts, colors, margins, padding, and more.
+
+CSS validators help web developers and designers ensure that their CSS code is syntactically correct and follows the recommended standards. Here are some of the key functions and benefits of using a CSS validator:
+
+## JS VALIDATOR
+-A JavaScript validator, also known as a JavaScript linter or static code analyzer, is a tool that checks JavaScript code for errors, coding style violations, and potential issues. JavaScript is a widely used programming language for web development, and validators help developers write cleaner, error-free, and more maintainable JavaScript code. Here are some key aspects of JavaScript validators:
+
+# Python PEP8 Checker
+
+Python is a versatile and widely used programming language known for its readability and clean code practices. To maintain the high standard of code quality and readability, Python introduced a set of guidelines known as PEP 8 (Python Enhancement Proposal 8). PEP 8 provides conventions and best practices for writing Python code, covering aspects such as naming conventions, code formatting, and style recommendations.
+
+## The Significance of PEP 8
+
+PEP 8 is essential for:
+
+- **Readability and Consistency**: It promotes code readability and consistency by establishing conventions for naming variables, functions, classes, and modules. Consistent naming makes it easier for developers to understand and collaborate on Python projects.
+
+- **Improved Maintainability**: Code that adheres to PEP 8 guidelines is more maintainable. It reduces confusion and makes it straightforward for developers to maintain and update the codebase over time.
+
+- **Enhanced Collaboration**: PEP 8 ensures that code looks familiar to other Python developers, making it easier for them to contribute to open-source projects or collaborate within a team.
+
+## The Role of a PEP 8 Checker
+
+A Python PEP 8 Checker is a tool specifically designed to enforce and validate PEP 8 compliance. Here's how it works and why it's valuable:
+
+- **Syntax and Style Validation**: The checker scans Python source code files and identifies deviations from PEP 8 guidelines. It checks for issues such as indentation errors, line length violations, and incorrect naming conventions.
+
+- **Automated Checks**: Developers can integrate PEP 8 checkers into their development workflow, either as standalone tools or as part of code editors and IDEs. This allows for automated and real-time checks as code is written or edited.
+
+- **Custom Configuration**: Many PEP 8 checkers allow developers to customize the checks to match their project-specific requirements. This flexibility ensures that projects can adhere to both general PEP 8 recommendations and project-specific coding standards.
+
+- **Reporting and Feedback**: When deviations are detected, PEP 8 checkers generate reports that highlight the specific issues and suggest corrections. This feedback enables developers to quickly address and rectify non-compliance.
+
+## Popular Python PEP 8 Checkers
+
+Several PEP 8 checkers are widely used in the Python development community:
+
+1. **pycodestyle (formerly known as pep8)**: This command-line tool checks Python code against PEP 8 style guide conventions.
+
+2. **flake8**: Combines multiple tools (including pycodestyle) into a single package to provide comprehensive code checking and validation against PEP 8 and other coding standards.
+
+
+3. **autopep8**: Not only detects PEP 8 violations but also automatically reformats code to comply with PEP 8 guidelines.
+
+## Conclusion
+
+The Python PEP 8 Checker is a valuable tool for Python developers and teams. It ensures that code adheres to the PEP 8 style guide, promoting code readability, consistency, and maintainability. By integrating a PEP 8 Checker into the development process, Python developers can maintain a high standard of code quality and contribute to more efficient and collaborative software development practices.
 
 #### Follow Test-Driven Development (TDD):
 Test-Driven Development (TDD) is a crucial part of my development process. I will write comprehensive tests for both JavaScript and Python components and ensure that these tests are consistently updated and pass before new features or changes are added. You can expect to see TDD principles demonstrated in my git commits.
