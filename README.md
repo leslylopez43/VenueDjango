@@ -1136,7 +1136,6 @@ that might cause a webpage to display incorrectly or behave unexpectedly in web 
 ## CSS Validator
 | CSS Validator                                       |
 |-----------------------------------------------------|
-
 | A CSS validator is a tool or service that checks Cascading Style Sheets (CSS) 
 code for compliance with CSS specifications and standards. CSS is used to style web pages, 
 defining how elements on a webpage should be presented, including attributes like fonts, colors, margins, padding, and more.|
@@ -1151,12 +1150,12 @@ is a tool that checks JavaScript code for errors, coding style violations, and p
 JavaScript is a widely used programming language for web development, and validators help 
 developers write cleaner, error-free, and more maintainable JavaScript code. Here are some key 
 aspects of JavaScript validators:|
-|![Boto3 Logo](media/products/pip8-validator.webp)|
+|![Boto3 Logo](media/products/jsvalidator.png)|
 
 # Python PEP8 Checker
 
 Python is a versatile and widely used programming language known for its readability and clean code practices. To maintain the high standard of code quality and readability, Python introduced a set of guidelines known as PEP 8 (Python Enhancement Proposal 8). PEP 8 provides conventions and best practices for writing Python code, covering aspects such as naming conventions, code formatting, and style recommendations.
-
+|![Boto3 Logo](media/products/pip8-validator.webp)|
 ## The Significance of PEP 8
 
 PEP 8 is essential for:
