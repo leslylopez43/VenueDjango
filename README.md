@@ -3,19 +3,12 @@
 
 ## Table of Contents
 - [Wireframe](#wireframe)
-- [Features Table](#Table-of-Contents)
+- [Table Data](#Table-Data)
 - [Venue Services](#venue-list)
 - [User History](#user-history)
 - [Website Front Page](#website-front-page)
 - [Customer User Stories](#customer-user-stories)
-- [Ipad Air Front Page](#ipad-air-front-page)
-- [Iphone 14 Pro Max Front Page](#iphone-14-pro-max-front-page)
 - [Enjoy Browsing](#enjoy-browsing)
-- [Browse and Navigate Available Venues](#browse-and-navigate-available-venues)
-- [Check Venue Availability](#check-venue-availability)
-- [Check Venue Features](#check-venue-features)
-- [Special Offers](#special-offers)
-- [Search by Price, Rating, Venue Name, Category](#search-by-price-rating-venue-name-category)
 - [Reserving Bookings](#reserving-bookings)
 - [Reserve a Venue](#reserve-a-venue)
 - [View and Manage Reservations](#view-and-manage-reservations)
@@ -105,7 +98,7 @@ For users on the go with the iPhone 14 Pro Max, our wireframes cater to the uniq
 
 
 
-## Table of Contents
+## Table Data
 In this section, we provide a structured overview of the contents of this Django Python project. The Table of Contents (ToC) serves as a guide, enabling you to quickly navigate to specific sections and topics of interest within this README document.
 
 
