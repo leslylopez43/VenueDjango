@@ -1119,7 +1119,7 @@ In our Venue Ariel Reservation Management System, we have integrated Lighthouse,
 
 
 ## Html Validator
-| ## Html Validator                                       |
+| Html Validator                                       |
 |-----------------------------------------------------------|
 | An HTML validator is a tool or software that checks HTML documents (web pages) to ensure they conform 
 to the official standards and rules defined by the World Wide Web Consortium (W3C). The main purpose of an HTML 
@@ -1130,15 +1130,14 @@ that might cause a webpage to display incorrectly or behave unexpectedly in web 
 | ![Boto3 Logo](media/products/htmlvalidator2.png) |
 | ![Boto3 Logo](media/products/html3validator.png) |
 | ![Boto3 Logo](media/products/html-validator4.png) |
-
 |-An HTML validator is a tool or software that checks HTML documents (web pages) to ensure they conform to the official standards and rules defined by the World Wide Web Consortium (W3C). The main purpose of an HTML validator is to identify and report any errors or deviations in the HTML code of a webpage. These errors can include syntax mistakes, missing or incorrectly nested tags, deprecated elements, and other issues that might cause a webpage to display incorrectly or behave unexpectedly in web browsers.|
 
 
 ## CSS Validator
-| ## CSS Validator                                       |
-|-----------------------------------------------------------|
+| CSS Validator                                       |
+|-----------------------------------------------------|
 
-|-A CSS validator is a tool or service that checks Cascading Style Sheets (CSS) 
+| A CSS validator is a tool or service that checks Cascading Style Sheets (CSS) 
 code for compliance with CSS specifications and standards. CSS is used to style web pages, 
 defining how elements on a webpage should be presented, including attributes like fonts, colors, margins, padding, and more.|
 |![Boto3 Logo](media/products/css-validator.png)|
@@ -1147,7 +1146,7 @@ defining how elements on a webpage should be presented, including attributes lik
 ## JS VALIDATOR
 | JS Validator                                       |
 |-----------------------------------------------------------|
-|-A JavaScript validator, also known as a JavaScript linter or static code analyzer, 
+| A JavaScript validator, also known as a JavaScript linter or static code analyzer, 
 is a tool that checks JavaScript code for errors, coding style violations, and potential issues. 
 JavaScript is a widely used programming language for web development, and validators help 
 developers write cleaner, error-free, and more maintainable JavaScript code. Here are some key 
