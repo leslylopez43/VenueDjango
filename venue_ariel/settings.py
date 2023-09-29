@@ -26,14 +26,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-)9nf8j^&e=^!z^l=_os1r
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False
 
 import os
 import dj_database_url
 
 
 ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com']
-
 
 
 
