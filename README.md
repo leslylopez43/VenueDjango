@@ -5,7 +5,7 @@
 - [Wireframe](#wireframe)
 - [Table Data](#Table-Data)
 - [Venue Services](#venue-list)
-- [User History](#user-history)
+- [User Storie](#user-history)
 - [Website Front Page](#website-front-page)
 - [Customer User Stories](#customer-user-stories)
 - [Enjoy Browsing](#enjoy-browsing)
