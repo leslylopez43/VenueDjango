@@ -22,17 +22,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-)9nf8j^&e=^!z^l=_os1r%3omcq=9c3^1=uwww7oet6!l$)1q!')
+SECRET_KEY = os.environ.get
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 import os
 import dj_database_url
 
 
-ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [os.environ.get]
+
+
 
 
 
@@ -120,8 +122,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'leslylopez43@someemail.com'
-EMAIL_HOST_PASSWORD = 'London2320'
+EMAIL_HOST_USER = 'test@someemail.com'
+EMAIL_HOST_PASSWORD = 'Password'
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
@@ -212,7 +214,3 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
-
-STRIPE_PUBLIC_KEY = 'pk_test_51NiAvcCBSejQRjV8ansbYAsGrN7Zvhu5YWMo2bboGCtP3NoGx1SoAXjKDEOo1yLb4U7awlPAK56XyPBapQZ9yk5X00KxBgtLet'
-                     
-STRIPE_SECRET_KEY = 'sk_test_51NiAvcCBSejQRjV886vQFPdD7bu5p9osxm07gFHcOdFBnJEHtPRWxWKldgrFv1iM7drq8ibiLpRQFlD83DIbL9Wf00MCXtgPvG'
