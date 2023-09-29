@@ -34,6 +34,8 @@ import dj_database_url
 
 ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com']
 
+ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -70,7 +72,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'venue_ariel.middleware.AdminAccessMiddleware',  
 ]
 
 ROOT_URLCONF = 'venue_ariel.urls'
@@ -202,8 +203,6 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
@@ -218,11 +217,7 @@ MEDIAFILES_LOCATION = 'media'
 # STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 # MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
 
-# settings.py
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 
