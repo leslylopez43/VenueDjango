@@ -26,13 +26,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-)9nf8j^&e=^!z^l=_os1r
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'false'
+DEBUG = 'DEVELOPMENT' in os.environ
 
 import os
 import dj_database_url
 
 
-ALLOWED_HOSTS = ['venueariel.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['venueariel-3a442b56d3de.herokuapp.com']
+
 
 
 # Application definition
@@ -267,4 +268,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-    
