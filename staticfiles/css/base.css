@@ -57,26 +57,26 @@ html {
   color:white;
 }
 .text-black{
-  color: #000 important;
+  color: #000 ;
 }
 .border-black{
-  border:1px solid black important;
+  border:1px solid black ;
 }
 bg-black{
-  background: #000 important;
+  background: #000 ;
 }
 
 
 .text-black {
-  color: #000 !important;
+  color: #000 ;
 }
 
 .border-black {
-  border: 1px solid black !important;
+  border: 1px solid black ;
 }
 
 .bg-black {
-  background: #000 !important;
+  background: #000;
 }
 
 .overlay {
@@ -98,8 +98,8 @@ bg-black{
 
 
 a.category-badge > span.badge:hover {
-  background: #212529 !important;
-  color: #fff !important;
+  background: #212529 ;
+  color: #fff ;
 }
 
 .btt-button {
