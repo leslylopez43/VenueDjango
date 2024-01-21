@@ -204,13 +204,23 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# ///////STRIPE/////////////////////
 
+
+
+# ///////STRIPE/////////////////////
+//////////# Note: Ensure you replace the '' with your actual default values if any. 
+# The os.getenv method is used to retrieve environment variables, providing a default value if the variable is not set.////////////////////////
+
+# Thresholds for free members and free delivery
 FREE_MEMBERS_THRESHOLD = 10
 FREE_DELIVERY_THRESHOLD = 50
+
+# Percentage for standard delivery
 STANDARD_DELIVERY_PERCENTAGE = 10
-STRIPE_CURRENCY = 'GBP'
-STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
-STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+# Stripe configuration
+STRIPE_CURRENCY = 'GBP' # Currency code for Stripe transactions
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')  # Stripe public key (replace '' with actual default value)
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')  # Stripe secret key (replace '' with actual default value)
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')  # Stripe webhook secret (replace '' with actual default value)
 
